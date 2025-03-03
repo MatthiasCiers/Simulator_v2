@@ -1,9 +1,12 @@
 from datetime import datetime
-
+import TransactionAgent
+import SettlementModel
+import InstitutionAgent
+import Account
 from mesa import Agent
 
 class InstructionAgent (Agent):
-    def __init__(self,model: SettlementModel, linkedTransaction: TransactionAgent = None, uniqueID: str, motherID: str, institution: InstitutionAgent, securitiesAccount: Account, cashAccount: Account, securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime):
+    def __init__(self,model: SettlementModel, uniqueID: str, motherID: str, institution: InstitutionAgent, securitiesAccount: Account, cashAccount: Account, securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime, linkedTransaction: TransactionAgent = None):
         super.__init__(model)
         self.model = model
         self.uniqueID = uniqueID
