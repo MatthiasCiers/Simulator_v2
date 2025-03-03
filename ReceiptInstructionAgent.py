@@ -28,4 +28,5 @@ class ReceiptInstructionAgent(InstructionAgent):
 
     def createReceiptChildren(self):
         # implementation to do
+        pass
 

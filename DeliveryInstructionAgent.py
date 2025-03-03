@@ -25,3 +25,4 @@ class DeliveryInstructionAgent(InstructionAgent):
 
     def createDeliveryChildren(self):
         #implementation to do
+        pass
