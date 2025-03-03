@@ -22,3 +22,6 @@ class DeliveryInstructionAgent(InstructionAgent):
             linkcode=linkcode,
             creation_time=creation_time
         )
+
+    def createDeliveryChildren(self):
+        #implementation to do
