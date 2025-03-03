@@ -1,4 +1,6 @@
 class Account:
+
+    #account object class
     def __init__(self, accountID: str, accountType:str,balance:float, creditLimit:float = 0):
         self.accountID = accountID
         self.accountType = accountType
