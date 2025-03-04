@@ -27,6 +27,21 @@ class ReceiptInstructionAgent(InstructionAgent):
         )
 
     def createReceiptChildren(self):
-        # implementation to do
-        pass
+        available_cash = self.cashAccount.checkSufficientBalance(self.amount, self.securityType)
+        if available_cash > 0:
+            # create delivery children instructions
 
+            # instant matching and settlement of first child not yet possible, because receipt_child_1 does not yet exist
+            receipt_child_1 = InstructionAgent(self.model, f"{self.uniqueID}_1", self.uniqueID,
+                                                self.institution, self.securitiesAccount, self.cashAccount,
+                                                self.securityType, available_cash, True, "Validated",
+                                                f"{self.linkcode}_1", datetime, None
+                                                )
+            receipt_child_2 = InstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
+                                                self.institution, self.securitiesAccount, self.cashAccount,
+                                                self.securityType, self.amount - available_cash, True,
+                                                "Validated", f"{self.linkcode}_1", datetime, None
+                                                )
+            # add child instructions to the model
+            self.model.schedule.add(receipt_child_1)
+            self.model.schedule.add(receipt_child_2)

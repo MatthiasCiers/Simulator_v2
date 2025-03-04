@@ -24,5 +24,19 @@ class DeliveryInstructionAgent(InstructionAgent):
         )
 
     def createDeliveryChildren(self):
-        #implementation to do
-        pass
+        available_securities = self.securitiesAccount.checkSufficientBalance(self.amount, self.securityType)
+        if available_securities > 0:
+            #create delivery children instructions
+
+            #instant matching and settlement of first child not yet possible, because receipt_child_1 does not yet exist
+            delivery_child_1 = InstructionAgent(self.model, f"{self.uniqueID}_1", self.uniqueID,
+                                                self.institution, self.securitiesAccount, self.cashAccount,
+                                                self.securityType, available_securities, True, "Validated", f"{self.linkcode}_1", datetime, None
+                                                )
+            delivery_child_2 = InstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
+                                                self.institution, self.securitiesAccount, self.cashAccount,
+                                                self.securityType, self.amount - available_securities, True, "Validated", f"{self.linkcode}_1", datetime, None
+                                                )
+            #add child instructions to the model
+            self.model.schedule.add(delivery_child_1)
+            self.model.schedule.add(delivery_child_2)
