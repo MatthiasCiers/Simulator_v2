@@ -24,7 +24,7 @@ class DeliveryInstructionAgent(InstructionAgent):
         )
 
     def createDeliveryChildren(self):
-        available_securities = self.securitiesAccount.checkSufficientBalance(self.amount, self.securityType)
+        available_securities = self.securitiesAccount.checkBalance(self.amount, self.securityType)
         if available_securities > 0:
             #create delivery children instructions
 

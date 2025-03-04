@@ -1,4 +1,5 @@
 from mesa import Agent
+import InstructionAgent
 import ReceiptInstructionAgent
 import DeliveryInstructionAgent
 
@@ -11,12 +12,33 @@ class TransactionAgent(Agent):
         self.status = status
 
     def get_status(self):
-        # TODO: Return the current status
-        pass
+        return self.status
 
     def settle(self):
-        # TODO: Implement settlement logic
-        pass
+        if self.deliverer.get_status() == "Matched" and self.receiver.get_status() == "Matched":
+            if (
+                self.deliverer.securitiesAccount.checkBalance(self.deliverer.get_amount, self.deliverer.get_securityType)
+                and self.receiver.cashAccount.checkBalance(self.receiver.get_amount, self.receiver.get_securityType)
+            ):
+                if self.deliverer.get_amount == self.receiver.get_amount:
+                    #additional check that to be settled amounts are equal
+
+                    #transfer of securities
+                    delivered_securities = self.deliverer.securitiesAccount.deductBalance(self.deliverer.get_amount, self.deliverer.get_securityType)
+                    received_securites = self.receiver.securitiesAccount.addBalance(self.receiver.get_amount, self.deliverer.get_securityType)
+
+                    #transfer of cash
+                    delivered_cash = self.receiver.cashAccount.deductBalance(self.receiver.get_amount, "Cash")
+                    received_cash = self.deliverer.cashAccount.addBalance(self.deliverer.get_amount, "Cash")
+
+                    #change states to "Settled"
+                    self.deliverer.set_status("Settled")
+                    self.receiver.set_status("Settled")
+                    self.status == "Settled"
+            else:
+
+
+
 
     def cancel_timeout(self):
         # TODO: Implement timeout cancellation logic

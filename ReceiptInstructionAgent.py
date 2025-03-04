@@ -27,7 +27,7 @@ class ReceiptInstructionAgent(InstructionAgent):
         )
 
     def createReceiptChildren(self):
-        available_cash = self.cashAccount.checkSufficientBalance(self.amount, self.securityType)
+        available_cash = self.cashAccount.checkBalance(self.amount, self.securityType)
         if available_cash > 0:
             # create delivery children instructions
 

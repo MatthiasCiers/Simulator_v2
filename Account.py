@@ -23,7 +23,7 @@ class Account:
         return self.usedCredit
 
 
-    def checkSufficientBalance(self, amount : float, securityType: str):
+    def checkBalance(self, amount : float, securityType: str):
         if self.accountType == "Cash" and securityType == "Cash":
            return  self.balance + self.creditLimit >= amount
         elif self.accountType == securityType:
