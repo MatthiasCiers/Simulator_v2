@@ -31,10 +31,16 @@ class TransactionAgent(Agent):
                     delivered_cash = self.receiver.cashAccount.deductBalance(self.receiver.get_amount, "Cash")
                     received_cash = self.deliverer.cashAccount.addBalance(self.deliverer.get_amount, "Cash")
 
+                    #extra check for safety
+                    if not delivered_securities == received_securites == delivered_cash == received_cash == self.deliverer.get_amount == self.receiver.get_amount:
+                        self.deliverer.set_status("Cancelled due to error")
+                        self.receiver.set_status("Cancelled due to error")
+                        self.status = "Cancelled due to error"
+
                     #change states to "Settled"
                     self.deliverer.set_status("Settled")
                     self.receiver.set_status("Settled")
-                    self.status == "Settled"
+                    self.status = "Settled"
             else:
 
 
