@@ -40,7 +40,7 @@ class ReceiptInstructionAgent(InstructionAgent):
             receipt_child_2 = InstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
                                                 self.institution, self.securitiesAccount, self.cashAccount,
                                                 self.securityType, self.amount - available_cash, True,
-                                                "Validated", f"{self.linkcode}_1", datetime, None
+                                                "Validated", f"{self.linkcode}_2", datetime, None
                                                 )
             # add child instructions to the model
             self.model.schedule.add(receipt_child_1)

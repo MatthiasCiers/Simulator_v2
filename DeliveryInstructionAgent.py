@@ -35,7 +35,7 @@ class DeliveryInstructionAgent(InstructionAgent):
                                                 )
             delivery_child_2 = InstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
                                                 self.institution, self.securitiesAccount, self.cashAccount,
-                                                self.securityType, self.amount - available_securities, True, "Validated", f"{self.linkcode}_1", datetime.now(), None
+                                                self.securityType, self.amount - available_securities, True, "Validated", f"{self.linkcode}_2", datetime.now(), None
                                                 )
             #add child instructions to the model
             self.model.schedule.add(delivery_child_1)
