@@ -45,3 +45,5 @@ class ReceiptInstructionAgent(InstructionAgent):
             # add child instructions to the model
             self.model.schedule.add(receipt_child_1)
             self.model.schedule.add(receipt_child_2)
+
+            return receipt_child_1, receipt_child_2

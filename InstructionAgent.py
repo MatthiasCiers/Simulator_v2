@@ -8,7 +8,7 @@ import ReceiptInstructionAgent
 import Account
 
 class InstructionAgent (Agent):
-    def __init__(self, model: SettlementModel, uniqueID: str, motherID: str, institution: InstitutionAgent, securitiesAccount: Account, cashAccount: Account, securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime, linkedTransaction: TransactionAgent = None):
+    def __init__(self, model: SettlementModel, uniqueID: str, motherID: str, institution: InstitutionAgent, securitiesAccount: Account, cashAccount: Account, securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime.now(), linkedTransaction: TransactionAgent = None):
         super().__init__(model)
         self.uniqueID = uniqueID
         self.motherID = motherID
@@ -127,6 +127,8 @@ class InstructionAgent (Agent):
         #update status in both instructions
         self.set_status("Matched")
         other_instruction.set_status("Matched")
+
+        return transaction
 
         # TODO: logging
 

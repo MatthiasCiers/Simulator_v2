@@ -42,6 +42,16 @@ class TransactionAgent(Agent):
                     self.receiver.set_status("Settled")
                     self.status = "Settled"
             else:
+                #check if institutions allow
+
+                delivery_child_1, delivery_child_2 = self.deliverer.createDeliveryChildren()
+                receipt_child_1, receipt_child_2 = self.receiver.createReceiptChildren()
+                child_transaction_1 = delivery_child_1.match()
+                child_transaction_2 = delivery_child_2.match()
+                child_transaction_1.settle()
+
+
+
 
 
 

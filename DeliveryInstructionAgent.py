@@ -31,12 +31,14 @@ class DeliveryInstructionAgent(InstructionAgent):
             #instant matching and settlement of first child not yet possible, because receipt_child_1 does not yet exist
             delivery_child_1 = InstructionAgent(self.model, f"{self.uniqueID}_1", self.uniqueID,
                                                 self.institution, self.securitiesAccount, self.cashAccount,
-                                                self.securityType, available_securities, True, "Validated", f"{self.linkcode}_1", datetime, None
+                                                self.securityType, available_securities, True, "Validated", f"{self.linkcode}_1", datetime.now(), None
                                                 )
             delivery_child_2 = InstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
                                                 self.institution, self.securitiesAccount, self.cashAccount,
-                                                self.securityType, self.amount - available_securities, True, "Validated", f"{self.linkcode}_1", datetime, None
+                                                self.securityType, self.amount - available_securities, True, "Validated", f"{self.linkcode}_1", datetime.now(), None
                                                 )
             #add child instructions to the model
             self.model.schedule.add(delivery_child_1)
             self.model.schedule.add(delivery_child_2)
+
+            return delivery_child_1, delivery_child_2
