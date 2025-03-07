@@ -17,10 +17,11 @@ class TransactionAgent(Agent):
     def settle(self):
         if self.deliverer.get_status() == "Matched" and self.receiver.get_status() == "Matched":
             if (
+                #checks if full ammount can be settled
                 self.deliverer.securitiesAccount.checkBalance(self.deliverer.get_amount, self.deliverer.get_securityType)
                 and self.receiver.cashAccount.checkBalance(self.receiver.get_amount, self.receiver.get_securityType)
             ):
-                if self.deliverer.get_amount == self.receiver.get_amount:
+                if self.deliverer.get_amount() == self.receiver.get_amount():
                     #additional check that to be settled amounts are equal
 
                     #transfer of securities
@@ -41,14 +42,20 @@ class TransactionAgent(Agent):
                     self.deliverer.set_status("Settled")
                     self.receiver.set_status("Settled")
                     self.status = "Settled"
-            else:
-                #check if institutions allow
 
-                delivery_child_1, delivery_child_2 = self.deliverer.createDeliveryChildren()
-                receipt_child_1, receipt_child_2 = self.receiver.createReceiptChildren()
-                child_transaction_1 = delivery_child_1.match()
-                child_transaction_2 = delivery_child_2.match()
-                child_transaction_1.settle()
+            elif self.deliverer.get_amount() == 0 or self.receiver.get_amount() == 0:
+                #will do nothing if there is no cash or securities available
+                pass
+            else:
+                #handless partial settlement
+
+                if self.deliverer.get_institution().check_partial_allowed() and self.receiver.get_institution().check_partial_allowed():
+                    #check if institutions allow partial settlement
+                    delivery_child_1, delivery_child_2 = self.deliverer.createDeliveryChildren()
+                    receipt_child_1, receipt_child_2 = self.receiver.createReceiptChildren()
+                    child_transaction_1 = delivery_child_1.match()
+                    child_transaction_2 = delivery_child_2.match()
+                    child_transaction_1.settle()
 
 
 
