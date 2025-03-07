@@ -82,6 +82,9 @@ class InstructionAgent (Agent):
 
     def insert_instruction(self):
         # TODO: is this just changing state from exists to pending?
+        if self.creation_time < datetime.now():
+            if self.status == 'Exists':
+                self.status = 'Pending'
         pass
 
     def validate(self):
