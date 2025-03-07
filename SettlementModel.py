@@ -1,5 +1,5 @@
 from mesa import Model
-from datetime import datetime
+from datetime import datetime, timedelta
 import pandas as pd
 import TransactionAgent
 import InstitutionAgent
@@ -31,7 +31,7 @@ class SettlementModel(Model):
         self.steps_per_day = 500 #random chosen
 
 
-
+        self.simulation_start = datetime.now()
         self.participants = []
         self.accounts = []
         self.instructions = []
@@ -40,6 +40,12 @@ class SettlementModel(Model):
         self.activity_log = []
         self.generate_data()
 
+    def random_timestamp(self):
+        simulation_end = self.simulation_start + timedelta(days=self.simulation_duration_days)
+        delta = simulation_end - self.simulation_start
+        random_seconds = random.uniform(0, delta.total_seconds())
+        random_time = self.simulation_start + timedelta(seconds=random_seconds)
+        return random_time  # Now returns a datetime object
 
     def log_event(self, message, agent_id, is_transaction=True):
         timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
