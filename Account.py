@@ -8,7 +8,11 @@ class Account:
         self.creditLimit = creditLimit
         self.usedCredit = 0
 
+        #logging
+        self.model.log_event(f"Account {accountID} of type {accountType} created with balance {balance} and credit limit {creditLimit}", accountID, is_transaction = False)
 
+    def getAccountID(self):
+        return self.accountID
 
     def getCreditLimit(self):
         return self.creditLimit
@@ -23,7 +27,7 @@ class Account:
         return self.usedCredit
 
 
-    def checkSufficientBalance(self, amount : float, securityType: str):
+    def checkBalance(self, amount : float, securityType: str):
         if self.accountType == "Cash" and securityType == "Cash":
            return  self.balance + self.creditLimit >= amount
         elif self.accountType == securityType:
@@ -41,6 +45,8 @@ class Account:
             if self.creditLimit == (self.creditLimit - self.usedCredit):
 
                 self.balance = self.balance + amount
+                #logging
+                self.model.log_event(f"Account {self.accountID} added {amount} cash. Total cash amount: {self.balance}, total credit amount: {self.usedCredit}", self.accountID, is_transaction = False)
                 return amount
 
             elif self.creditLimit != self.creditLimit - self.usedCredit:
@@ -48,20 +54,29 @@ class Account:
                 if self.usedCredit >= amount:
                     #reset the used credit with the amount
                     self.usedCredit = self.usedCredit - amount
+                    # logging
+                    self.model.log_event(f"Account {self.accountID} added {amount} cash. Total cash amount: {self.balance}, total credit amount: {self.usedCredit}", self.accountID, is_transaction=False)
                     return amount
                 else:
                     #set used credit to 0 and add remaining to balance
                     remaining = amount - self.usedCredit
                     self.usedCredit = 0
                     self.balance = self.balance + remaining
+                    # logging
+                    self.model.log_event(f"Account {self.accountID} added {amount} cash. Total cash amount: {self.balance}, total credit amount: {self.usedCredit}",self.accountID, is_transaction=False)
                     return amount
+
         #if security account:
         elif self.accountType == securityType:
             self.balance = self.balance + amount
+            #logging
+            self.model.log_event(f"Account {self.accountID} added {amount} securities of type {self.accountType}. New amount: {self.balance}", self.accountID, is_transaction = False)
             return amount
 
         else:
             print("Error: account doesn't allow to add this type of assets")
+            #logging
+            self.model.log_event(f"ERROR: account {self.accountID} doesn't allow to add this type of assets", self.accountID, is_transaction = False)
             return 0
 
 
@@ -74,33 +89,46 @@ class Account:
                 deducted = total_available
                 self.usedCredit = self.creditLimit
                 self.balance = 0
+                # logging
+                self.model.log_event(f"Account {self.accountID} deducted {amount} cash. Total cash amount: {self.balance}, total credit amount: {self.usedCredit}",self.accountID, is_transaction=False)
                 return deducted
 
             elif total_available > amount and self.balance == 0:
                 #adjust the creditLimit accordingly
                 self.usedCredit = self.usedCredit + amount
+                # logging
+                self.model.log_event(f"Account {self.accountID} deducted {amount} cash. Total cash amount: {self.balance}, total credit amount: {self.usedCredit}", self.accountID, is_transaction=False)
                 return amount
 
             elif self.balance > 0:
                 if self.balance >= amount:
                     self.balance = self.balance - amount
+                    # logging
+                    self.model.log_event(f"Account {self.accountID} deducted {amount} cash. Total cash amount: {self.balance}, total credit amount: {self.usedCredit}", self.accountID, is_transaction=False)
                     return amount
                 else:
                     deductedFromBalance = self.balance
                     self.balance = 0
                     self.usedCredit = self.usedCredit + deductedFromBalance
+                    # logging
+                    self.model.log_event(f"Account {self.accountID} deducted {amount} cash. Total cash amount: {self.balance}, total credit amount: {self.usedCredit}",self.accountID, is_transaction=False)
                     return amount
 
         #deduct securities
         elif self.accountType == securityType:
             if self.balance >= amount:
                 self.balance = self.balance -amount
+                # logging
+                self.model.log_event(f"Account {self.accountID} deducted {amount} securities of type {self.accountType}. New amount: {self.balance}", self.accountID, is_transaction=False)
                 return amount
             else:
+                #@ruben i think this should not be possible. if there is not enough to deduct, nothing should be deducted and partial settlement should be triggered
                 deducted = self.balance
                 self.balance = 0
                 return deducted
 
         else:
             print("Error: account doesn't allow to deduct this type of assets")
+            # logging
+            self.model.log_event(f"ERROR: account {self.accountID} doesn't allow to deduct this type of assets", self.accountID, is_transaction=False)
             return 0
