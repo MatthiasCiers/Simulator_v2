@@ -25,6 +25,10 @@ class ReceiptInstructionAgent(InstructionAgent):
             linkcode=linkcode,
             creation_time=creation_time
         )
+        # logging ( don't know why is_transaction = True)
+        self.model.log_event(
+            f"Receipt instruction with ID {uniqueID} created by institution {institution} for {securityType} for amount {amount}",
+            self.uniqueID, is_transaction=True)
 
     def createReceiptChildren(self):
         available_cash = self.cashAccount.checkBalance(self.amount, self.securityType)

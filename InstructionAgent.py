@@ -23,6 +23,7 @@ class InstructionAgent (Agent):
         self.creation_time = datetime.now() # track creation time for timeout
         self.linkedTransaction = linkedTransaction
 
+
 #getter methods
     def get_model(self):
         """Returns the model associated with the agent."""
@@ -87,12 +88,15 @@ class InstructionAgent (Agent):
         if self.status == 'Pending':
             # TODO: second delay has to be implemented still
             self.set_status('Validated')
-            # TODO: logging to eventlog
+
+            #logging
+            self.model.log_event(f"Instruction {self.uniqueID} validated.", self.uniqueID, is_transaction = True)
 
     def match(self):
     #matches this instruction with the other instruction with same linkcode
     #creates transactionAgent with the 2 instructions
-
+        #logging
+        self.model.log_event(f"Instruction {self.uniqueID} attempting to match", self.uniqueID, is_transaction = True)
         if self.status == 'Validated':
             #find other instruction with same linkcode:
             other_instruction = None
@@ -110,40 +114,53 @@ class InstructionAgent (Agent):
                     ):
                         other_instruction = agent
                         break
+            else:
+                #logging
+                self.model.log_event(f"ERROR: Instruction {self.uniqueID} failed to match, no matching instruction found", self.uniqueID, is_transaction = True)
 
-        #create transaction
-        transaction = TransactionAgent(
-            model = self.model,
-            transactionID = f"{self.uniqueID}_{other_instruction.uniqueID}",
-            deliverer = self if isinstance(self, DeliveryInstructionAgent) else other_instruction,
-            receiver = self if isinstance(self, ReceiptInstructionAgent) else other_instruction,
-            status = "Matched"
-        )
+            #create transaction
+            transaction = TransactionAgent(
+                model = self.model,
+                transactionID = f"{self.uniqueID}_{other_instruction.uniqueID}",
+                deliverer = self if isinstance(self, DeliveryInstructionAgent) else other_instruction,
+                receiver = self if isinstance(self, ReceiptInstructionAgent) else other_instruction,
+                status = "Matched"
+            )
 
-        #link transaction to both instructions:
-        self.linkedTransaction = transaction
-        other_instruction.linkedTransaction = transaction
+            #link transaction to both instructions:
+            self.linkedTransaction = transaction
+            other_instruction.linkedTransaction = transaction
 
-        #update status in both instructions
-        self.set_status("Matched")
-        other_instruction.set_status("Matched")
+            #update status in both instructions
+            self.set_status("Matched")
+            other_instruction.set_status("Matched")
 
-        return transaction
+            #logging
+            self.model.log_event(f"Instruction {self.uniqueID} matched with instruction {self.linkedTransaction.get_uniqueID}", self.uniqueID, is_transaction = True)
+            return transaction
 
-        # TODO: logging
+        else:
+            self.model.log_event(f"Error: Instruction {self.uniqueID} in wrong state, impossible to match", self.uniqueID, is_transaction = True)
 
     def settle(self):
     #only to change state. Actual settlement logic is in TransactionAgent
         if self.status == "Matched":
             self.set_status('Settled')
+            #logging
+            self.model.log_event(f"Instruction {self.uniqueID} settled", self.uniqueID, is_transaction = True)
 
     def cancel_timout(self):
         #method to cancel instruction due to timeout
         # TODO
+        # logging
+        self.model.log_event(f"Instruction {self.uniqueID} cancelled due to timeout.", self.uniqueID, is_transaction=True)
         pass
 
     def cancel_partial(self):
         #method to cancel instruction due to partial settlement.
         #this instruction gets cancelled, but children get created
-        # TODO
-        pass
+        self.status = "Cancelled due to partial settlement"
+        #logging
+        self.model.log_event(f"Instruction {self.uniqueID} cancelled due to partial settlement.", self.uniqueID, is_transaction = True)
+
+

@@ -11,10 +11,15 @@ class TransactionAgent(Agent):
         self.receiver = receiver
         self.status = status
 
+        #logging ( don't know why is_transaction = True)
+        self.model.log_event(f"Transaction {self.transactionID} created from account {self.deliverer.get_securitiesAccount.getAccountID} to account {self.receiver.get_cashAccount.getAccountID}", self.transactionID, is_transaction = True)
+
     def get_status(self):
         return self.status
 
     def settle(self):
+        #logging
+        self.model.log_event(f"Transaction {self.transactionID} attempting to settle.", self.transactionID, is_transaction = True)
         if self.deliverer.get_status() == "Matched" and self.receiver.get_status() == "Matched":
             if (
                 #checks if full ammount can be settled
@@ -43,12 +48,15 @@ class TransactionAgent(Agent):
                     self.receiver.set_status("Settled")
                     self.status = "Settled"
 
+                    #logging
+                    self.model.log_event(f"Transaction {self.transactionID} settled fully.", self.transactionID, is_transaction = True)
+
             elif self.deliverer.get_amount() == 0 or self.receiver.get_amount() == 0:
                 #will do nothing if there is no cash or securities available
-                pass
+                #logging
+                self.model.log_event(f"Error: Transaction {self.transactionID} failed due to no cash or securities available", self.transactionID, is_transaction = True)
             else:
                 #handless partial settlement
-
                 if self.deliverer.get_institution().check_partial_allowed() and self.receiver.get_institution().check_partial_allowed():
                     #check if institutions allow partial settlement
                     delivery_child_1, delivery_child_2 = self.deliverer.createDeliveryChildren()
@@ -56,18 +64,28 @@ class TransactionAgent(Agent):
                     child_transaction_1 = delivery_child_1.match()
                     child_transaction_2 = delivery_child_2.match()
                     child_transaction_1.settle()
+                    #logging:
+                    self.model.log_event(f"Transaction {self.transactionID} partially settled. Children {receipt_child_1.get_uniqueID}, {receipt_child_2.get_uniqueID}, {delivery_child_1.get_uniqueID} and {delivery_child_2.get_uniqueID} got created. Transactions {child_transaction_1} and {child_transaction_2} got created.", self.transactionID, is_transaction = True)
+
+                    self.cancel_partial()
 
 
 
 
-
-
+    def step(self):
+        # TODO
+        pass
 
     def cancel_timeout(self):
         # TODO: Implement timeout cancellation logic
+        self.status = "Cancelled due to timeout"
+        # logging
+        self.model.log_event(f"Transaction {self.transactionID} cancelled due to timeout.", self.transactionID, is_transaction=True)
         pass
 
     def cancel_partial(self):
-        # TODO: Implement partial settlement cancellation logic
-        pass
+        self.status = "Cancelled due to partial settlement"
+        #logging
+        self.model.log_event(f"Transaction {self.transactionID} cancelled due to partial settlement.", self.transactionID, is_transaction = True)
+
 
