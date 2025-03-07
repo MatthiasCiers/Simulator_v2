@@ -103,7 +103,7 @@ class InstructionAgent (Agent):
         if self.status == 'Validated':
             #find other instruction with same linkcode:
             other_instruction = None
-            for agent in self.model.schedule.agents:
+            for agent in self.model.agents:
                 if (
                     isinstance(agent, InstructionAgent) #checks if it is an InstructionAgent
                     and agent.uniqueID != self.uniqueID #checks if it is not itself
