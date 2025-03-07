@@ -8,7 +8,7 @@ import ReceiptInstructionAgent
 import Account
 
 class InstructionAgent (Agent):
-    def __init__(self, model: SettlementModel, uniqueID: str, motherID: str, institution: InstitutionAgent, securitiesAccount: Account, cashAccount: Account, securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime.now(), linkedTransaction: TransactionAgent = None):
+    def __init__(self, model: SettlementModel, uniqueID: str, motherID: str, institution: InstitutionAgent, securitiesAccount: Account, cashAccount: Account, securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime= datetime.now(), linkedTransaction: TransactionAgent = None):
         super().__init__(model)
         self.uniqueID = uniqueID
         self.motherID = motherID
@@ -20,7 +20,7 @@ class InstructionAgent (Agent):
         self.isChild = isChild
         self.status = status
         self.linkcode = linkcode
-        self.creation_time = datetime.now() # track creation time for timeout
+        self.creation_time = creation_time# track creation time for timeout
         self.linkedTransaction = linkedTransaction
 
 
