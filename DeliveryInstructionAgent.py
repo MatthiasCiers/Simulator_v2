@@ -9,6 +9,7 @@ if TYPE_CHECKING:
     from TransactionAgent import TransactionAgent
 
 import ReceiptInstructionAgent
+import TransactionAgent
 
 class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
     def __init__(self, model: "SettlementModel", uniqueID: str, motherID: str, institution: "InstitutionAgent", securitiesAccount: "Account", cashAccount: "Account", securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime ,linkedTransaction: Optional["TransactionAgent"] = None):
@@ -93,7 +94,7 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
             return None
 
         # Create a transaction
-        transaction = TransactionAgent(
+        transaction = TransactionAgent.TransactionAgent(
             model=self.model,
             transactionID=f"{self.uniqueID}_{other_instruction.uniqueID}",
             deliverer=self,

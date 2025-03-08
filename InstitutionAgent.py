@@ -68,7 +68,7 @@ class InstitutionAgent(Agent):
         status = "Exists"
         linkcode = f"LINK-{uniqueID}L{otherID}"
         instruction_creation_time = datetime.now()
-        counter_instruction_creation_time = self.model.random_timestamp()
+        counter_instruction_creation_time = datetime.now()
 
         if instruction_type == 'delivery':
             new_instructionAgent = DeliveryInstructionAgent.DeliveryInstructionAgent(uniqueID=uniqueID, model = model, linkedTransaction = linkedTransaction, motherID=motherID, institution= institution, securitiesAccount = security_account, cashAccount = cash_account, securityType=securityType, amount= amount, isChild=isChild, status=status, linkcode=linkcode, creation_time = instruction_creation_time)
