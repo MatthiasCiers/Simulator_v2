@@ -1,16 +1,18 @@
 from datetime import datetime
-
+from typing import TYPE_CHECKING, Optional
 import InstructionAgent
-import SettlementModel
-import InstitutionAgent
-import Account
-import TransactionAgent
+
+if TYPE_CHECKING:
+    from SettlementModel import SettlementModel
+    from InstitutionAgent import InstitutionAgent
+    from Account import Account
+    from TransactionAgent import TransactionAgent
 
 
-class ReceiptInstructionAgent(InstructionAgent):
-    def __init__(self, model: SettlementModel, uniqueID: str, motherID: str, institution: InstitutionAgent,
-                 securitiesAccount: Account, cashAccount: Account, securityType: str, amount: float, isChild: bool,
-                 status: str, linkcode: str, creation_time: datetime, linkedTransaction: TransactionAgent = None):
+class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
+    def __init__(self, model: "SettlementModel", uniqueID: str, motherID: str, institution: "InstitutionAgent",
+                 securitiesAccount: "Account", cashAccount: "Account", securityType: str, amount: float, isChild: bool,
+                 status: str, linkcode: str, creation_time: datetime, linkedTransaction: Optional["TransactionAgent"] = None):
         super().__init__(
             model=model,
             linkedTransaction=linkedTransaction,

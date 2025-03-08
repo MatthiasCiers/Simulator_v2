@@ -1,5 +1,4 @@
 from mesa import Agent
-import InstructionAgent
 import ReceiptInstructionAgent
 import DeliveryInstructionAgent
 

@@ -1,12 +1,15 @@
 from datetime import datetime
 from mesa import Agent
-import TransactionAgent
-import SettlementModel
-import InstitutionAgent
-import Account
+from typing import TYPE_CHECKING, Optional
+
+if TYPE_CHECKING:
+    from TransactionAgent import TransactionAgent
+    from SettlementModel import SettlementModel
+    from InstitutionAgent import InstitutionAgent
+    from Account import Account
 
 class InstructionAgent (Agent):
-    def __init__(self, model: SettlementModel, uniqueID: str, motherID: str, institution: InstitutionAgent, securitiesAccount: Account, cashAccount: Account, securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime= datetime.now(), linkedTransaction: TransactionAgent = None):
+    def __init__(self, model: "SettlementModel", uniqueID: str, motherID: str, institution: "InstitutionAgent", securitiesAccount: "Account", cashAccount: "Account", securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime= datetime.now(), linkedTransaction: Optional["TransactionAgent"] = None):
         super().__init__(model)
         self.uniqueID = uniqueID
         self.motherID = motherID
@@ -92,56 +95,6 @@ class InstructionAgent (Agent):
 
             #logging
             self.model.log_event(f"Instruction {self.uniqueID} validated.", self.uniqueID, is_transaction = True)
-
-    def match(self):
-    #matches this instruction with the other instruction with same linkcode
-    #creates transactionAgent with the 2 instructions
-        #logging
-        self.model.log_event(f"Instruction {self.uniqueID} attempting to match", self.uniqueID, is_transaction = True)
-        if self.status == 'Validated':
-            #find other instruction with same linkcode:
-            other_instruction = None
-            for agent in self.model.agents:
-                if (
-                    isinstance(agent, InstructionAgent) #checks if it is an InstructionAgent
-                    and agent.uniqueID != self.uniqueID #checks if it is not itself
-                    and agent.linkcode == self.linkcode #checks if linkcodes match
-                    and agent.status == 'Validated' #checks status of other instruction
-                ):
-                    if( #check if both instructions are of opposite type
-                        isinstance(self, DeliveryInstructionAgent) and isinstance(agent, ReceiptInstructionAgent)
-                    ) or (
-                        isinstance(self, ReceiptInstructionAgent) and isinstance(agent, DeliveryInstructionAgent)
-                    ):
-                        other_instruction = agent
-                        break
-            else:
-                #logging
-                self.model.log_event(f"ERROR: Instruction {self.uniqueID} failed to match, no matching instruction found", self.uniqueID, is_transaction = True)
-
-            #create transaction
-            transaction = TransactionAgent(
-                model = self.model,
-                transactionID = f"{self.uniqueID}_{other_instruction.uniqueID}",
-                deliverer = self if isinstance(self, DeliveryInstructionAgent) else other_instruction,
-                receiver = self if isinstance(self, ReceiptInstructionAgent) else other_instruction,
-                status = "Matched"
-            )
-
-            #link transaction to both instructions:
-            self.linkedTransaction = transaction
-            other_instruction.linkedTransaction = transaction
-
-            #update status in both instructions
-            self.set_status("Matched")
-            other_instruction.set_status("Matched")
-
-            #logging
-            self.model.log_event(f"Instruction {self.uniqueID} matched with instruction {self.linkedTransaction.get_uniqueID}", self.uniqueID, is_transaction = True)
-            return transaction
-
-        else:
-            self.model.log_event(f"Error: Instruction {self.uniqueID} in wrong state, impossible to match", self.uniqueID, is_transaction = True)
 
     def settle(self):
     #only to change state. Actual settlement logic is in TransactionAgent
