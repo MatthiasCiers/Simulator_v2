@@ -1,11 +1,8 @@
 from mesa import Model
 from datetime import datetime, timedelta
 import pandas as pd
-import TransactionAgent
 import InstitutionAgent
 import Account
-import DeliveryInstructionAgent
-import ReceiptInstructionAgent
 import random
 
 def generate_iban():

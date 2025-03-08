@@ -1,9 +1,10 @@
 from datetime import datetime
-import TransactionAgent
+
+import InstructionAgent
 import SettlementModel
 import InstitutionAgent
-import InstructionAgent
 import Account
+import TransactionAgent
 
 class DeliveryInstructionAgent(InstructionAgent):
     def __init__(self, model: SettlementModel, uniqueID: str, motherID: str, institution: InstitutionAgent, securitiesAccount: Account, cashAccount: Account, securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime ,linkedTransaction: TransactionAgent = None):
@@ -37,11 +38,11 @@ class DeliveryInstructionAgent(InstructionAgent):
             #create delivery children instructions
 
             #instant matching and settlement of first child not yet possible, because receipt_child_1 does not yet exist
-            delivery_child_1 = InstructionAgent(self.model, f"{self.uniqueID}_1", self.uniqueID,
+            delivery_child_1 = DeliveryInstructionAgent.DeliveryInstructionAgent(self.model, f"{self.uniqueID}_1", self.uniqueID,
                                                 self.institution, self.securitiesAccount, self.cashAccount,
                                                 self.securityType, available_to_settle, True, "Validated", f"{self.linkcode}_1", datetime.now(), None
                                                 )
-            delivery_child_2 = InstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
+            delivery_child_2 = DeliveryInstructionAgent.DeliveryInstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
                                                 self.institution, self.securitiesAccount, self.cashAccount,
                                                 self.securityType, self.amount - available_to_settle, True, "Validated", f"{self.linkcode}_2", datetime.now(), None
                                                 )

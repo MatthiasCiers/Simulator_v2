@@ -3,8 +3,6 @@ from mesa import Agent
 import TransactionAgent
 import SettlementModel
 import InstitutionAgent
-import DeliveryInstructionAgent
-import ReceiptInstructionAgent
 import Account
 
 class InstructionAgent (Agent):

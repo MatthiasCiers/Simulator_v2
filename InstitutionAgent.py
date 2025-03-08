@@ -10,20 +10,13 @@ import DeliveryInstructionAgent
 import Account
 
 
-#helper function to generate iban
-def generate_iban():
-    """Generate a simple IBAN-like string.
-    Example: 'DE45' + 5 digits.
-    """
-    country_code = random.choice(["DE", "FR", "NL", "GB"])
-    check_digits = str(random.randint(10, 99))
-    bban = ''.join(random.choices("0123456789", k=5))
-    return f"{country_code}{check_digits}{bban}"
+
 
 class InstitutionAgent(Agent):
 
     def __init__(self, model:SettlementModel, institutionID:str, accounts:list[Account] = [],allowPartial:bool = True):
-        super.__init__(model)
+        super().__init__(model)
+
         self.institutionID = institutionID
         self.accounts = accounts
         self.allowPartial = allowPartial

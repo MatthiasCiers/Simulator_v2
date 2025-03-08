@@ -1,9 +1,10 @@
 from datetime import datetime
-import TransactionAgent
+
+import InstructionAgent
 import SettlementModel
 import InstitutionAgent
-import InstructionAgent
 import Account
+import TransactionAgent
 
 
 class ReceiptInstructionAgent(InstructionAgent):
@@ -42,15 +43,15 @@ class ReceiptInstructionAgent(InstructionAgent):
             # create delivery children instructions
 
             # instant matching and settlement of first child not yet possible, because receipt_child_1 does not yet exist
-            receipt_child_1 = InstructionAgent(self.model, f"{self.uniqueID}_1", self.uniqueID,
+            receipt_child_1 = ReceiptInstructionAgent.ReceiptInstructionAgent(self.model, f"{self.uniqueID}_1", self.uniqueID,
                                                 self.institution, self.securitiesAccount, self.cashAccount,
                                                 self.securityType, available_to_settle, True, "Validated",
-                                                f"{self.linkcode}_1", datetime, None
+                                                f"{self.linkcode}_1", creation_time=datetime.now(), TransactionAgent=None
                                                 )
-            receipt_child_2 = InstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
+            receipt_child_2 = ReceiptInstructionAgent.ReceiptInstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
                                                 self.institution, self.securitiesAccount, self.cashAccount,
                                                 self.securityType, self.amount - available_to_settle, True,
-                                                "Validated", f"{self.linkcode}_2", datetime, None
+                                                "Validated", f"{self.linkcode}_2", creation_time=datetime.now(), TransactionAgent = None
                                                 )
             # add child instructions to the model
             self.model.schedule.add(receipt_child_1)
