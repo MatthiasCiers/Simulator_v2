@@ -7,7 +7,8 @@ if TYPE_CHECKING:
     from InstitutionAgent import InstitutionAgent
     from Account import Account
     from TransactionAgent import TransactionAgent
-    from DeliveryInstructionAgent import DeliveryInstructionAgent
+
+import DeliveryInstructionAgent
 
 
 class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
@@ -86,7 +87,7 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
         other_instruction = None
         for agent in self.model.agents:
             if (
-                    isinstance(agent, DeliveryInstructionAgent)  # Ensure it's a ReceiptInstructionAgent
+                    isinstance(agent, DeliveryInstructionAgent.DeliveryInstructionAgent)  # Ensure it's a DeliveryInstructionAgent
                     and agent.linkcode == self.linkcode  # Check if linkcodes match
                     and agent.status == "Validated"  # Ensure the status is correct
             ):

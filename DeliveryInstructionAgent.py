@@ -7,7 +7,8 @@ if TYPE_CHECKING:
     from InstitutionAgent import InstitutionAgent
     from Account import Account
     from TransactionAgent import TransactionAgent
-    from ReceiptInstructionAgent import ReceiptInstructionAgent
+
+import ReceiptInstructionAgent
 
 class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
     def __init__(self, model: "SettlementModel", uniqueID: str, motherID: str, institution: "InstitutionAgent", securitiesAccount: "Account", cashAccount: "Account", securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime ,linkedTransaction: Optional["TransactionAgent"] = None):
@@ -77,7 +78,7 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
         other_instruction = None
         for agent in self.model.agents:
             if (
-                    isinstance(agent, ReceiptInstructionAgent)  # Ensure it's a ReceiptInstructionAgent
+                    isinstance(agent, ReceiptInstructionAgent.ReceiptInstructionAgent)  # Ensure it's a ReceiptInstructionAgent
                     and agent.linkcode == self.linkcode  # Check if linkcodes match
                     and agent.status == "Validated"  # Ensure the status is correct
             ):
