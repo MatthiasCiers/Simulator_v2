@@ -2,6 +2,7 @@ from mesa import Agent
 import ReceiptInstructionAgent
 import DeliveryInstructionAgent
 
+
 class TransactionAgent(Agent):
     def __init__(self, model, transactionID: str, deliverer: DeliveryInstructionAgent, receiver: ReceiptInstructionAgent, status: str):
         super().__init__(model)
@@ -71,9 +72,21 @@ class TransactionAgent(Agent):
 
 
 
+    # Example usage:
+    if __name__ == "__main__":
+        past_time = datetime.now() - timedelta(days=4)  # 4 days ago
+        recent_time = datetime.now() - timedelta(days=1)  # 1 day ago
+
+        print("Past time is older than 3 days:", is_older_than_three_days(past_time))  # Expected: True
+        print("Recent time is older than 3 days:", is_older_than_three_days(recent_time))  # Expected: False
+
     def step(self):
-        # TODO
-        pass
+        if self.deliverer.is_instruction_time_out() or self.receiver.is_instruction_time_out():
+            self.cancel_timeout()
+        else:
+            if self.status not in ["Cancelled due to timeout", "Settled"]:
+                self.settle()
+
 
     def cancel_timeout(self):
         # TODO: Implement timeout cancellation logic

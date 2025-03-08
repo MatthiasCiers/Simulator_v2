@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from mesa import Agent
 from typing import TYPE_CHECKING, Optional
 
@@ -117,4 +117,9 @@ class InstructionAgent (Agent):
         #logging
         self.model.log_event(f"Instruction {self.uniqueID} cancelled due to partial settlement.", self.uniqueID, is_transaction = True)
 
+    def is_instruction_time_out(self):
+        return self.creation_time < datetime.now() - timedelta(days=3)
+
+    def step(self):
+        return
 
