@@ -81,18 +81,18 @@ class InstructionAgent (Agent):
     def set_status(self, new_status: str):
         self.status = new_status
 
-    def insert_instruction(self):
+    def insert(self):
         # TODO: is this just changing state from exists to pending?
         if self.creation_time < datetime.now():
             if self.status == 'Exists':
                 self.status = 'Pending'
-        pass
+                # logging
+                self.model.log_event(f"Instruction {self.uniqueID} inserted.", self.uniqueID, is_transaction=True)
 
     def validate(self):
         if self.status == 'Pending':
             # TODO: second delay has to be implemented still
             self.set_status('Validated')
-
             #logging
             self.model.log_event(f"Instruction {self.uniqueID} validated.", self.uniqueID, is_transaction = True)
 
