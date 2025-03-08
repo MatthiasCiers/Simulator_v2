@@ -27,7 +27,7 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
             creation_time=creation_time
         )
         # logging ( don't know why is_transaction = True)
-        self.model.log_event(f"Delivery instruction with ID {uniqueID} created by institution {institution} for {securityType} for amount {amount}", self.uniqueID, is_transaction = True)
+        self.model.log_event(f"Delivery instruction with ID {uniqueID} created by institution {institution.institutionID} for {securityType} for amount {amount}", self.uniqueID, is_transaction = True)
 
     def createDeliveryChildren(self):
         available_securities = self.securitiesAccount.checkBalance(self.amount, self.securityType)

@@ -1,465 +1,469 @@
 Timestamp,Agent ID,Event
-2025-03-08 11:35:54,1,Delivery instruction with ID 1 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 362.48
-2025-03-08 11:35:54,2,Receipt instruction with ID 2 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 362.48
-2025-03-08 11:35:54,3,Delivery instruction with ID 3 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 6008.0
-2025-03-08 11:35:54,4,Receipt instruction with ID 4 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 6008.0
-2025-03-08 11:35:54,5,Receipt instruction with ID 5 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 7082.11
-2025-03-08 11:35:54,6,Delivery instruction with ID 6 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 7082.11
-2025-03-08 11:35:54,7,Delivery instruction with ID 7 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 2252.8
-2025-03-08 11:35:54,8,Receipt instruction with ID 8 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 2252.8
-2025-03-08 11:35:54,9,Delivery instruction with ID 9 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 9291.14
-2025-03-08 11:35:54,10,Receipt instruction with ID 10 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 9291.14
-2025-03-08 11:35:54,11,Delivery instruction with ID 11 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 1922.27
-2025-03-08 11:35:54,12,Receipt instruction with ID 12 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 1922.27
-2025-03-08 11:35:54,13,Delivery instruction with ID 13 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 9289.73
-2025-03-08 11:35:54,14,Receipt instruction with ID 14 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 9289.73
-2025-03-08 11:35:54,15,Receipt instruction with ID 15 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 8435.6
-2025-03-08 11:35:54,16,Delivery instruction with ID 16 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 8435.6
-2025-03-08 11:35:54,17,Delivery instruction with ID 17 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 6808.16
-2025-03-08 11:35:54,18,Receipt instruction with ID 18 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 6808.16
-2025-03-08 11:35:54,19,Receipt instruction with ID 19 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 4002.93
-2025-03-08 11:35:54,20,Delivery instruction with ID 20 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 4002.93
-2025-03-08 11:35:54,21,Receipt instruction with ID 21 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 8825.83
-2025-03-08 11:35:54,22,Delivery instruction with ID 22 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 8825.83
-2025-03-08 11:35:54,23,Delivery instruction with ID 23 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 6325.88
-2025-03-08 11:35:54,24,Receipt instruction with ID 24 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 6325.88
-2025-03-08 11:35:54,25,Delivery instruction with ID 25 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 6164.4
-2025-03-08 11:35:54,26,Receipt instruction with ID 26 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 6164.4
-2025-03-08 11:35:54,27,Delivery instruction with ID 27 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 458.67
-2025-03-08 11:35:54,28,Receipt instruction with ID 28 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 458.67
-2025-03-08 11:35:54,29,Receipt instruction with ID 29 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 9595.07
-2025-03-08 11:35:54,30,Delivery instruction with ID 30 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 9595.07
-2025-03-08 11:35:54,31,Receipt instruction with ID 31 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 9661.42
-2025-03-08 11:35:54,32,Delivery instruction with ID 32 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 9661.42
-2025-03-08 11:35:54,33,Receipt instruction with ID 33 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 3978.74
-2025-03-08 11:35:54,34,Delivery instruction with ID 34 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 3978.74
-2025-03-08 11:35:54,35,Receipt instruction with ID 35 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 2488.11
-2025-03-08 11:35:54,36,Delivery instruction with ID 36 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 2488.11
-2025-03-08 11:35:54,37,Receipt instruction with ID 37 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 3245.7
-2025-03-08 11:35:54,38,Delivery instruction with ID 38 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 3245.7
-2025-03-08 11:35:54,39,Receipt instruction with ID 39 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 6529.88
-2025-03-08 11:35:54,40,Delivery instruction with ID 40 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 6529.88
-2025-03-08 11:35:54,41,Receipt instruction with ID 41 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 3842.65
-2025-03-08 11:35:54,42,Delivery instruction with ID 42 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 3842.65
-2025-03-08 11:35:54,43,Receipt instruction with ID 43 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 9172.75
-2025-03-08 11:35:54,44,Delivery instruction with ID 44 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 9172.75
-2025-03-08 11:35:54,45,Receipt instruction with ID 45 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 9318.14
-2025-03-08 11:35:54,46,Delivery instruction with ID 46 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 9318.14
-2025-03-08 11:35:54,47,Delivery instruction with ID 47 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 7814.53
-2025-03-08 11:35:54,48,Receipt instruction with ID 48 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 7814.53
-2025-03-08 11:35:54,49,Receipt instruction with ID 49 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 8896.62
-2025-03-08 11:35:54,50,Delivery instruction with ID 50 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 8896.62
-2025-03-08 11:35:54,51,Receipt instruction with ID 51 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 6459.02
-2025-03-08 11:35:54,52,Delivery instruction with ID 52 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 6459.02
-2025-03-08 11:35:54,53,Delivery instruction with ID 53 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 7184.26
-2025-03-08 11:35:54,54,Receipt instruction with ID 54 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 7184.26
-2025-03-08 11:35:54,55,Delivery instruction with ID 55 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 8688.21
-2025-03-08 11:35:54,56,Receipt instruction with ID 56 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 8688.21
-2025-03-08 11:35:54,57,Receipt instruction with ID 57 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 4232.5
-2025-03-08 11:35:54,58,Delivery instruction with ID 58 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 4232.5
-2025-03-08 11:35:54,59,Receipt instruction with ID 59 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 948.17
-2025-03-08 11:35:54,60,Delivery instruction with ID 60 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 948.17
-2025-03-08 11:35:54,61,Delivery instruction with ID 61 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 180.78
-2025-03-08 11:35:54,62,Receipt instruction with ID 62 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 180.78
-2025-03-08 11:35:54,63,Receipt instruction with ID 63 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 6779.15
-2025-03-08 11:35:54,64,Delivery instruction with ID 64 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 6779.15
-2025-03-08 11:35:54,65,Delivery instruction with ID 65 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 6154.06
-2025-03-08 11:35:54,66,Receipt instruction with ID 66 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 6154.06
-2025-03-08 11:35:54,67,Receipt instruction with ID 67 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 6851.1
-2025-03-08 11:35:54,68,Delivery instruction with ID 68 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 6851.1
-2025-03-08 11:35:54,69,Receipt instruction with ID 69 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 5896.56
-2025-03-08 11:35:54,70,Delivery instruction with ID 70 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 5896.56
-2025-03-08 11:35:54,71,Receipt instruction with ID 71 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 7163.03
-2025-03-08 11:35:54,72,Delivery instruction with ID 72 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 7163.03
-2025-03-08 11:35:54,73,Delivery instruction with ID 73 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 7237.81
-2025-03-08 11:35:54,74,Receipt instruction with ID 74 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 7237.81
-2025-03-08 11:35:54,75,Receipt instruction with ID 75 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 6739.19
-2025-03-08 11:35:54,76,Delivery instruction with ID 76 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 6739.19
-2025-03-08 11:35:54,77,Receipt instruction with ID 77 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 5997.35
-2025-03-08 11:35:54,78,Delivery instruction with ID 78 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 5997.35
-2025-03-08 11:35:54,79,Receipt instruction with ID 79 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 1412.33
-2025-03-08 11:35:54,80,Delivery instruction with ID 80 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 1412.33
-2025-03-08 11:35:54,81,Delivery instruction with ID 81 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 9154.96
-2025-03-08 11:35:54,82,Receipt instruction with ID 82 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 9154.96
-2025-03-08 11:35:54,83,Delivery instruction with ID 83 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 5001.24
-2025-03-08 11:35:54,84,Receipt instruction with ID 84 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 5001.24
-2025-03-08 11:35:54,85,Delivery instruction with ID 85 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 393.74
-2025-03-08 11:35:54,86,Receipt instruction with ID 86 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 393.74
-2025-03-08 11:35:54,87,Receipt instruction with ID 87 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 2413.2
-2025-03-08 11:35:54,88,Delivery instruction with ID 88 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 2413.2
-2025-03-08 11:35:54,89,Receipt instruction with ID 89 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 4647.28
-2025-03-08 11:35:54,90,Delivery instruction with ID 90 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 4647.28
-2025-03-08 11:35:54,91,Receipt instruction with ID 91 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 5226.56
-2025-03-08 11:35:54,92,Delivery instruction with ID 92 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 5226.56
-2025-03-08 11:35:54,93,Receipt instruction with ID 93 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 6798.5
-2025-03-08 11:35:54,94,Delivery instruction with ID 94 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 6798.5
-2025-03-08 11:35:54,95,Delivery instruction with ID 95 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 896.64
-2025-03-08 11:35:54,96,Receipt instruction with ID 96 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 896.64
-2025-03-08 11:35:54,97,Receipt instruction with ID 97 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 2012.95
-2025-03-08 11:35:54,98,Delivery instruction with ID 98 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 2012.95
-2025-03-08 11:35:54,99,Delivery instruction with ID 99 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 8216.55
-2025-03-08 11:35:54,100,Receipt instruction with ID 100 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 8216.55
-2025-03-08 11:35:54,101,Delivery instruction with ID 101 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 1075.44
-2025-03-08 11:35:54,102,Receipt instruction with ID 102 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 1075.44
-2025-03-08 11:35:54,103,Delivery instruction with ID 103 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 6968.29
-2025-03-08 11:35:54,104,Receipt instruction with ID 104 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 6968.29
-2025-03-08 11:35:54,105,Delivery instruction with ID 105 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 9634.76
-2025-03-08 11:35:54,106,Receipt instruction with ID 106 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 9634.76
-2025-03-08 11:35:54,107,Receipt instruction with ID 107 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 4384.28
-2025-03-08 11:35:54,108,Delivery instruction with ID 108 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 4384.28
-2025-03-08 11:35:54,109,Receipt instruction with ID 109 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 2120.14
-2025-03-08 11:35:54,110,Delivery instruction with ID 110 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 2120.14
-2025-03-08 11:35:54,111,Delivery instruction with ID 111 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 3389.4
-2025-03-08 11:35:54,112,Receipt instruction with ID 112 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 3389.4
-2025-03-08 11:35:54,113,Delivery instruction with ID 113 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 3509.8
-2025-03-08 11:35:54,114,Receipt instruction with ID 114 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 3509.8
-2025-03-08 11:35:54,115,Delivery instruction with ID 115 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 6010.09
-2025-03-08 11:35:54,116,Receipt instruction with ID 116 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 6010.09
-2025-03-08 11:35:54,117,Receipt instruction with ID 117 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 5741.89
-2025-03-08 11:35:54,118,Delivery instruction with ID 118 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 5741.89
-2025-03-08 11:35:54,119,Receipt instruction with ID 119 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 8162.99
-2025-03-08 11:35:54,120,Delivery instruction with ID 120 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 8162.99
-2025-03-08 11:35:54,121,Receipt instruction with ID 121 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 240.48
-2025-03-08 11:35:54,122,Delivery instruction with ID 122 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 240.48
-2025-03-08 11:35:54,123,Receipt instruction with ID 123 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 5338.69
-2025-03-08 11:35:54,124,Delivery instruction with ID 124 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 5338.69
-2025-03-08 11:35:54,125,Receipt instruction with ID 125 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 1813.77
-2025-03-08 11:35:54,126,Delivery instruction with ID 126 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 1813.77
-2025-03-08 11:35:54,127,Delivery instruction with ID 127 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 3511.74
-2025-03-08 11:35:54,128,Receipt instruction with ID 128 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 3511.74
-2025-03-08 11:35:54,129,Delivery instruction with ID 129 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 6816.21
-2025-03-08 11:35:54,130,Receipt instruction with ID 130 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 6816.21
-2025-03-08 11:35:54,131,Receipt instruction with ID 131 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 3573.86
-2025-03-08 11:35:54,132,Delivery instruction with ID 132 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 3573.86
-2025-03-08 11:35:54,133,Delivery instruction with ID 133 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 598.68
-2025-03-08 11:35:54,134,Receipt instruction with ID 134 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 598.68
-2025-03-08 11:35:54,135,Delivery instruction with ID 135 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 503.32
-2025-03-08 11:35:54,136,Receipt instruction with ID 136 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 503.32
-2025-03-08 11:35:54,137,Receipt instruction with ID 137 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 8911.64
-2025-03-08 11:35:54,138,Delivery instruction with ID 138 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 8911.64
-2025-03-08 11:35:54,139,Receipt instruction with ID 139 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 8931.33
-2025-03-08 11:35:54,140,Delivery instruction with ID 140 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 8931.33
-2025-03-08 11:35:54,141,Delivery instruction with ID 141 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 9733.78
-2025-03-08 11:35:54,142,Receipt instruction with ID 142 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 9733.78
-2025-03-08 11:35:54,143,Delivery instruction with ID 143 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 6718.49
-2025-03-08 11:35:54,144,Receipt instruction with ID 144 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 6718.49
-2025-03-08 11:35:54,145,Delivery instruction with ID 145 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 7650.83
-2025-03-08 11:35:54,146,Receipt instruction with ID 146 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 7650.83
-2025-03-08 11:35:54,147,Receipt instruction with ID 147 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 3664.12
-2025-03-08 11:35:54,148,Delivery instruction with ID 148 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 3664.12
-2025-03-08 11:35:54,149,Receipt instruction with ID 149 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 9719.51
-2025-03-08 11:35:54,150,Delivery instruction with ID 150 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 9719.51
-2025-03-08 11:35:54,151,Receipt instruction with ID 151 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 3718.15
-2025-03-08 11:35:54,152,Delivery instruction with ID 152 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 3718.15
-2025-03-08 11:35:54,153,Delivery instruction with ID 153 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 3100.82
-2025-03-08 11:35:54,154,Receipt instruction with ID 154 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 3100.82
-2025-03-08 11:35:54,155,Delivery instruction with ID 155 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 3736.92
-2025-03-08 11:35:54,156,Receipt instruction with ID 156 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 3736.92
-2025-03-08 11:35:54,157,Delivery instruction with ID 157 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 2835.83
-2025-03-08 11:35:54,158,Receipt instruction with ID 158 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 2835.83
-2025-03-08 11:35:54,159,Delivery instruction with ID 159 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 9350.38
-2025-03-08 11:35:54,160,Receipt instruction with ID 160 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 9350.38
-2025-03-08 11:35:54,161,Receipt instruction with ID 161 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 1500.02
-2025-03-08 11:35:54,162,Delivery instruction with ID 162 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 1500.02
-2025-03-08 11:35:54,163,Delivery instruction with ID 163 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 7186.77
-2025-03-08 11:35:54,164,Receipt instruction with ID 164 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 7186.77
-2025-03-08 11:35:54,165,Receipt instruction with ID 165 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 2097.54
-2025-03-08 11:35:54,166,Delivery instruction with ID 166 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 2097.54
-2025-03-08 11:35:54,167,Receipt instruction with ID 167 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 9833.69
-2025-03-08 11:35:54,168,Delivery instruction with ID 168 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 9833.69
-2025-03-08 11:35:54,169,Delivery instruction with ID 169 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 8652.28
-2025-03-08 11:35:54,170,Receipt instruction with ID 170 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 8652.28
-2025-03-08 11:35:54,171,Receipt instruction with ID 171 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 8225.93
-2025-03-08 11:35:54,172,Delivery instruction with ID 172 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 8225.93
-2025-03-08 11:35:54,173,Delivery instruction with ID 173 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 9987.85
-2025-03-08 11:35:54,174,Receipt instruction with ID 174 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 9987.85
-2025-03-08 11:35:54,175,Receipt instruction with ID 175 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 7146.42
-2025-03-08 11:35:54,176,Delivery instruction with ID 176 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 7146.42
-2025-03-08 11:35:54,177,Receipt instruction with ID 177 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 7170.65
-2025-03-08 11:35:54,178,Delivery instruction with ID 178 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 7170.65
-2025-03-08 11:35:54,179,Delivery instruction with ID 179 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 3626.72
-2025-03-08 11:35:54,180,Receipt instruction with ID 180 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 3626.72
-2025-03-08 11:35:54,181,Delivery instruction with ID 181 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 2805.46
-2025-03-08 11:35:54,182,Receipt instruction with ID 182 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 2805.46
-2025-03-08 11:35:54,183,Delivery instruction with ID 183 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 4543.36
-2025-03-08 11:35:54,184,Receipt instruction with ID 184 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 4543.36
-2025-03-08 11:35:54,185,Delivery instruction with ID 185 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 2487.68
-2025-03-08 11:35:54,186,Receipt instruction with ID 186 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 2487.68
-2025-03-08 11:35:54,187,Delivery instruction with ID 187 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 6464.18
-2025-03-08 11:35:54,188,Receipt instruction with ID 188 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 6464.18
-2025-03-08 11:35:54,189,Delivery instruction with ID 189 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 7765.55
-2025-03-08 11:35:54,190,Receipt instruction with ID 190 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 7765.55
-2025-03-08 11:35:54,191,Delivery instruction with ID 191 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 9206.97
-2025-03-08 11:35:54,192,Receipt instruction with ID 192 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 9206.97
-2025-03-08 11:35:54,193,Receipt instruction with ID 193 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 3945.33
-2025-03-08 11:35:54,194,Delivery instruction with ID 194 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 3945.33
-2025-03-08 11:35:54,195,Receipt instruction with ID 195 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 7207.81
-2025-03-08 11:35:54,196,Delivery instruction with ID 196 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 7207.81
-2025-03-08 11:35:54,197,Receipt instruction with ID 197 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 5926.55
-2025-03-08 11:35:54,198,Delivery instruction with ID 198 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 5926.55
-2025-03-08 11:35:54,199,Delivery instruction with ID 199 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 1430.28
-2025-03-08 11:35:54,200,Receipt instruction with ID 200 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 1430.28
-2025-03-08 11:35:54,201,Receipt instruction with ID 201 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 4715.7
-2025-03-08 11:35:54,202,Delivery instruction with ID 202 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 4715.7
-2025-03-08 11:35:54,203,Delivery instruction with ID 203 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 5066.43
-2025-03-08 11:35:54,204,Receipt instruction with ID 204 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 5066.43
-2025-03-08 11:35:54,205,Delivery instruction with ID 205 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 4052.57
-2025-03-08 11:35:54,206,Receipt instruction with ID 206 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 4052.57
-2025-03-08 11:35:54,207,Delivery instruction with ID 207 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 7573.14
-2025-03-08 11:35:54,208,Receipt instruction with ID 208 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 7573.14
-2025-03-08 11:35:54,209,Delivery instruction with ID 209 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 7790.09
-2025-03-08 11:35:54,210,Receipt instruction with ID 210 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 7790.09
-2025-03-08 11:35:54,211,Delivery instruction with ID 211 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 3620.13
-2025-03-08 11:35:54,212,Receipt instruction with ID 212 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 3620.13
-2025-03-08 11:35:54,213,Receipt instruction with ID 213 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 1651.1
-2025-03-08 11:35:54,214,Delivery instruction with ID 214 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 1651.1
-2025-03-08 11:35:54,215,Delivery instruction with ID 215 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 7864.21
-2025-03-08 11:35:54,216,Receipt instruction with ID 216 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 7864.21
-2025-03-08 11:35:54,217,Delivery instruction with ID 217 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 9138.09
-2025-03-08 11:35:54,218,Receipt instruction with ID 218 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 9138.09
-2025-03-08 11:35:54,219,Receipt instruction with ID 219 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 6254.87
-2025-03-08 11:35:54,220,Delivery instruction with ID 220 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 6254.87
-2025-03-08 11:35:54,221,Receipt instruction with ID 221 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 2087.51
-2025-03-08 11:35:54,222,Delivery instruction with ID 222 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 2087.51
-2025-03-08 11:35:54,223,Receipt instruction with ID 223 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 6495.73
-2025-03-08 11:35:54,224,Delivery instruction with ID 224 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 6495.73
-2025-03-08 11:35:54,225,Delivery instruction with ID 225 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 1151.58
-2025-03-08 11:35:54,226,Receipt instruction with ID 226 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 1151.58
-2025-03-08 11:35:54,227,Delivery instruction with ID 227 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 4105.74
-2025-03-08 11:35:54,228,Receipt instruction with ID 228 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 4105.74
-2025-03-08 11:35:54,229,Receipt instruction with ID 229 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 5893.53
-2025-03-08 11:35:54,230,Delivery instruction with ID 230 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 5893.53
-2025-03-08 11:35:54,231,Delivery instruction with ID 231 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 3877.11
-2025-03-08 11:35:54,232,Receipt instruction with ID 232 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 3877.11
-2025-03-08 11:35:54,233,Receipt instruction with ID 233 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 944.51
-2025-03-08 11:35:54,234,Delivery instruction with ID 234 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 944.51
-2025-03-08 11:35:54,235,Receipt instruction with ID 235 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 3802.34
-2025-03-08 11:35:54,236,Delivery instruction with ID 236 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 3802.34
-2025-03-08 11:35:54,237,Delivery instruction with ID 237 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 9838.83
-2025-03-08 11:35:54,238,Receipt instruction with ID 238 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 9838.83
-2025-03-08 11:35:54,239,Delivery instruction with ID 239 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 3876.93
-2025-03-08 11:35:54,240,Receipt instruction with ID 240 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 3876.93
-2025-03-08 11:35:54,241,Delivery instruction with ID 241 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 9505.91
-2025-03-08 11:35:54,242,Receipt instruction with ID 242 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 9505.91
-2025-03-08 11:35:54,243,Receipt instruction with ID 243 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 6795.81
-2025-03-08 11:35:54,244,Delivery instruction with ID 244 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 6795.81
-2025-03-08 11:35:54,245,Delivery instruction with ID 245 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 563.99
-2025-03-08 11:35:54,246,Receipt instruction with ID 246 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 563.99
-2025-03-08 11:35:54,247,Delivery instruction with ID 247 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 3163.82
-2025-03-08 11:35:54,248,Receipt instruction with ID 248 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 3163.82
-2025-03-08 11:35:54,249,Delivery instruction with ID 249 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 4162.13
-2025-03-08 11:35:54,250,Receipt instruction with ID 250 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 4162.13
-2025-03-08 11:35:54,251,Delivery instruction with ID 251 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 7549.28
-2025-03-08 11:35:54,252,Receipt instruction with ID 252 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 7549.28
-2025-03-08 11:35:54,253,Delivery instruction with ID 253 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 8417.67
-2025-03-08 11:35:54,254,Receipt instruction with ID 254 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 8417.67
-2025-03-08 11:35:54,255,Receipt instruction with ID 255 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 1384.73
-2025-03-08 11:35:54,256,Delivery instruction with ID 256 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 1384.73
-2025-03-08 11:35:54,257,Receipt instruction with ID 257 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 5257.5
-2025-03-08 11:35:54,258,Delivery instruction with ID 258 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 5257.5
-2025-03-08 11:35:54,259,Receipt instruction with ID 259 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 3173.19
-2025-03-08 11:35:54,260,Delivery instruction with ID 260 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 3173.19
-2025-03-08 11:35:54,261,Receipt instruction with ID 261 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 2992.86
-2025-03-08 11:35:54,262,Delivery instruction with ID 262 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 2992.86
-2025-03-08 11:35:54,263,Receipt instruction with ID 263 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 2760.06
-2025-03-08 11:35:54,264,Delivery instruction with ID 264 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 2760.06
-2025-03-08 11:35:54,265,Delivery instruction with ID 265 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 8571.21
-2025-03-08 11:35:54,266,Receipt instruction with ID 266 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 8571.21
-2025-03-08 11:35:54,267,Receipt instruction with ID 267 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 9592.97
-2025-03-08 11:35:54,268,Delivery instruction with ID 268 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 9592.97
-2025-03-08 11:35:54,269,Receipt instruction with ID 269 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 4628.39
-2025-03-08 11:35:54,270,Delivery instruction with ID 270 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 4628.39
-2025-03-08 11:35:54,271,Receipt instruction with ID 271 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 7277.09
-2025-03-08 11:35:54,272,Delivery instruction with ID 272 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 7277.09
-2025-03-08 11:35:54,273,Delivery instruction with ID 273 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 5037.99
-2025-03-08 11:35:54,274,Receipt instruction with ID 274 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 5037.99
-2025-03-08 11:35:54,275,Receipt instruction with ID 275 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 6155.77
-2025-03-08 11:35:54,276,Delivery instruction with ID 276 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 6155.77
-2025-03-08 11:35:54,277,Delivery instruction with ID 277 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 8253.97
-2025-03-08 11:35:54,278,Receipt instruction with ID 278 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 8253.97
-2025-03-08 11:35:54,279,Receipt instruction with ID 279 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 3259.99
-2025-03-08 11:35:54,280,Delivery instruction with ID 280 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 3259.99
-2025-03-08 11:35:54,281,Delivery instruction with ID 281 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 3407.19
-2025-03-08 11:35:54,282,Receipt instruction with ID 282 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 3407.19
-2025-03-08 11:35:54,283,Delivery instruction with ID 283 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 417.27
-2025-03-08 11:35:54,284,Receipt instruction with ID 284 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 417.27
-2025-03-08 11:35:54,285,Receipt instruction with ID 285 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 9863.88
-2025-03-08 11:35:54,286,Delivery instruction with ID 286 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 9863.88
-2025-03-08 11:35:54,287,Receipt instruction with ID 287 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 6967.71
-2025-03-08 11:35:54,288,Delivery instruction with ID 288 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 6967.71
-2025-03-08 11:35:54,289,Receipt instruction with ID 289 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 5644.68
-2025-03-08 11:35:54,290,Delivery instruction with ID 290 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 5644.68
-2025-03-08 11:35:54,291,Receipt instruction with ID 291 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 4361.93
-2025-03-08 11:35:54,292,Delivery instruction with ID 292 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 4361.93
-2025-03-08 11:35:54,293,Delivery instruction with ID 293 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 8352.7
-2025-03-08 11:35:54,294,Receipt instruction with ID 294 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 8352.7
-2025-03-08 11:35:54,295,Delivery instruction with ID 295 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 8963.8
-2025-03-08 11:35:54,296,Receipt instruction with ID 296 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 8963.8
-2025-03-08 11:35:54,297,Receipt instruction with ID 297 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 5957.61
-2025-03-08 11:35:54,298,Delivery instruction with ID 298 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 5957.61
-2025-03-08 11:35:54,299,Delivery instruction with ID 299 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 5378.08
-2025-03-08 11:35:54,300,Receipt instruction with ID 300 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 5378.08
-2025-03-08 11:35:54,301,Delivery instruction with ID 301 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 365.23
-2025-03-08 11:35:54,302,Receipt instruction with ID 302 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 365.23
-2025-03-08 11:35:54,303,Receipt instruction with ID 303 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 3060.96
-2025-03-08 11:35:54,304,Delivery instruction with ID 304 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 3060.96
-2025-03-08 11:35:54,305,Receipt instruction with ID 305 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 6071.31
-2025-03-08 11:35:54,306,Delivery instruction with ID 306 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 6071.31
-2025-03-08 11:35:54,307,Delivery instruction with ID 307 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 8656.64
-2025-03-08 11:35:54,308,Receipt instruction with ID 308 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 8656.64
-2025-03-08 11:35:54,309,Receipt instruction with ID 309 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 7532.51
-2025-03-08 11:35:54,310,Delivery instruction with ID 310 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 7532.51
-2025-03-08 11:35:54,311,Receipt instruction with ID 311 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 5375.77
-2025-03-08 11:35:54,312,Delivery instruction with ID 312 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 5375.77
-2025-03-08 11:35:54,313,Receipt instruction with ID 313 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 7782.0
-2025-03-08 11:35:54,314,Delivery instruction with ID 314 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 7782.0
-2025-03-08 11:35:54,315,Delivery instruction with ID 315 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 8521.16
-2025-03-08 11:35:54,316,Receipt instruction with ID 316 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 8521.16
-2025-03-08 11:35:54,317,Delivery instruction with ID 317 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 8779.6
-2025-03-08 11:35:54,318,Receipt instruction with ID 318 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 8779.6
-2025-03-08 11:35:54,319,Receipt instruction with ID 319 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 3116.04
-2025-03-08 11:35:54,320,Delivery instruction with ID 320 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 3116.04
-2025-03-08 11:35:54,321,Receipt instruction with ID 321 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 7462.98
-2025-03-08 11:35:54,322,Delivery instruction with ID 322 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 7462.98
-2025-03-08 11:35:54,323,Receipt instruction with ID 323 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 4494.8
-2025-03-08 11:35:54,324,Delivery instruction with ID 324 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 4494.8
-2025-03-08 11:35:54,325,Delivery instruction with ID 325 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 5969.81
-2025-03-08 11:35:54,326,Receipt instruction with ID 326 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 5969.81
-2025-03-08 11:35:54,327,Receipt instruction with ID 327 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 4254.99
-2025-03-08 11:35:54,328,Delivery instruction with ID 328 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 4254.99
-2025-03-08 11:35:54,329,Delivery instruction with ID 329 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 6594.68
-2025-03-08 11:35:54,330,Receipt instruction with ID 330 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 6594.68
-2025-03-08 11:35:54,331,Receipt instruction with ID 331 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 4546.65
-2025-03-08 11:35:54,332,Delivery instruction with ID 332 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 4546.65
-2025-03-08 11:35:54,333,Delivery instruction with ID 333 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 4400.56
-2025-03-08 11:35:54,334,Receipt instruction with ID 334 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 4400.56
-2025-03-08 11:35:54,335,Delivery instruction with ID 335 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 9220.28
-2025-03-08 11:35:54,336,Receipt instruction with ID 336 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 9220.28
-2025-03-08 11:35:54,337,Delivery instruction with ID 337 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 1125.08
-2025-03-08 11:35:54,338,Receipt instruction with ID 338 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 1125.08
-2025-03-08 11:35:54,339,Delivery instruction with ID 339 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 9706.63
-2025-03-08 11:35:54,340,Receipt instruction with ID 340 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 9706.63
-2025-03-08 11:35:54,341,Receipt instruction with ID 341 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 3099.87
-2025-03-08 11:35:54,342,Delivery instruction with ID 342 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 3099.87
-2025-03-08 11:35:54,343,Receipt instruction with ID 343 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 895.76
-2025-03-08 11:35:54,344,Delivery instruction with ID 344 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 895.76
-2025-03-08 11:35:54,345,Delivery instruction with ID 345 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 3994.43
-2025-03-08 11:35:54,346,Receipt instruction with ID 346 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 3994.43
-2025-03-08 11:35:54,347,Receipt instruction with ID 347 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 2634.79
-2025-03-08 11:35:54,348,Delivery instruction with ID 348 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-B for amount 2634.79
-2025-03-08 11:35:54,349,Receipt instruction with ID 349 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 4301.7
-2025-03-08 11:35:54,350,Delivery instruction with ID 350 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 4301.7
-2025-03-08 11:35:54,351,Delivery instruction with ID 351 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 802.25
-2025-03-08 11:35:54,352,Receipt instruction with ID 352 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 802.25
-2025-03-08 11:35:54,353,Receipt instruction with ID 353 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 271.99
-2025-03-08 11:35:54,354,Delivery instruction with ID 354 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 271.99
-2025-03-08 11:35:54,355,Delivery instruction with ID 355 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 4720.64
-2025-03-08 11:35:54,356,Receipt instruction with ID 356 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 4720.64
-2025-03-08 11:35:54,357,Delivery instruction with ID 357 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 7287.34
-2025-03-08 11:35:54,358,Receipt instruction with ID 358 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 7287.34
-2025-03-08 11:35:54,359,Delivery instruction with ID 359 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 9541.46
-2025-03-08 11:35:54,360,Receipt instruction with ID 360 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 9541.46
-2025-03-08 11:35:54,361,Receipt instruction with ID 361 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 1293.19
-2025-03-08 11:35:54,362,Delivery instruction with ID 362 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 1293.19
-2025-03-08 11:35:54,363,Receipt instruction with ID 363 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 743.19
-2025-03-08 11:35:54,364,Delivery instruction with ID 364 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 743.19
-2025-03-08 11:35:54,365,Receipt instruction with ID 365 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 3313.22
-2025-03-08 11:35:54,366,Delivery instruction with ID 366 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 3313.22
-2025-03-08 11:35:54,367,Receipt instruction with ID 367 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 9510.58
-2025-03-08 11:35:54,368,Delivery instruction with ID 368 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 9510.58
-2025-03-08 11:35:54,369,Receipt instruction with ID 369 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 1114.59
-2025-03-08 11:35:54,370,Delivery instruction with ID 370 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 1114.59
-2025-03-08 11:35:54,371,Delivery instruction with ID 371 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 2144.71
-2025-03-08 11:35:54,372,Receipt instruction with ID 372 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 2144.71
-2025-03-08 11:35:54,373,Receipt instruction with ID 373 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 9037.16
-2025-03-08 11:35:54,374,Delivery instruction with ID 374 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 9037.16
-2025-03-08 11:35:54,375,Delivery instruction with ID 375 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 8637.39
-2025-03-08 11:35:54,376,Receipt instruction with ID 376 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 8637.39
-2025-03-08 11:35:54,377,Receipt instruction with ID 377 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 1064.34
-2025-03-08 11:35:54,378,Delivery instruction with ID 378 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 1064.34
-2025-03-08 11:35:54,379,Delivery instruction with ID 379 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 1670.48
-2025-03-08 11:35:54,380,Receipt instruction with ID 380 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 1670.48
-2025-03-08 11:35:54,381,Delivery instruction with ID 381 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 9066.53
-2025-03-08 11:35:54,382,Receipt instruction with ID 382 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 9066.53
-2025-03-08 11:35:54,383,Delivery instruction with ID 383 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 4523.17
-2025-03-08 11:35:54,384,Receipt instruction with ID 384 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 4523.17
-2025-03-08 11:35:54,385,Receipt instruction with ID 385 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 8259.93
-2025-03-08 11:35:54,386,Delivery instruction with ID 386 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 8259.93
-2025-03-08 11:35:54,387,Receipt instruction with ID 387 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 9229.45
-2025-03-08 11:35:54,388,Delivery instruction with ID 388 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 9229.45
-2025-03-08 11:35:54,389,Delivery instruction with ID 389 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 6350.61
-2025-03-08 11:35:54,390,Receipt instruction with ID 390 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 6350.61
-2025-03-08 11:35:54,391,Receipt instruction with ID 391 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 2852.18
-2025-03-08 11:35:54,392,Delivery instruction with ID 392 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 2852.18
-2025-03-08 11:35:54,393,Receipt instruction with ID 393 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 7089.82
-2025-03-08 11:35:54,394,Delivery instruction with ID 394 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 7089.82
-2025-03-08 11:35:54,395,Receipt instruction with ID 395 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 4335.8
-2025-03-08 11:35:54,396,Delivery instruction with ID 396 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 4335.8
-2025-03-08 11:35:54,397,Delivery instruction with ID 397 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 3776.07
-2025-03-08 11:35:54,398,Receipt instruction with ID 398 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 3776.07
-2025-03-08 11:35:54,399,Delivery instruction with ID 399 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 7273.6
-2025-03-08 11:35:54,400,Receipt instruction with ID 400 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 7273.6
-2025-03-08 11:35:54,401,Receipt instruction with ID 401 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 8311.35
-2025-03-08 11:35:54,402,Delivery instruction with ID 402 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 8311.35
-2025-03-08 11:35:54,403,Delivery instruction with ID 403 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 6214.37
-2025-03-08 11:35:54,404,Receipt instruction with ID 404 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 6214.37
-2025-03-08 11:35:54,405,Delivery instruction with ID 405 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 2910.79
-2025-03-08 11:35:54,406,Receipt instruction with ID 406 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 2910.79
-2025-03-08 11:35:54,407,Delivery instruction with ID 407 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 1713.93
-2025-03-08 11:35:54,408,Receipt instruction with ID 408 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 1713.93
-2025-03-08 11:35:54,409,Delivery instruction with ID 409 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 2311.04
-2025-03-08 11:35:54,410,Receipt instruction with ID 410 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 2311.04
-2025-03-08 11:35:54,411,Delivery instruction with ID 411 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 2212.8
-2025-03-08 11:35:54,412,Receipt instruction with ID 412 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-C for amount 2212.8
-2025-03-08 11:35:54,413,Delivery instruction with ID 413 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 6884.37
-2025-03-08 11:35:54,414,Receipt instruction with ID 414 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 6884.37
-2025-03-08 11:35:54,415,Delivery instruction with ID 415 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 166.71
-2025-03-08 11:35:54,416,Receipt instruction with ID 416 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 166.71
-2025-03-08 11:35:54,417,Receipt instruction with ID 417 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-A for amount 104.85
-2025-03-08 11:35:54,418,Delivery instruction with ID 418 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 104.85
-2025-03-08 11:35:54,419,Receipt instruction with ID 419 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 9021.23
-2025-03-08 11:35:54,420,Delivery instruction with ID 420 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 9021.23
-2025-03-08 11:35:54,421,Delivery instruction with ID 421 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 2589.38
-2025-03-08 11:35:54,422,Receipt instruction with ID 422 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 2589.38
-2025-03-08 11:35:54,423,Delivery instruction with ID 423 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-A for amount 1799.86
-2025-03-08 11:35:54,424,Receipt instruction with ID 424 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-A for amount 1799.86
-2025-03-08 11:35:54,425,Delivery instruction with ID 425 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 4265.48
-2025-03-08 11:35:54,426,Receipt instruction with ID 426 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 4265.48
-2025-03-08 11:35:54,427,Delivery instruction with ID 427 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 6420.29
-2025-03-08 11:35:54,428,Receipt instruction with ID 428 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 6420.29
-2025-03-08 11:35:54,429,Delivery instruction with ID 429 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 4867.19
-2025-03-08 11:35:54,430,Receipt instruction with ID 430 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 4867.19
-2025-03-08 11:35:54,431,Receipt instruction with ID 431 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 2900.57
-2025-03-08 11:35:54,432,Delivery instruction with ID 432 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 2900.57
-2025-03-08 11:35:54,433,Receipt instruction with ID 433 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 2004.69
-2025-03-08 11:35:54,434,Delivery instruction with ID 434 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 2004.69
-2025-03-08 11:35:54,435,Delivery instruction with ID 435 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 6170.89
-2025-03-08 11:35:54,436,Receipt instruction with ID 436 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 6170.89
-2025-03-08 11:35:54,437,Receipt instruction with ID 437 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 3625.8
-2025-03-08 11:35:54,438,Delivery instruction with ID 438 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 3625.8
-2025-03-08 11:35:54,439,Receipt instruction with ID 439 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 1710.97
-2025-03-08 11:35:54,440,Delivery instruction with ID 440 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 1710.97
-2025-03-08 11:35:54,441,Receipt instruction with ID 441 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 1225.41
-2025-03-08 11:35:54,442,Delivery instruction with ID 442 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 1225.41
-2025-03-08 11:35:54,443,Receipt instruction with ID 443 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-D for amount 439.8
-2025-03-08 11:35:54,444,Delivery instruction with ID 444 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 439.8
-2025-03-08 11:35:54,445,Delivery instruction with ID 445 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 1496.1
-2025-03-08 11:35:54,446,Receipt instruction with ID 446 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-D for amount 1496.1
-2025-03-08 11:35:54,447,Receipt instruction with ID 447 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-D for amount 886.43
-2025-03-08 11:35:54,448,Delivery instruction with ID 448 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 886.43
-2025-03-08 11:35:54,449,Receipt instruction with ID 449 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-B for amount 6882.92
-2025-03-08 11:35:54,450,Delivery instruction with ID 450 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 6882.92
-2025-03-08 11:35:54,451,Delivery instruction with ID 451 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-D for amount 3044.48
-2025-03-08 11:35:54,452,Receipt instruction with ID 452 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-D for amount 3044.48
-2025-03-08 11:35:54,453,Delivery instruction with ID 453 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 1999.66
-2025-03-08 11:35:54,454,Receipt instruction with ID 454 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6010> for Bond-C for amount 1999.66
-2025-03-08 11:35:54,455,Delivery instruction with ID 455 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-B for amount 5863.77
-2025-03-08 11:35:54,456,Receipt instruction with ID 456 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 5863.77
-2025-03-08 11:35:54,457,Delivery instruction with ID 457 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-C for amount 6040.86
-2025-03-08 11:35:54,458,Receipt instruction with ID 458 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 6040.86
-2025-03-08 11:35:54,459,Receipt instruction with ID 459 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-C for amount 4258.43
-2025-03-08 11:35:54,460,Delivery instruction with ID 460 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ABE98C3D0> for Bond-C for amount 4258.43
-2025-03-08 11:35:54,461,Delivery instruction with ID 461 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE63D0> for Bond-B for amount 1614.73
-2025-03-08 11:35:54,462,Receipt instruction with ID 462 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-B for amount 1614.73
-2025-03-08 11:35:54,463,Delivery instruction with ID 463 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE6350> for Bond-A for amount 7313.73
-2025-03-08 11:35:54,464,Receipt instruction with ID 464 created by institution <InstitutionAgent.InstitutionAgent object at 0x0000020ADEBE5D10> for Bond-A for amount 7313.73
+2025-03-08 11:49:22,1,Delivery instruction with ID 1 created by institution INST-5 for Bond-C for amount 1944.35
+2025-03-08 11:49:22,2,Receipt instruction with ID 2 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-C for amount 1944.35
+2025-03-08 11:49:22,3,Delivery instruction with ID 3 created by institution INST-4 for Bond-D for amount 7479.66
+2025-03-08 11:49:22,4,Receipt instruction with ID 4 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 7479.66
+2025-03-08 11:49:22,5,Delivery instruction with ID 5 created by institution INST-4 for Bond-D for amount 536.79
+2025-03-08 11:49:22,6,Receipt instruction with ID 6 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 536.79
+2025-03-08 11:49:22,7,Delivery instruction with ID 7 created by institution INST-3 for Bond-B for amount 8923.97
+2025-03-08 11:49:22,8,Receipt instruction with ID 8 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-B for amount 8923.97
+2025-03-08 11:49:22,9,Delivery instruction with ID 9 created by institution INST-5 for Bond-A for amount 5603.35
+2025-03-08 11:49:22,10,Receipt instruction with ID 10 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 5603.35
+2025-03-08 11:49:22,11,Receipt instruction with ID 11 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 8875.52
+2025-03-08 11:49:22,12,Delivery instruction with ID 12 created by institution INST-3 for Bond-D for amount 8875.52
+2025-03-08 11:49:22,13,Delivery instruction with ID 13 created by institution INST-2 for Bond-A for amount 8951.06
+2025-03-08 11:49:22,14,Receipt instruction with ID 14 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 8951.06
+2025-03-08 11:49:22,15,Delivery instruction with ID 15 created by institution INST-4 for Bond-D for amount 3190.85
+2025-03-08 11:49:22,16,Receipt instruction with ID 16 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 3190.85
+2025-03-08 11:49:22,17,Delivery instruction with ID 17 created by institution INST-3 for Bond-D for amount 1329.09
+2025-03-08 11:49:22,18,Receipt instruction with ID 18 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 1329.09
+2025-03-08 11:49:22,19,Delivery instruction with ID 19 created by institution INST-3 for Bond-D for amount 4911.23
+2025-03-08 11:49:22,20,Receipt instruction with ID 20 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 4911.23
+2025-03-08 11:49:22,21,Delivery instruction with ID 21 created by institution INST-1 for Bond-D for amount 7681.78
+2025-03-08 11:49:22,22,Receipt instruction with ID 22 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 7681.78
+2025-03-08 11:49:22,23,Delivery instruction with ID 23 created by institution INST-4 for Bond-B for amount 7926.37
+2025-03-08 11:49:22,24,Receipt instruction with ID 24 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 7926.37
+2025-03-08 11:49:22,25,Receipt instruction with ID 25 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-B for amount 7907.59
+2025-03-08 11:49:22,26,Delivery instruction with ID 26 created by institution INST-4 for Bond-B for amount 7907.59
+2025-03-08 11:49:22,27,Receipt instruction with ID 27 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 4121.55
+2025-03-08 11:49:22,28,Delivery instruction with ID 28 created by institution INST-2 for Bond-D for amount 4121.55
+2025-03-08 11:49:22,29,Receipt instruction with ID 29 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-B for amount 7968.72
+2025-03-08 11:49:22,30,Delivery instruction with ID 30 created by institution INST-2 for Bond-B for amount 7968.72
+2025-03-08 11:49:22,31,Receipt instruction with ID 31 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 4880.83
+2025-03-08 11:49:22,32,Delivery instruction with ID 32 created by institution INST-4 for Bond-D for amount 4880.83
+2025-03-08 11:49:22,33,Receipt instruction with ID 33 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-A for amount 330.69
+2025-03-08 11:49:22,34,Delivery instruction with ID 34 created by institution INST-2 for Bond-A for amount 330.69
+2025-03-08 11:49:22,35,Delivery instruction with ID 35 created by institution INST-5 for Bond-D for amount 7307.89
+2025-03-08 11:49:22,36,Receipt instruction with ID 36 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 7307.89
+2025-03-08 11:49:22,37,Delivery instruction with ID 37 created by institution INST-4 for Bond-C for amount 3874.55
+2025-03-08 11:49:22,38,Receipt instruction with ID 38 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 3874.55
+2025-03-08 11:49:22,39,Delivery instruction with ID 39 created by institution INST-2 for Bond-C for amount 6184.46
+2025-03-08 11:49:22,40,Receipt instruction with ID 40 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 6184.46
+2025-03-08 11:49:22,41,Delivery instruction with ID 41 created by institution INST-5 for Bond-A for amount 7667.21
+2025-03-08 11:49:22,42,Receipt instruction with ID 42 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 7667.21
+2025-03-08 11:49:22,43,Receipt instruction with ID 43 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 4109.0
+2025-03-08 11:49:22,44,Delivery instruction with ID 44 created by institution INST-5 for Bond-B for amount 4109.0
+2025-03-08 11:49:22,45,Delivery instruction with ID 45 created by institution INST-5 for Bond-C for amount 8066.72
+2025-03-08 11:49:22,46,Receipt instruction with ID 46 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 8066.72
+2025-03-08 11:49:22,47,Delivery instruction with ID 47 created by institution INST-1 for Bond-C for amount 1578.6
+2025-03-08 11:49:22,48,Receipt instruction with ID 48 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 1578.6
+2025-03-08 11:49:22,49,Receipt instruction with ID 49 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 3300.24
+2025-03-08 11:49:22,50,Delivery instruction with ID 50 created by institution INST-3 for Bond-D for amount 3300.24
+2025-03-08 11:49:22,51,Delivery instruction with ID 51 created by institution INST-4 for Bond-D for amount 9519.41
+2025-03-08 11:49:22,52,Receipt instruction with ID 52 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-D for amount 9519.41
+2025-03-08 11:49:22,53,Delivery instruction with ID 53 created by institution INST-2 for Bond-A for amount 5739.94
+2025-03-08 11:49:22,54,Receipt instruction with ID 54 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 5739.94
+2025-03-08 11:49:22,55,Receipt instruction with ID 55 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 1759.29
+2025-03-08 11:49:22,56,Delivery instruction with ID 56 created by institution INST-1 for Bond-B for amount 1759.29
+2025-03-08 11:49:22,57,Delivery instruction with ID 57 created by institution INST-1 for Bond-D for amount 2131.49
+2025-03-08 11:49:22,58,Receipt instruction with ID 58 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 2131.49
+2025-03-08 11:49:22,59,Receipt instruction with ID 59 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 7401.94
+2025-03-08 11:49:22,60,Delivery instruction with ID 60 created by institution INST-2 for Bond-A for amount 7401.94
+2025-03-08 11:49:22,61,Delivery instruction with ID 61 created by institution INST-4 for Bond-D for amount 3703.8
+2025-03-08 11:49:22,62,Receipt instruction with ID 62 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 3703.8
+2025-03-08 11:49:22,63,Receipt instruction with ID 63 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 8897.54
+2025-03-08 11:49:22,64,Delivery instruction with ID 64 created by institution INST-4 for Bond-A for amount 8897.54
+2025-03-08 11:49:22,65,Delivery instruction with ID 65 created by institution INST-4 for Bond-C for amount 3801.94
+2025-03-08 11:49:22,66,Receipt instruction with ID 66 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 3801.94
+2025-03-08 11:49:22,67,Delivery instruction with ID 67 created by institution INST-4 for Bond-B for amount 9361.06
+2025-03-08 11:49:22,68,Receipt instruction with ID 68 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-B for amount 9361.06
+2025-03-08 11:49:22,69,Receipt instruction with ID 69 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-B for amount 5490.07
+2025-03-08 11:49:22,70,Delivery instruction with ID 70 created by institution INST-2 for Bond-B for amount 5490.07
+2025-03-08 11:49:22,71,Delivery instruction with ID 71 created by institution INST-3 for Bond-A for amount 9013.34
+2025-03-08 11:49:22,72,Receipt instruction with ID 72 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 9013.34
+2025-03-08 11:49:22,73,Receipt instruction with ID 73 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 3000.89
+2025-03-08 11:49:22,74,Delivery instruction with ID 74 created by institution INST-3 for Bond-B for amount 3000.89
+2025-03-08 11:49:22,75,Delivery instruction with ID 75 created by institution INST-5 for Bond-C for amount 6639.65
+2025-03-08 11:49:22,76,Receipt instruction with ID 76 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 6639.65
+2025-03-08 11:49:22,77,Delivery instruction with ID 77 created by institution INST-1 for Bond-A for amount 4032.28
+2025-03-08 11:49:22,78,Receipt instruction with ID 78 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 4032.28
+2025-03-08 11:49:22,79,Delivery instruction with ID 79 created by institution INST-2 for Bond-C for amount 2986.19
+2025-03-08 11:49:22,80,Receipt instruction with ID 80 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 2986.19
+2025-03-08 11:49:22,81,Receipt instruction with ID 81 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 4150.11
+2025-03-08 11:49:22,82,Delivery instruction with ID 82 created by institution INST-5 for Bond-C for amount 4150.11
+2025-03-08 11:49:22,83,Receipt instruction with ID 83 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-B for amount 4365.22
+2025-03-08 11:49:22,84,Delivery instruction with ID 84 created by institution INST-5 for Bond-B for amount 4365.22
+2025-03-08 11:49:22,85,Delivery instruction with ID 85 created by institution INST-4 for Bond-D for amount 5372.87
+2025-03-08 11:49:22,86,Receipt instruction with ID 86 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 5372.87
+2025-03-08 11:49:22,87,Delivery instruction with ID 87 created by institution INST-1 for Bond-D for amount 9652.08
+2025-03-08 11:49:22,88,Receipt instruction with ID 88 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-D for amount 9652.08
+2025-03-08 11:49:22,89,Delivery instruction with ID 89 created by institution INST-4 for Bond-A for amount 6740.3
+2025-03-08 11:49:22,90,Receipt instruction with ID 90 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 6740.3
+2025-03-08 11:49:22,91,Receipt instruction with ID 91 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-B for amount 4019.97
+2025-03-08 11:49:22,92,Delivery instruction with ID 92 created by institution INST-4 for Bond-B for amount 4019.97
+2025-03-08 11:49:22,93,Delivery instruction with ID 93 created by institution INST-2 for Bond-A for amount 1643.16
+2025-03-08 11:49:22,94,Receipt instruction with ID 94 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 1643.16
+2025-03-08 11:49:22,95,Receipt instruction with ID 95 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 5024.74
+2025-03-08 11:49:22,96,Delivery instruction with ID 96 created by institution INST-3 for Bond-D for amount 5024.74
+2025-03-08 11:49:22,97,Receipt instruction with ID 97 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 9173.44
+2025-03-08 11:49:22,98,Delivery instruction with ID 98 created by institution INST-2 for Bond-B for amount 9173.44
+2025-03-08 11:49:22,99,Delivery instruction with ID 99 created by institution INST-4 for Bond-A for amount 6592.69
+2025-03-08 11:49:22,100,Receipt instruction with ID 100 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 6592.69
+2025-03-08 11:49:22,101,Receipt instruction with ID 101 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-A for amount 2920.72
+2025-03-08 11:49:22,102,Delivery instruction with ID 102 created by institution INST-2 for Bond-A for amount 2920.72
+2025-03-08 11:49:22,103,Delivery instruction with ID 103 created by institution INST-1 for Bond-D for amount 1512.23
+2025-03-08 11:49:22,104,Receipt instruction with ID 104 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 1512.23
+2025-03-08 11:49:22,105,Delivery instruction with ID 105 created by institution INST-5 for Bond-B for amount 1092.06
+2025-03-08 11:49:22,106,Receipt instruction with ID 106 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-B for amount 1092.06
+2025-03-08 11:49:22,107,Receipt instruction with ID 107 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 7521.62
+2025-03-08 11:49:22,108,Delivery instruction with ID 108 created by institution INST-2 for Bond-B for amount 7521.62
+2025-03-08 11:49:22,109,Receipt instruction with ID 109 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 1911.28
+2025-03-08 11:49:22,110,Delivery instruction with ID 110 created by institution INST-4 for Bond-C for amount 1911.28
+2025-03-08 11:49:22,111,Delivery instruction with ID 111 created by institution INST-3 for Bond-D for amount 1925.13
+2025-03-08 11:49:22,112,Receipt instruction with ID 112 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 1925.13
+2025-03-08 11:49:22,113,Receipt instruction with ID 113 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 2832.52
+2025-03-08 11:49:22,114,Delivery instruction with ID 114 created by institution INST-2 for Bond-A for amount 2832.52
+2025-03-08 11:49:22,115,Receipt instruction with ID 115 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-A for amount 2155.66
+2025-03-08 11:49:22,116,Delivery instruction with ID 116 created by institution INST-2 for Bond-A for amount 2155.66
+2025-03-08 11:49:22,117,Delivery instruction with ID 117 created by institution INST-2 for Bond-A for amount 5333.51
+2025-03-08 11:49:22,118,Receipt instruction with ID 118 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 5333.51
+2025-03-08 11:49:22,119,Receipt instruction with ID 119 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-A for amount 2361.85
+2025-03-08 11:49:22,120,Delivery instruction with ID 120 created by institution INST-2 for Bond-A for amount 2361.85
+2025-03-08 11:49:22,121,Receipt instruction with ID 121 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 2409.44
+2025-03-08 11:49:22,122,Delivery instruction with ID 122 created by institution INST-4 for Bond-A for amount 2409.44
+2025-03-08 11:49:22,123,Delivery instruction with ID 123 created by institution INST-4 for Bond-B for amount 2828.19
+2025-03-08 11:49:22,124,Receipt instruction with ID 124 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-B for amount 2828.19
+2025-03-08 11:49:22,125,Delivery instruction with ID 125 created by institution INST-2 for Bond-D for amount 6255.18
+2025-03-08 11:49:22,126,Receipt instruction with ID 126 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 6255.18
+2025-03-08 11:49:22,127,Delivery instruction with ID 127 created by institution INST-5 for Bond-B for amount 6953.55
+2025-03-08 11:49:22,128,Receipt instruction with ID 128 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-B for amount 6953.55
+2025-03-08 11:49:22,129,Delivery instruction with ID 129 created by institution INST-1 for Bond-A for amount 6481.99
+2025-03-08 11:49:22,130,Receipt instruction with ID 130 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 6481.99
+2025-03-08 11:49:22,131,Receipt instruction with ID 131 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 6905.13
+2025-03-08 11:49:22,132,Delivery instruction with ID 132 created by institution INST-3 for Bond-C for amount 6905.13
+2025-03-08 11:49:22,133,Receipt instruction with ID 133 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 6764.79
+2025-03-08 11:49:22,134,Delivery instruction with ID 134 created by institution INST-4 for Bond-C for amount 6764.79
+2025-03-08 11:49:22,135,Receipt instruction with ID 135 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 715.65
+2025-03-08 11:49:22,136,Delivery instruction with ID 136 created by institution INST-3 for Bond-B for amount 715.65
+2025-03-08 11:49:22,137,Receipt instruction with ID 137 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-A for amount 2533.59
+2025-03-08 11:49:22,138,Delivery instruction with ID 138 created by institution INST-2 for Bond-A for amount 2533.59
+2025-03-08 11:49:22,139,Receipt instruction with ID 139 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 7955.57
+2025-03-08 11:49:22,140,Delivery instruction with ID 140 created by institution INST-4 for Bond-A for amount 7955.57
+2025-03-08 11:49:22,141,Delivery instruction with ID 141 created by institution INST-2 for Bond-B for amount 222.3
+2025-03-08 11:49:22,142,Receipt instruction with ID 142 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 222.3
+2025-03-08 11:49:22,143,Receipt instruction with ID 143 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-B for amount 8627.49
+2025-03-08 11:49:22,144,Delivery instruction with ID 144 created by institution INST-2 for Bond-B for amount 8627.49
+2025-03-08 11:49:22,145,Receipt instruction with ID 145 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 8537.37
+2025-03-08 11:49:22,146,Delivery instruction with ID 146 created by institution INST-4 for Bond-C for amount 8537.37
+2025-03-08 11:49:22,147,Delivery instruction with ID 147 created by institution INST-4 for Bond-C for amount 5683.51
+2025-03-08 11:49:22,148,Receipt instruction with ID 148 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 5683.51
+2025-03-08 11:49:22,149,Receipt instruction with ID 149 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-A for amount 8557.74
+2025-03-08 11:49:22,150,Delivery instruction with ID 150 created by institution INST-1 for Bond-A for amount 8557.74
+2025-03-08 11:49:22,151,Delivery instruction with ID 151 created by institution INST-1 for Bond-B for amount 6249.12
+2025-03-08 11:49:22,152,Receipt instruction with ID 152 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-B for amount 6249.12
+2025-03-08 11:49:22,153,Delivery instruction with ID 153 created by institution INST-2 for Bond-C for amount 5288.07
+2025-03-08 11:49:22,154,Receipt instruction with ID 154 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-C for amount 5288.07
+2025-03-08 11:49:22,155,Delivery instruction with ID 155 created by institution INST-5 for Bond-A for amount 5206.97
+2025-03-08 11:49:22,156,Receipt instruction with ID 156 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 5206.97
+2025-03-08 11:49:22,157,Receipt instruction with ID 157 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-C for amount 2497.01
+2025-03-08 11:49:22,158,Delivery instruction with ID 158 created by institution INST-3 for Bond-C for amount 2497.01
+2025-03-08 11:49:22,159,Receipt instruction with ID 159 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 8875.72
+2025-03-08 11:49:22,160,Delivery instruction with ID 160 created by institution INST-1 for Bond-D for amount 8875.72
+2025-03-08 11:49:22,161,Delivery instruction with ID 161 created by institution INST-2 for Bond-A for amount 4959.2
+2025-03-08 11:49:22,162,Receipt instruction with ID 162 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-A for amount 4959.2
+2025-03-08 11:49:22,163,Receipt instruction with ID 163 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-B for amount 8433.38
+2025-03-08 11:49:22,164,Delivery instruction with ID 164 created by institution INST-1 for Bond-B for amount 8433.38
+2025-03-08 11:49:22,165,Receipt instruction with ID 165 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 6318.0
+2025-03-08 11:49:22,166,Delivery instruction with ID 166 created by institution INST-1 for Bond-B for amount 6318.0
+2025-03-08 11:49:22,167,Delivery instruction with ID 167 created by institution INST-2 for Bond-B for amount 9621.07
+2025-03-08 11:49:22,168,Receipt instruction with ID 168 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-B for amount 9621.07
+2025-03-08 11:49:22,169,Delivery instruction with ID 169 created by institution INST-4 for Bond-C for amount 1511.56
+2025-03-08 11:49:22,170,Receipt instruction with ID 170 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 1511.56
+2025-03-08 11:49:22,171,Delivery instruction with ID 171 created by institution INST-5 for Bond-A for amount 7878.32
+2025-03-08 11:49:22,172,Receipt instruction with ID 172 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 7878.32
+2025-03-08 11:49:22,173,Receipt instruction with ID 173 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 3772.39
+2025-03-08 11:49:22,174,Delivery instruction with ID 174 created by institution INST-4 for Bond-C for amount 3772.39
+2025-03-08 11:49:22,175,Delivery instruction with ID 175 created by institution INST-5 for Bond-A for amount 7222.21
+2025-03-08 11:49:22,176,Receipt instruction with ID 176 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 7222.21
+2025-03-08 11:49:22,177,Delivery instruction with ID 177 created by institution INST-1 for Bond-A for amount 1444.74
+2025-03-08 11:49:22,178,Receipt instruction with ID 178 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-A for amount 1444.74
+2025-03-08 11:49:22,179,Receipt instruction with ID 179 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 195.39
+2025-03-08 11:49:22,180,Delivery instruction with ID 180 created by institution INST-3 for Bond-D for amount 195.39
+2025-03-08 11:49:22,181,Receipt instruction with ID 181 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 3168.59
+2025-03-08 11:49:22,182,Delivery instruction with ID 182 created by institution INST-2 for Bond-A for amount 3168.59
+2025-03-08 11:49:22,183,Receipt instruction with ID 183 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-A for amount 3389.41
+2025-03-08 11:49:22,184,Delivery instruction with ID 184 created by institution INST-2 for Bond-A for amount 3389.41
+2025-03-08 11:49:22,185,Receipt instruction with ID 185 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-D for amount 9735.69
+2025-03-08 11:49:22,186,Delivery instruction with ID 186 created by institution INST-1 for Bond-D for amount 9735.69
+2025-03-08 11:49:22,187,Delivery instruction with ID 187 created by institution INST-4 for Bond-A for amount 8300.69
+2025-03-08 11:49:22,188,Receipt instruction with ID 188 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 8300.69
+2025-03-08 11:49:22,189,Receipt instruction with ID 189 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 4047.03
+2025-03-08 11:49:22,190,Delivery instruction with ID 190 created by institution INST-4 for Bond-D for amount 4047.03
+2025-03-08 11:49:22,191,Delivery instruction with ID 191 created by institution INST-4 for Bond-A for amount 8089.78
+2025-03-08 11:49:22,192,Receipt instruction with ID 192 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 8089.78
+2025-03-08 11:49:22,193,Receipt instruction with ID 193 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 4139.51
+2025-03-08 11:49:22,194,Delivery instruction with ID 194 created by institution INST-2 for Bond-C for amount 4139.51
+2025-03-08 11:49:22,195,Receipt instruction with ID 195 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-B for amount 1839.45
+2025-03-08 11:49:22,196,Delivery instruction with ID 196 created by institution INST-2 for Bond-B for amount 1839.45
+2025-03-08 11:49:22,197,Receipt instruction with ID 197 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 8004.78
+2025-03-08 11:49:22,198,Delivery instruction with ID 198 created by institution INST-3 for Bond-D for amount 8004.78
+2025-03-08 11:49:22,199,Delivery instruction with ID 199 created by institution INST-3 for Bond-A for amount 3079.48
+2025-03-08 11:49:22,200,Receipt instruction with ID 200 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 3079.48
+2025-03-08 11:49:22,201,Receipt instruction with ID 201 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 902.8
+2025-03-08 11:49:22,202,Delivery instruction with ID 202 created by institution INST-2 for Bond-B for amount 902.8
+2025-03-08 11:49:22,203,Receipt instruction with ID 203 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 3694.66
+2025-03-08 11:49:22,204,Delivery instruction with ID 204 created by institution INST-1 for Bond-C for amount 3694.66
+2025-03-08 11:49:22,205,Receipt instruction with ID 205 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 5166.44
+2025-03-08 11:49:22,206,Delivery instruction with ID 206 created by institution INST-5 for Bond-B for amount 5166.44
+2025-03-08 11:49:22,207,Receipt instruction with ID 207 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 4395.44
+2025-03-08 11:49:22,208,Delivery instruction with ID 208 created by institution INST-2 for Bond-C for amount 4395.44
+2025-03-08 11:49:22,209,Receipt instruction with ID 209 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-C for amount 2627.16
+2025-03-08 11:49:22,210,Delivery instruction with ID 210 created by institution INST-3 for Bond-C for amount 2627.16
+2025-03-08 11:49:22,211,Receipt instruction with ID 211 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-B for amount 7568.07
+2025-03-08 11:49:22,212,Delivery instruction with ID 212 created by institution INST-5 for Bond-B for amount 7568.07
+2025-03-08 11:49:22,213,Delivery instruction with ID 213 created by institution INST-5 for Bond-A for amount 3674.59
+2025-03-08 11:49:22,214,Receipt instruction with ID 214 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 3674.59
+2025-03-08 11:49:22,215,Receipt instruction with ID 215 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 7985.0
+2025-03-08 11:49:22,216,Delivery instruction with ID 216 created by institution INST-5 for Bond-D for amount 7985.0
+2025-03-08 11:49:22,217,Receipt instruction with ID 217 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 9068.83
+2025-03-08 11:49:22,218,Delivery instruction with ID 218 created by institution INST-3 for Bond-B for amount 9068.83
+2025-03-08 11:49:22,219,Delivery instruction with ID 219 created by institution INST-1 for Bond-D for amount 5965.13
+2025-03-08 11:49:22,220,Receipt instruction with ID 220 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 5965.13
+2025-03-08 11:49:22,221,Delivery instruction with ID 221 created by institution INST-1 for Bond-B for amount 6374.15
+2025-03-08 11:49:22,222,Receipt instruction with ID 222 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-B for amount 6374.15
+2025-03-08 11:49:22,223,Delivery instruction with ID 223 created by institution INST-3 for Bond-B for amount 7551.75
+2025-03-08 11:49:22,224,Receipt instruction with ID 224 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 7551.75
+2025-03-08 11:49:22,225,Receipt instruction with ID 225 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 5575.63
+2025-03-08 11:49:22,226,Delivery instruction with ID 226 created by institution INST-4 for Bond-A for amount 5575.63
+2025-03-08 11:49:22,227,Receipt instruction with ID 227 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-A for amount 155.99
+2025-03-08 11:49:22,228,Delivery instruction with ID 228 created by institution INST-4 for Bond-A for amount 155.99
+2025-03-08 11:49:22,229,Delivery instruction with ID 229 created by institution INST-2 for Bond-D for amount 9490.4
+2025-03-08 11:49:22,230,Receipt instruction with ID 230 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 9490.4
+2025-03-08 11:49:22,231,Receipt instruction with ID 231 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 3083.38
+2025-03-08 11:49:22,232,Delivery instruction with ID 232 created by institution INST-3 for Bond-C for amount 3083.38
+2025-03-08 11:49:22,233,Delivery instruction with ID 233 created by institution INST-4 for Bond-C for amount 7915.34
+2025-03-08 11:49:22,234,Receipt instruction with ID 234 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 7915.34
+2025-03-08 11:49:22,235,Delivery instruction with ID 235 created by institution INST-3 for Bond-A for amount 3907.13
+2025-03-08 11:49:22,236,Receipt instruction with ID 236 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 3907.13
+2025-03-08 11:49:22,237,Receipt instruction with ID 237 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 4282.23
+2025-03-08 11:49:22,238,Delivery instruction with ID 238 created by institution INST-5 for Bond-C for amount 4282.23
+2025-03-08 11:49:22,239,Receipt instruction with ID 239 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 4360.54
+2025-03-08 11:49:22,240,Delivery instruction with ID 240 created by institution INST-1 for Bond-A for amount 4360.54
+2025-03-08 11:49:22,241,Receipt instruction with ID 241 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 5908.5
+2025-03-08 11:49:22,242,Delivery instruction with ID 242 created by institution INST-2 for Bond-B for amount 5908.5
+2025-03-08 11:49:22,243,Delivery instruction with ID 243 created by institution INST-1 for Bond-B for amount 7047.66
+2025-03-08 11:49:22,244,Receipt instruction with ID 244 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-B for amount 7047.66
+2025-03-08 11:49:22,245,Delivery instruction with ID 245 created by institution INST-3 for Bond-C for amount 783.71
+2025-03-08 11:49:22,246,Receipt instruction with ID 246 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 783.71
+2025-03-08 11:49:22,247,Delivery instruction with ID 247 created by institution INST-4 for Bond-D for amount 3553.65
+2025-03-08 11:49:22,248,Receipt instruction with ID 248 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-D for amount 3553.65
+2025-03-08 11:49:22,249,Delivery instruction with ID 249 created by institution INST-1 for Bond-D for amount 3788.18
+2025-03-08 11:49:22,250,Receipt instruction with ID 250 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-D for amount 3788.18
+2025-03-08 11:49:22,251,Receipt instruction with ID 251 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 1542.13
+2025-03-08 11:49:22,252,Delivery instruction with ID 252 created by institution INST-4 for Bond-C for amount 1542.13
+2025-03-08 11:49:22,253,Receipt instruction with ID 253 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 9505.88
+2025-03-08 11:49:22,254,Delivery instruction with ID 254 created by institution INST-4 for Bond-B for amount 9505.88
+2025-03-08 11:49:22,255,Delivery instruction with ID 255 created by institution INST-3 for Bond-A for amount 6395.3
+2025-03-08 11:49:22,256,Receipt instruction with ID 256 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 6395.3
+2025-03-08 11:49:22,257,Receipt instruction with ID 257 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 8661.01
+2025-03-08 11:49:22,258,Delivery instruction with ID 258 created by institution INST-1 for Bond-B for amount 8661.01
+2025-03-08 11:49:22,259,Delivery instruction with ID 259 created by institution INST-5 for Bond-D for amount 8925.33
+2025-03-08 11:49:22,260,Receipt instruction with ID 260 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 8925.33
+2025-03-08 11:49:22,261,Delivery instruction with ID 261 created by institution INST-2 for Bond-C for amount 6640.42
+2025-03-08 11:49:22,262,Receipt instruction with ID 262 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-C for amount 6640.42
+2025-03-08 11:49:22,263,Receipt instruction with ID 263 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 817.82
+2025-03-08 11:49:22,264,Delivery instruction with ID 264 created by institution INST-2 for Bond-B for amount 817.82
+2025-03-08 11:49:22,265,Delivery instruction with ID 265 created by institution INST-2 for Bond-A for amount 5255.78
+2025-03-08 11:49:22,266,Receipt instruction with ID 266 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-A for amount 5255.78
+2025-03-08 11:49:22,267,Delivery instruction with ID 267 created by institution INST-4 for Bond-C for amount 9107.56
+2025-03-08 11:49:22,268,Receipt instruction with ID 268 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 9107.56
+2025-03-08 11:49:22,269,Receipt instruction with ID 269 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 8341.79
+2025-03-08 11:49:22,270,Delivery instruction with ID 270 created by institution INST-5 for Bond-C for amount 8341.79
+2025-03-08 11:49:22,271,Delivery instruction with ID 271 created by institution INST-4 for Bond-D for amount 1297.93
+2025-03-08 11:49:22,272,Receipt instruction with ID 272 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 1297.93
+2025-03-08 11:49:22,273,Delivery instruction with ID 273 created by institution INST-3 for Bond-C for amount 9354.1
+2025-03-08 11:49:22,274,Receipt instruction with ID 274 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-C for amount 9354.1
+2025-03-08 11:49:22,275,Delivery instruction with ID 275 created by institution INST-5 for Bond-D for amount 2049.85
+2025-03-08 11:49:22,276,Receipt instruction with ID 276 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 2049.85
+2025-03-08 11:49:22,277,Receipt instruction with ID 277 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-B for amount 4704.36
+2025-03-08 11:49:22,278,Delivery instruction with ID 278 created by institution INST-5 for Bond-B for amount 4704.36
+2025-03-08 11:49:22,279,Delivery instruction with ID 279 created by institution INST-5 for Bond-D for amount 2382.85
+2025-03-08 11:49:22,280,Receipt instruction with ID 280 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 2382.85
+2025-03-08 11:49:22,281,Receipt instruction with ID 281 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 9756.27
+2025-03-08 11:49:22,282,Delivery instruction with ID 282 created by institution INST-1 for Bond-D for amount 9756.27
+2025-03-08 11:49:22,283,Delivery instruction with ID 283 created by institution INST-1 for Bond-A for amount 9522.15
+2025-03-08 11:49:22,284,Receipt instruction with ID 284 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 9522.15
+2025-03-08 11:49:22,285,Delivery instruction with ID 285 created by institution INST-2 for Bond-C for amount 6613.31
+2025-03-08 11:49:22,286,Receipt instruction with ID 286 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 6613.31
+2025-03-08 11:49:22,287,Delivery instruction with ID 287 created by institution INST-4 for Bond-C for amount 960.08
+2025-03-08 11:49:22,288,Receipt instruction with ID 288 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 960.08
+2025-03-08 11:49:22,289,Receipt instruction with ID 289 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-B for amount 9487.66
+2025-03-08 11:49:22,290,Delivery instruction with ID 290 created by institution INST-5 for Bond-B for amount 9487.66
+2025-03-08 11:49:22,291,Receipt instruction with ID 291 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 9748.08
+2025-03-08 11:49:22,292,Delivery instruction with ID 292 created by institution INST-4 for Bond-D for amount 9748.08
+2025-03-08 11:49:22,293,Delivery instruction with ID 293 created by institution INST-1 for Bond-A for amount 4261.64
+2025-03-08 11:49:22,294,Receipt instruction with ID 294 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-A for amount 4261.64
+2025-03-08 11:49:22,295,Delivery instruction with ID 295 created by institution INST-4 for Bond-D for amount 3792.35
+2025-03-08 11:49:22,296,Receipt instruction with ID 296 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-D for amount 3792.35
+2025-03-08 11:49:22,297,Receipt instruction with ID 297 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 5974.5
+2025-03-08 11:49:22,298,Delivery instruction with ID 298 created by institution INST-5 for Bond-D for amount 5974.5
+2025-03-08 11:49:22,299,Delivery instruction with ID 299 created by institution INST-5 for Bond-C for amount 2855.97
+2025-03-08 11:49:22,300,Receipt instruction with ID 300 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 2855.97
+2025-03-08 11:49:22,301,Delivery instruction with ID 301 created by institution INST-2 for Bond-D for amount 5643.98
+2025-03-08 11:49:22,302,Receipt instruction with ID 302 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 5643.98
+2025-03-08 11:49:22,303,Receipt instruction with ID 303 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 7791.79
+2025-03-08 11:49:22,304,Delivery instruction with ID 304 created by institution INST-5 for Bond-C for amount 7791.79
+2025-03-08 11:49:22,305,Receipt instruction with ID 305 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 7236.8
+2025-03-08 11:49:22,306,Delivery instruction with ID 306 created by institution INST-3 for Bond-B for amount 7236.8
+2025-03-08 11:49:22,307,Delivery instruction with ID 307 created by institution INST-4 for Bond-A for amount 8366.22
+2025-03-08 11:49:22,308,Receipt instruction with ID 308 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 8366.22
+2025-03-08 11:49:22,309,Delivery instruction with ID 309 created by institution INST-2 for Bond-D for amount 2323.39
+2025-03-08 11:49:22,310,Receipt instruction with ID 310 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 2323.39
+2025-03-08 11:49:22,311,Receipt instruction with ID 311 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 6639.13
+2025-03-08 11:49:22,312,Delivery instruction with ID 312 created by institution INST-2 for Bond-B for amount 6639.13
+2025-03-08 11:49:22,313,Delivery instruction with ID 313 created by institution INST-3 for Bond-A for amount 5913.19
+2025-03-08 11:49:22,314,Receipt instruction with ID 314 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 5913.19
+2025-03-08 11:49:22,315,Delivery instruction with ID 315 created by institution INST-4 for Bond-C for amount 5834.47
+2025-03-08 11:49:22,316,Receipt instruction with ID 316 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 5834.47
+2025-03-08 11:49:22,317,Receipt instruction with ID 317 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 3085.39
+2025-03-08 11:49:22,318,Delivery instruction with ID 318 created by institution INST-1 for Bond-C for amount 3085.39
+2025-03-08 11:49:22,319,Receipt instruction with ID 319 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 3160.52
+2025-03-08 11:49:22,320,Delivery instruction with ID 320 created by institution INST-4 for Bond-D for amount 3160.52
+2025-03-08 11:49:22,321,Receipt instruction with ID 321 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 1208.35
+2025-03-08 11:49:22,322,Delivery instruction with ID 322 created by institution INST-2 for Bond-C for amount 1208.35
+2025-03-08 11:49:22,323,Delivery instruction with ID 323 created by institution INST-4 for Bond-C for amount 232.68
+2025-03-08 11:49:22,324,Receipt instruction with ID 324 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 232.68
+2025-03-08 11:49:22,325,Receipt instruction with ID 325 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 6153.08
+2025-03-08 11:49:22,326,Delivery instruction with ID 326 created by institution INST-5 for Bond-C for amount 6153.08
+2025-03-08 11:49:22,327,Receipt instruction with ID 327 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-B for amount 6816.04
+2025-03-08 11:49:22,328,Delivery instruction with ID 328 created by institution INST-2 for Bond-B for amount 6816.04
+2025-03-08 11:49:22,329,Delivery instruction with ID 329 created by institution INST-2 for Bond-D for amount 2123.3
+2025-03-08 11:49:22,330,Receipt instruction with ID 330 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 2123.3
+2025-03-08 11:49:22,331,Delivery instruction with ID 331 created by institution INST-4 for Bond-C for amount 8902.18
+2025-03-08 11:49:22,332,Receipt instruction with ID 332 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 8902.18
+2025-03-08 11:49:22,333,Receipt instruction with ID 333 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-A for amount 7261.9
+2025-03-08 11:49:22,334,Delivery instruction with ID 334 created by institution INST-4 for Bond-A for amount 7261.9
+2025-03-08 11:49:22,335,Delivery instruction with ID 335 created by institution INST-4 for Bond-C for amount 6679.8
+2025-03-08 11:49:22,336,Receipt instruction with ID 336 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 6679.8
+2025-03-08 11:49:22,337,Delivery instruction with ID 337 created by institution INST-5 for Bond-D for amount 549.83
+2025-03-08 11:49:22,338,Receipt instruction with ID 338 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 549.83
+2025-03-08 11:49:22,339,Receipt instruction with ID 339 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 5121.88
+2025-03-08 11:49:22,340,Delivery instruction with ID 340 created by institution INST-2 for Bond-B for amount 5121.88
+2025-03-08 11:49:22,341,Delivery instruction with ID 341 created by institution INST-3 for Bond-D for amount 9667.0
+2025-03-08 11:49:22,342,Receipt instruction with ID 342 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 9667.0
+2025-03-08 11:49:22,343,Receipt instruction with ID 343 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 6981.02
+2025-03-08 11:49:22,344,Delivery instruction with ID 344 created by institution INST-2 for Bond-D for amount 6981.02
+2025-03-08 11:49:22,345,Receipt instruction with ID 345 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 8365.55
+2025-03-08 11:49:22,346,Delivery instruction with ID 346 created by institution INST-2 for Bond-A for amount 8365.55
+2025-03-08 11:49:22,347,Receipt instruction with ID 347 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 8741.66
+2025-03-08 11:49:22,348,Delivery instruction with ID 348 created by institution INST-5 for Bond-D for amount 8741.66
+2025-03-08 11:49:22,349,Delivery instruction with ID 349 created by institution INST-3 for Bond-A for amount 5689.0
+2025-03-08 11:49:22,350,Receipt instruction with ID 350 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 5689.0
+2025-03-08 11:49:22,351,Receipt instruction with ID 351 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 8584.06
+2025-03-08 11:49:22,352,Delivery instruction with ID 352 created by institution INST-3 for Bond-D for amount 8584.06
+2025-03-08 11:49:22,353,Delivery instruction with ID 353 created by institution INST-5 for Bond-A for amount 6250.04
+2025-03-08 11:49:22,354,Receipt instruction with ID 354 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 6250.04
+2025-03-08 11:49:22,355,Delivery instruction with ID 355 created by institution INST-3 for Bond-D for amount 894.37
+2025-03-08 11:49:22,356,Receipt instruction with ID 356 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 894.37
+2025-03-08 11:49:22,357,Receipt instruction with ID 357 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 8916.2
+2025-03-08 11:49:22,358,Delivery instruction with ID 358 created by institution INST-2 for Bond-B for amount 8916.2
+2025-03-08 11:49:22,359,Delivery instruction with ID 359 created by institution INST-2 for Bond-A for amount 2976.22
+2025-03-08 11:49:22,360,Receipt instruction with ID 360 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 2976.22
+2025-03-08 11:49:22,361,Receipt instruction with ID 361 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 9852.44
+2025-03-08 11:49:22,362,Delivery instruction with ID 362 created by institution INST-3 for Bond-D for amount 9852.44
+2025-03-08 11:49:22,363,Receipt instruction with ID 363 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 9394.23
+2025-03-08 11:49:22,364,Delivery instruction with ID 364 created by institution INST-2 for Bond-A for amount 9394.23
+2025-03-08 11:49:22,365,Delivery instruction with ID 365 created by institution INST-3 for Bond-B for amount 7922.09
+2025-03-08 11:49:22,366,Receipt instruction with ID 366 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-B for amount 7922.09
+2025-03-08 11:49:22,367,Delivery instruction with ID 367 created by institution INST-1 for Bond-D for amount 9566.86
+2025-03-08 11:49:22,368,Receipt instruction with ID 368 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 9566.86
+2025-03-08 11:49:22,369,Receipt instruction with ID 369 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 915.81
+2025-03-08 11:49:22,370,Delivery instruction with ID 370 created by institution INST-1 for Bond-C for amount 915.81
+2025-03-08 11:49:22,371,Delivery instruction with ID 371 created by institution INST-1 for Bond-A for amount 2538.12
+2025-03-08 11:49:22,372,Receipt instruction with ID 372 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 2538.12
+2025-03-08 11:49:22,373,Receipt instruction with ID 373 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 8384.32
+2025-03-08 11:49:22,374,Delivery instruction with ID 374 created by institution INST-5 for Bond-D for amount 8384.32
+2025-03-08 11:49:22,375,Receipt instruction with ID 375 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 866.56
+2025-03-08 11:49:22,376,Delivery instruction with ID 376 created by institution INST-2 for Bond-B for amount 866.56
+2025-03-08 11:49:22,377,Receipt instruction with ID 377 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-D for amount 8336.66
+2025-03-08 11:49:22,378,Delivery instruction with ID 378 created by institution INST-1 for Bond-D for amount 8336.66
+2025-03-08 11:49:22,379,Receipt instruction with ID 379 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-A for amount 6173.16
+2025-03-08 11:49:22,380,Delivery instruction with ID 380 created by institution INST-4 for Bond-A for amount 6173.16
+2025-03-08 11:49:22,381,Delivery instruction with ID 381 created by institution INST-3 for Bond-C for amount 4173.12
+2025-03-08 11:49:22,382,Receipt instruction with ID 382 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-C for amount 4173.12
+2025-03-08 11:49:22,383,Receipt instruction with ID 383 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-C for amount 8680.25
+2025-03-08 11:49:22,384,Delivery instruction with ID 384 created by institution INST-2 for Bond-C for amount 8680.25
+2025-03-08 11:49:22,385,Receipt instruction with ID 385 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-D for amount 3403.34
+2025-03-08 11:49:22,386,Delivery instruction with ID 386 created by institution INST-3 for Bond-D for amount 3403.34
+2025-03-08 11:49:22,387,Receipt instruction with ID 387 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 8159.94
+2025-03-08 11:49:22,388,Delivery instruction with ID 388 created by institution INST-3 for Bond-D for amount 8159.94
+2025-03-08 11:49:22,389,Delivery instruction with ID 389 created by institution INST-5 for Bond-B for amount 873.07
+2025-03-08 11:49:22,390,Receipt instruction with ID 390 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 873.07
+2025-03-08 11:49:22,391,Delivery instruction with ID 391 created by institution INST-4 for Bond-A for amount 4818.64
+2025-03-08 11:49:22,392,Receipt instruction with ID 392 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 4818.64
+2025-03-08 11:49:22,393,Delivery instruction with ID 393 created by institution INST-5 for Bond-C for amount 1990.61
+2025-03-08 11:49:22,394,Receipt instruction with ID 394 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-C for amount 1990.61
+2025-03-08 11:49:22,395,Receipt instruction with ID 395 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 1704.8
+2025-03-08 11:49:22,396,Delivery instruction with ID 396 created by institution INST-4 for Bond-B for amount 1704.8
+2025-03-08 11:49:22,397,Delivery instruction with ID 397 created by institution INST-5 for Bond-D for amount 250.93
+2025-03-08 11:49:22,398,Receipt instruction with ID 398 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 250.93
+2025-03-08 11:49:22,399,Delivery instruction with ID 399 created by institution INST-4 for Bond-C for amount 2200.49
+2025-03-08 11:49:22,400,Receipt instruction with ID 400 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 2200.49
+2025-03-08 11:49:22,401,Receipt instruction with ID 401 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 9214.88
+2025-03-08 11:49:22,402,Delivery instruction with ID 402 created by institution INST-3 for Bond-B for amount 9214.88
+2025-03-08 11:49:22,403,Receipt instruction with ID 403 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 6019.29
+2025-03-08 11:49:22,404,Delivery instruction with ID 404 created by institution INST-5 for Bond-C for amount 6019.29
+2025-03-08 11:49:22,405,Delivery instruction with ID 405 created by institution INST-2 for Bond-D for amount 3373.17
+2025-03-08 11:49:22,406,Receipt instruction with ID 406 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 3373.17
+2025-03-08 11:49:22,407,Delivery instruction with ID 407 created by institution INST-5 for Bond-D for amount 7401.24
+2025-03-08 11:49:22,408,Receipt instruction with ID 408 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 7401.24
+2025-03-08 11:49:22,409,Receipt instruction with ID 409 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-D for amount 844.42
+2025-03-08 11:49:22,410,Delivery instruction with ID 410 created by institution INST-2 for Bond-D for amount 844.42
+2025-03-08 11:49:22,411,Receipt instruction with ID 411 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 2503.51
+2025-03-08 11:49:22,412,Delivery instruction with ID 412 created by institution INST-2 for Bond-C for amount 2503.51
+2025-03-08 11:49:22,413,Delivery instruction with ID 413 created by institution INST-4 for Bond-C for amount 8475.11
+2025-03-08 11:49:22,414,Receipt instruction with ID 414 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-C for amount 8475.11
+2025-03-08 11:49:22,415,Receipt instruction with ID 415 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-A for amount 740.65
+2025-03-08 11:49:22,416,Delivery instruction with ID 416 created by institution INST-5 for Bond-A for amount 740.65
+2025-03-08 11:49:22,417,Receipt instruction with ID 417 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 1396.03
+2025-03-08 11:49:22,418,Delivery instruction with ID 418 created by institution INST-1 for Bond-C for amount 1396.03
+2025-03-08 11:49:22,419,Receipt instruction with ID 419 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-B for amount 9263.62
+2025-03-08 11:49:22,420,Delivery instruction with ID 420 created by institution INST-2 for Bond-B for amount 9263.62
+2025-03-08 11:49:22,421,Delivery instruction with ID 421 created by institution INST-5 for Bond-D for amount 7159.2
+2025-03-08 11:49:22,422,Receipt instruction with ID 422 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 7159.2
+2025-03-08 11:49:22,423,Receipt instruction with ID 423 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 8208.42
+2025-03-08 11:49:22,424,Delivery instruction with ID 424 created by institution INST-3 for Bond-D for amount 8208.42
+2025-03-08 11:49:22,425,Delivery instruction with ID 425 created by institution INST-2 for Bond-B for amount 563.55
+2025-03-08 11:49:22,426,Receipt instruction with ID 426 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-B for amount 563.55
+2025-03-08 11:49:22,427,Delivery instruction with ID 427 created by institution INST-1 for Bond-D for amount 5764.44
+2025-03-08 11:49:22,428,Receipt instruction with ID 428 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 5764.44
+2025-03-08 11:49:22,429,Receipt instruction with ID 429 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-A for amount 2258.56
+2025-03-08 11:49:22,430,Delivery instruction with ID 430 created by institution INST-1 for Bond-A for amount 2258.56
+2025-03-08 11:49:22,431,Delivery instruction with ID 431 created by institution INST-4 for Bond-A for amount 8290.59
+2025-03-08 11:49:22,432,Receipt instruction with ID 432 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-A for amount 8290.59
+2025-03-08 11:49:22,433,Receipt instruction with ID 433 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-C for amount 3541.64
+2025-03-08 11:49:22,434,Delivery instruction with ID 434 created by institution INST-3 for Bond-C for amount 3541.64
+2025-03-08 11:49:22,435,Receipt instruction with ID 435 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 3475.22
+2025-03-08 11:49:22,436,Delivery instruction with ID 436 created by institution INST-1 for Bond-B for amount 3475.22
+2025-03-08 11:49:22,437,Delivery instruction with ID 437 created by institution INST-5 for Bond-D for amount 9939.9
+2025-03-08 11:49:22,438,Receipt instruction with ID 438 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 9939.9
+2025-03-08 11:49:22,439,Receipt instruction with ID 439 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-A for amount 9624.04
+2025-03-08 11:49:22,440,Delivery instruction with ID 440 created by institution INST-3 for Bond-A for amount 9624.04
+2025-03-08 11:49:22,441,Delivery instruction with ID 441 created by institution INST-3 for Bond-B for amount 7838.25
+2025-03-08 11:49:22,442,Receipt instruction with ID 442 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-B for amount 7838.25
+2025-03-08 11:49:22,443,Receipt instruction with ID 443 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-A for amount 2716.17
+2025-03-08 11:49:22,444,Delivery instruction with ID 444 created by institution INST-2 for Bond-A for amount 2716.17
+2025-03-08 11:49:22,445,Delivery instruction with ID 445 created by institution INST-2 for Bond-B for amount 8185.33
+2025-03-08 11:49:22,446,Receipt instruction with ID 446 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-B for amount 8185.33
+2025-03-08 11:49:22,447,Delivery instruction with ID 447 created by institution INST-3 for Bond-D for amount 4898.13
+2025-03-08 11:49:22,448,Receipt instruction with ID 448 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-D for amount 4898.13
+2025-03-08 11:49:22,449,Receipt instruction with ID 449 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE26774A10> for Bond-D for amount 1192.99
+2025-03-08 11:49:22,450,Delivery instruction with ID 450 created by institution INST-5 for Bond-D for amount 1192.99
+2025-03-08 11:49:22,451,Delivery instruction with ID 451 created by institution INST-4 for Bond-C for amount 8437.03
+2025-03-08 11:49:22,452,Receipt instruction with ID 452 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 8437.03
+2025-03-08 11:49:22,453,Delivery instruction with ID 453 created by institution INST-3 for Bond-D for amount 8021.07
+2025-03-08 11:49:22,454,Receipt instruction with ID 454 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 8021.07
+2025-03-08 11:49:22,455,Delivery instruction with ID 455 created by institution INST-1 for Bond-C for amount 2630.75
+2025-03-08 11:49:22,456,Receipt instruction with ID 456 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B90> for Bond-C for amount 2630.75
+2025-03-08 11:49:22,457,Receipt instruction with ID 457 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-A for amount 1726.61
+2025-03-08 11:49:22,458,Delivery instruction with ID 458 created by institution INST-2 for Bond-A for amount 1726.61
+2025-03-08 11:49:22,459,Receipt instruction with ID 459 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC54D0> for Bond-D for amount 451.41
+2025-03-08 11:49:22,460,Delivery instruction with ID 460 created by institution INST-2 for Bond-D for amount 451.41
+2025-03-08 11:49:22,461,Delivery instruction with ID 461 created by institution INST-1 for Bond-C for amount 5943.78
+2025-03-08 11:49:22,462,Receipt instruction with ID 462 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-C for amount 5943.78
+2025-03-08 11:49:22,463,Delivery instruction with ID 463 created by institution INST-5 for Bond-B for amount 7760.13
+2025-03-08 11:49:22,464,Receipt instruction with ID 464 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-B for amount 7760.13
+2025-03-08 11:49:22,465,Delivery instruction with ID 465 created by institution INST-2 for Bond-D for amount 3847.03
+2025-03-08 11:49:22,466,Receipt instruction with ID 466 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC5B10> for Bond-D for amount 3847.03
+2025-03-08 11:49:22,467,Delivery instruction with ID 467 created by institution INST-4 for Bond-C for amount 157.38
+2025-03-08 11:49:22,468,Receipt instruction with ID 468 created by institution <InstitutionAgent.InstitutionAgent object at 0x000001DE37CC4250> for Bond-C for amount 157.38
