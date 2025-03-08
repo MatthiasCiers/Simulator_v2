@@ -6,8 +6,9 @@ if TYPE_CHECKING:
     from SettlementModel import SettlementModel
     from InstitutionAgent import InstitutionAgent
     from Account import Account
-    from TransactionAgent import TransactionAgent
+    #from TransactionAgent import TransactionAgent
 
+import TransactionAgent
 import DeliveryInstructionAgent
 
 
@@ -102,7 +103,7 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
             return None
 
         # Create a transaction
-        transaction = TransactionAgent(
+        transaction = TransactionAgent.TransactionAgent(
             model=self.model,
             transactionID=f"{self.uniqueID}_{other_instruction.uniqueID}",
             deliverer=other_instruction,

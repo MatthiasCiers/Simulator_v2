@@ -1,7 +1,7 @@
 #InstitutionAgent
 import time
 import random
-from datetime import datetime
+from datetime import datetime, timedelta
 import SettlementModel
 from mesa import Agent, Model
 import ReceiptInstructionAgent
@@ -108,6 +108,6 @@ class InstitutionAgent(Agent):
                 self.opt_out_partial()
             else:
                 self.opt_in_partial()
-
+        self.model.simulated_time = self.model.simulated_time + timedelta(seconds=1)
 
 

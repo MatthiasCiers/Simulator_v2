@@ -132,7 +132,6 @@ class InstructionAgent (Agent):
            elif self.status == "Validated":
                self.match()
 
-           else:
-               return
+       self.model.simulated_time = self.model.simulated_time +timedelta(seconds=1)
 
 

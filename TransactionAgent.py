@@ -86,7 +86,7 @@ class TransactionAgent(Agent):
         else:
             if self.status not in ["Cancelled due to timeout", "Settled"]:
                 self.settle()
-
+        self.model.simulated_time = self.model.simulated_time + timedelta(seconds=1)
 
     def cancel_timeout(self):
         # TODO: Implement timeout cancellation logic

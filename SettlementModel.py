@@ -23,12 +23,14 @@ class SettlementModel(Model):
         self.num_institutions = 5
         self.min_total_accounts = 2
         self.max_total_accounts = 6
-        self.simulation_duration_days = 10
+        self.simulation_duration_days = 1
         self.bond_types = ["Bond-A", "Bond-B", "Bond-C", "Bond-D"]
         self.steps_per_day = 500 #random chosen
 
 
         self.simulation_start = datetime.now()
+        self.simulation_end = self.simulation_start + timedelta(days=self.simulation_duration_days)
+        self.simulated_time = self.simulation_start
         self.institutions = []
         self.accounts = []
         self.instructions = []
@@ -38,14 +40,13 @@ class SettlementModel(Model):
         self.generate_data()
 
     def random_timestamp(self):
-        simulation_end = self.simulation_start + timedelta(days=self.simulation_duration_days)
-        delta = simulation_end - self.simulation_start
+        delta = self.simulation_end - self.simulated_time
         random_seconds = random.uniform(0, delta.total_seconds())
         random_time = self.simulation_start + timedelta(seconds=random_seconds)
         return random_time  # Now returns a datetime object
 
     def log_event(self, message, agent_id, is_transaction=True):
-        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        timestamp = self.simulated_time.strftime('%Y-%m-%d %H:%M:%S')
         log_entry = {'Timestamp': timestamp, 'Agent ID': agent_id, 'Event': message}
 
         if is_transaction:
@@ -99,10 +100,13 @@ class SettlementModel(Model):
 
 
     def step(self):
-        print(f"Running simulation step {self.steps}...")
-        #shuffles all agents and then executes their step module once for all of them
-        self.agents.shuffle_do("step")
-        print(f"{len(self.agents)} Agents executed their step module")
+
+        while self.simulated_time < self.simulation_end:
+            print(f"Running simulation step {self.steps}...")
+            #shuffles all agents and then executes their step module once for all of them
+
+            self.agents.shuffle_do("step")
+            print(f"{len(self.agents)} Agents executed their step module")
 
 
         #this has to be implemented later
