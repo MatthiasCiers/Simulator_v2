@@ -1,6 +1,6 @@
 #InstitutionAgent
 import time
-from random import random
+import random
 from datetime import datetime
 import SettlementModel
 from mesa import Agent, Model
@@ -51,6 +51,7 @@ class InstitutionAgent(Agent):
 
     def create_instruction(self):
         instruction_type = random.choice(['delivery', 'receipt'])
+
         cash_account = self.getSecurityAccounts(self, securityType= "Cash")
         random_security = random.choice(["Bond-A", "Bond-B", "Bond-C", "Bond-D"])
         security_account = self.getSecurityAccounts(self, securityType= random_security)
