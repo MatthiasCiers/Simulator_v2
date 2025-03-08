@@ -36,7 +36,7 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
 
         #takes the minimum of available securities of deliverer and available cash of seller
         available_to_settle = min(self.securitiesAccount.checkBalance(self.amount, self.securityType),
-                                  self.linkedTransaction.cashAccount.checkBalance(self.amount, self.securityType)
+                                  self.linkedTransaction.receiver.cashAccount.checkBalance(self.amount, self.securityType)
                                   )
 
         if available_securities > 0:

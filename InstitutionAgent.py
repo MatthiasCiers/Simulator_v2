@@ -40,12 +40,12 @@ class InstitutionAgent(Agent):
             return False
 
     def getSecurityAccounts(self, securityType:str):
-        security_accounts = []
+
         for account in self.accounts:
             if account.accountType == securityType:
-                security_accounts.append(account)
+                return account
 
-        return security_accounts
+
 
     def create_instruction(self):
         instruction_type = random.choice(['delivery', 'receipt'])
