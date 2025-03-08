@@ -51,8 +51,12 @@ class InstitutionAgent(Agent):
         instruction_type = random.choice(['delivery', 'receipt'])
 
         cash_account = self.getSecurityAccounts(securityType= "Cash")
-        random_security = random.choice(["Bond-A", "Bond-B", "Bond-C", "Bond-D"])
-        security_account = self.getSecurityAccounts(securityType= random_security)
+        # Filter available security accounts from the institution's accounts
+        security_accounts = [acc for acc in self.accounts if acc.accountType in self.model.bond_types]
+        if not security_accounts:
+            raise ValueError("No security accounts available for institution " + self.institutionID)
+        security_account = random.choice(security_accounts)
+        random_security = security_account.accountType  # Use the type from the chosen account
         amount = round(random.uniform(100, 10000), 2)
         model = self.model
         linkedTransaction = None
@@ -64,6 +68,20 @@ class InstitutionAgent(Agent):
         securityType = random_security
         other_institution_cash_account= other_institution.getSecurityAccounts(securityType= "Cash")
         other_institution_security_account = other_institution.getSecurityAccounts(securityType=securityType)
+        if other_institution_security_account is None:
+            # Create a new security account for the counterparty institution
+            new_security_account_id = SettlementModel.generate_iban()  # Generates an IBAN-like string
+            new_security_balance = round(random.uniform(5000, 200000), 2)  # Mimic the balance generation logic
+            new_security_account = Account.Account(
+                accountID=new_security_account_id,
+                accountType=securityType,
+                balance=new_security_balance,
+                creditLimit=0
+            )
+            # Add the new account to the institution's list of accounts
+            other_institution.accounts.append(new_security_account)
+            other_institution_security_account = new_security_account
+            self.model.accounts.append(new_security_account)
         isChild = False
         status = "Exists"
         linkcode = f"LINK-{uniqueID}L{otherID}"

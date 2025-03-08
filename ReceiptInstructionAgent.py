@@ -12,6 +12,7 @@ import TransactionAgent
 import DeliveryInstructionAgent
 
 
+
 class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
     def __init__(self, model: "SettlementModel", uniqueID: str, motherID: str, institution: "InstitutionAgent",
                  securitiesAccount: "Account", cashAccount: "Account", securityType: str, amount: float, isChild: bool,
@@ -37,34 +38,65 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
             self.uniqueID, is_transaction=True)
 
     def createReceiptChildren(self):
-        available_cash = self.cashAccount.checkBalance(self.amount, self.securityType)
+        # Calculate the actual available amounts using getBalance(), ensuring correct account types.
+        if self.cashAccount.getAccountType() != "Cash":
+            available_cash = 0
+        else:
+            available_cash = self.cashAccount.getBalance()
 
-        # takes the minimum of available securities of deliverer and available cash of seller
-        available_to_settle = min(self.linkedTransaction.securitiesAccount.checkBalance(self.amount, self.securityType),
-                                  self.cashAccount.checkBalance(self.amount, self.securityType)
-                                  )
+        deliverer = self.linkedTransaction.deliverer
+        if deliverer.securitiesAccount.getAccountType() != self.securityType:
+            available_securities = 0
+        else:
+            available_securities = deliverer.securitiesAccount.getBalance()
 
-        if available_cash > 0:
-            # create delivery children instructions
+        # Compute the amount that can actually be settled.
+        available_to_settle = min(self.amount, available_cash, available_securities)
 
-            # instant matching and settlement of first child not yet possible, because receipt_child_1 does not yet exist
-            receipt_child_1 = ReceiptInstructionAgent.ReceiptInstructionAgent(self.model, f"{self.uniqueID}_1", self.uniqueID,
-                                                self.institution, self.securitiesAccount, self.cashAccount,
-                                                self.securityType, available_to_settle, True, "Validated",
-                                                f"{self.linkcode}_1", creation_time=datetime.now(), TransactionAgent=None
-                                                )
-            receipt_child_2 = ReceiptInstructionAgent.ReceiptInstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
-                                                self.institution, self.securitiesAccount, self.cashAccount,
-                                                self.securityType, self.amount - available_to_settle, True,
-                                                "Validated", f"{self.linkcode}_2", creation_time=datetime.now(), TransactionAgent = None
-                                                )
-            # add child instructions to the model
-            self.model.schedule.add(receipt_child_1)
-            self.model.schedule.add(receipt_child_2)
-
+        if available_to_settle > 0:
+            # Create receipt child instructions with the computed amounts.
+            receipt_child_1 = ReceiptInstructionAgent(
+                self.model,
+                f"{self.uniqueID}_1",
+                self.uniqueID,
+                self.institution,
+                self.securitiesAccount,
+                self.cashAccount,
+                self.securityType,
+                available_to_settle,
+                True,
+                "Validated",
+                f"{self.linkcode}_1",
+                creation_time=datetime.now(),
+                linkedTransaction=None
+            )
+            receipt_child_2 = ReceiptInstructionAgent(
+                self.model,
+                f"{self.uniqueID}_2",
+                self.uniqueID,
+                self.institution,
+                self.securitiesAccount,
+                self.cashAccount,
+                self.securityType,
+                self.amount - available_to_settle,
+                True,
+                "Validated",
+                f"{self.linkcode}_2",
+                creation_time=datetime.now(),
+                linkedTransaction=None
+            )
+            # Add the new child instructions to the agents scheduler.
+            self.model.agents.add(receipt_child_1)
+            self.model.agents.add(receipt_child_2)
             return receipt_child_1, receipt_child_2
-
-
+        else:
+            # Log insufficient funds and return a tuple of Nones.
+            self.model.log_event(
+                f"ReceiptInstruction {self.uniqueID}: insufficient funds for partial settlement.",
+                self.uniqueID,
+                is_transaction=True
+            )
+            return (None, None)
 
     def match(self):
         """Matches this ReceiptInstructionAgent with a DeliveryInstructionAgent

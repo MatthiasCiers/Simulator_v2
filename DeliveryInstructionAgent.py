@@ -43,18 +43,19 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
             #create delivery children instructions
 
             #instant matching and settlement of first child not yet possible, because receipt_child_1 does not yet exist
-            delivery_child_1 = DeliveryInstructionAgent.DeliveryInstructionAgent(self.model, f"{self.uniqueID}_1", self.uniqueID,
+            delivery_child_1 = DeliveryInstructionAgent(self.model, f"{self.uniqueID}_1", self.uniqueID,
                                                 self.institution, self.securitiesAccount, self.cashAccount,
                                                 self.securityType, available_to_settle, True, "Validated", f"{self.linkcode}_1", datetime.now(), None
                                                 )
-            delivery_child_2 = DeliveryInstructionAgent.DeliveryInstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
+            delivery_child_2 = DeliveryInstructionAgent(self.model, f"{self.uniqueID}_2", self.uniqueID,
                                                 self.institution, self.securitiesAccount, self.cashAccount,
                                                 self.securityType, self.amount - available_to_settle, True, "Validated", f"{self.linkcode}_2", datetime.now(), None
                                                 )
             #add child instructions to the model
-            self.model.schedule.add(delivery_child_1)
-            self.model.schedule.add(delivery_child_2)
-
+            self.model.agents.add(delivery_child_1)
+            self.model.agents.add(delivery_child_2)
+            self.model.instructions.append(delivery_child_1)
+            self.model.instructions.append(delivery_child_2)
             return delivery_child_1, delivery_child_2
 
     def match(self):

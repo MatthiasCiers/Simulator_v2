@@ -23,7 +23,7 @@ class SettlementModel(Model):
         self.num_institutions = 5
         self.min_total_accounts = 2
         self.max_total_accounts = 6
-        self.simulation_duration_days = 1
+        self.simulation_duration_days = 0.3
         self.bond_types = ["Bond-A", "Bond-B", "Bond-C", "Bond-D"]
         self.steps_per_day = 500 #random chosen
 
@@ -101,7 +101,7 @@ class SettlementModel(Model):
 
     def step(self):
 
-        while self.simulated_time < self.simulation_end:
+
             print(f"Running simulation step {self.steps}...")
             #shuffles all agents and then executes their step module once for all of them
 
@@ -138,8 +138,9 @@ if __name__ == "__main__":
     if not log_path.strip():
         log_path = "event_log.csv"
     model = SettlementModel()
-    for _ in range(100):
+    while model.simulated_time < model.simulation_end:
         model.step()
+
     print("Final Event Log:")
     for event in model.event_log:
         print(event)

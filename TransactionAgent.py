@@ -25,10 +25,8 @@ class TransactionAgent(Agent):
         #logging
         self.model.log_event(f"Transaction {self.transactionID} attempting to settle.", self.transactionID, is_transaction = True)
         if self.deliverer.get_status() == "Matched" and self.receiver.get_status() == "Matched":
-            if (
-                #checks if full ammount can be settled
-                self.deliverer.securitiesAccount.checkBalance(self.deliverer.get_amount, self.deliverer.get_securityType)
-                and self.receiver.cashAccount.checkBalance(self.receiver.get_amount, self.receiver.get_securityType)
+            if (self.deliverer.securitiesAccount.checkBalance(self.deliverer.get_amount(), self.deliverer.get_securityType())
+                    and self.receiver.cashAccount.checkBalance(self.receiver.get_amount(), self.receiver.get_securityType())
             ):
                 if self.deliverer.get_amount() == self.receiver.get_amount():
                     #additional check that to be settled amounts are equal
@@ -61,20 +59,34 @@ class TransactionAgent(Agent):
                 self.model.log_event(f"Error: Transaction {self.transactionID} failed due to no cash or securities available", self.transactionID, is_transaction = True)
             else:
                 #handless partial settlement
+                # Inside the partial settlement block in TransactionAgent.settle()
                 if self.deliverer.get_institution().check_partial_allowed() and self.receiver.get_institution().check_partial_allowed():
-                    #check if institutions allow partial settlement
-                    delivery_child_1, delivery_child_2 = self.deliverer.createDeliveryChildren()
-                    receipt_child_1, receipt_child_2 = self.receiver.createReceiptChildren()
-                    child_transaction_1 = delivery_child_1.match()
-                    child_transaction_2 = delivery_child_2.match()
-                    child_transaction_1.settle()
-                    #logging:
-                    self.model.log_event(f"Transaction {self.transactionID} partially settled. Children {receipt_child_1.get_uniqueID}, {receipt_child_2.get_uniqueID}, {delivery_child_1.get_uniqueID} and {delivery_child_2.get_uniqueID} got created. Transactions {child_transaction_1} and {child_transaction_2} got created.", self.transactionID, is_transaction = True)
+                    delivery_children = self.deliverer.createDeliveryChildren()
+                    receipt_children = self.receiver.createReceiptChildren()
 
-                    self.cancel_partial()
+                    # Check if partial settlement children were created.
+                    if receipt_children == (None, None) or delivery_children == (None, None):
+                        self.model.log_event(
+                            f"Transaction {self.transactionID} partial settlement aborted due to insufficient funds.",
+                            self.transactionID,
+                            is_transaction=True
+                        )
+                        # Optionally, you can handle this scenario (e.g., cancel the transaction or retry later)
+                    else:
+                        delivery_child_1, delivery_child_2 = delivery_children
+                        receipt_child_1, receipt_child_2 = receipt_children
 
-
-
+                        child_transaction_1 = delivery_child_1.match()
+                        child_transaction_2 = delivery_child_2.match()
+                        child_transaction_1.settle()
+                        self.model.log_event(
+                            f"Transaction {self.transactionID} partially settled. Children {receipt_child_1.get_uniqueID()}, "
+                            f"{receipt_child_2.get_uniqueID()}, {delivery_child_1.get_uniqueID()} and {delivery_child_2.get_uniqueID()} created. "
+                            f"Transactions {child_transaction_1} and {child_transaction_2} created.",
+                            self.transactionID,
+                            is_transaction=True
+                        )
+                        self.cancel_partial()
 
     def step(self):
         if self.deliverer.is_instruction_time_out() or self.receiver.is_instruction_time_out():
