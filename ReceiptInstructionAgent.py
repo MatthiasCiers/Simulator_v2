@@ -7,6 +7,7 @@ if TYPE_CHECKING:
     from InstitutionAgent import InstitutionAgent
     from Account import Account
     from TransactionAgent import TransactionAgent
+    from DeliveryInstructionAgent import DeliveryInstructionAgent
 
 
 class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
@@ -60,3 +61,65 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
             self.model.schedule.add(receipt_child_2)
 
             return receipt_child_1, receipt_child_2
+
+
+
+    def match(self):
+        """Matches this ReceiptInstructionAgent with a DeliveryInstructionAgent
+        that has the same link code and creates a TransactionAgent."""
+
+        self.model.log_event(
+            f"Instruction {self.uniqueID} attempting to match",
+            self.uniqueID,
+            is_transaction=True
+        )
+
+        if self.status != "Validated":
+            self.model.log_event(
+                f"Error: Instruction {self.uniqueID} in wrong state, cannot match",
+                self.uniqueID,
+                is_transaction=True,
+            )
+            return None
+
+        # Find a matching DeliveryInstructionAgent
+        other_instruction = None
+        for agent in self.model.agents:
+            if (
+                    isinstance(agent, DeliveryInstructionAgent)  # Ensure it's a ReceiptInstructionAgent
+                    and agent.linkcode == self.linkcode  # Check if linkcodes match
+                    and agent.status == "Validated"  # Ensure the status is correct
+            ):
+                other_instruction = agent
+                break
+        else:
+            self.model.log_event(
+                f"ERROR: ReceiptInstruction {self.uniqueID} failed to match, no matching DeliveryInstruction found",
+                self.uniqueID,
+                is_transaction=True,
+            )
+            return None
+
+        # Create a transaction
+        transaction = TransactionAgent(
+            model=self.model,
+            transactionID=f"{self.uniqueID}_{other_instruction.uniqueID}",
+            deliverer=other_instruction,
+            receiver=self,
+            status="Matched",
+        )
+
+        # Link transaction to both instructions
+        self.linkedTransaction = transaction
+        other_instruction.linkedTransaction = transaction
+
+        # Update status
+        self.set_status("Matched")
+        other_instruction.set_status("Matched")
+
+        self.model.log_event(
+            f"ReceiptInstruction {self.uniqueID} matched with DeliveryInstruction {other_instruction.uniqueID}",
+            self.uniqueID,
+            is_transaction=True,
+        )
+        return transaction
