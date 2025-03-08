@@ -10,8 +10,6 @@ import DeliveryInstructionAgent
 import Account
 
 
-
-
 class InstitutionAgent(Agent):
 
     def __init__(self, model:SettlementModel, institutionID:str, accounts:list[Account] = [],allowPartial:bool = True):
@@ -52,9 +50,9 @@ class InstitutionAgent(Agent):
     def create_instruction(self):
         instruction_type = random.choice(['delivery', 'receipt'])
 
-        cash_account = self.getSecurityAccounts(self, securityType= "Cash")
+        cash_account = self.getSecurityAccounts(securityType= "Cash")
         random_security = random.choice(["Bond-A", "Bond-B", "Bond-C", "Bond-D"])
-        security_account = self.getSecurityAccounts(self, securityType= random_security)
+        security_account = self.getSecurityAccounts(securityType= random_security)
         amount = round(random.uniform(100, 10000), 2)
         model = self.model
         linkedTransaction = None
@@ -68,7 +66,7 @@ class InstitutionAgent(Agent):
         other_institution_security_account = other_institution.getSecurityAccounts(securityType=securityType)
         isChild = False
         status = "Exists"
-        linkcode = "LINK-"+ uniqueID + "L" + otherID
+        linkcode = f"LINK-{uniqueID}L{otherID}"
         instruction_creation_time = datetime.now()
         counter_instruction_creation_time = self.model.random_timestamp()
 
@@ -106,7 +104,7 @@ class InstitutionAgent(Agent):
             self.create_cancelation_instruction()
 
         if random.random() < 0.01:
-            if self.allow_partial:
+            if self.allowPartial:
                 self.opt_out_partial()
             else:
                 self.opt_in_partial()

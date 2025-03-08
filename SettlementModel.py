@@ -29,7 +29,7 @@ class SettlementModel(Model):
 
 
         self.simulation_start = datetime.now()
-        self.participants = []
+        self.institutions = []
         self.accounts = []
         self.instructions = []
         self.transactions = []
@@ -45,7 +45,7 @@ class SettlementModel(Model):
         return random_time  # Now returns a datetime object
 
     def log_event(self, message, agent_id, is_transaction=True):
-        timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         log_entry = {'Timestamp': timestamp, 'Agent ID': agent_id, 'Event': message}
 
         if is_transaction:
@@ -93,7 +93,7 @@ class SettlementModel(Model):
                 inst_accounts.append(new_security_Account)
                 self.accounts.append(new_security_Account)
             new_institution = InstitutionAgent.InstitutionAgent(institutionID= inst_id, accounts= inst_accounts, model=self, allowPartial=True)
-            self.participants.append(new_institution)
+            self.institutions.append(new_institution)
 
 
 
@@ -102,7 +102,7 @@ class SettlementModel(Model):
         print(f"Running simulation step {self.steps}...")
         #shuffles all agents and then executes their step module once for all of them
         self.agents.shuffle_do("step")
-        print(len(self.agents) + "Agents executed their step module")
+        print(f"{len(self.agents)} Agents executed their step module")
 
 
         #this has to be implemented later
