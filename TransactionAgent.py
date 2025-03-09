@@ -52,6 +52,11 @@ class TransactionAgent(Agent):
 
                     #logging
                     self.model.log_event(f"Transaction {self.transactionID} settled fully.", self.transactionID, is_transaction = True)
+                    #remove the transaction and instructions from the model if fully settled
+                    self.model.agents.remove(self)
+                    self.model.agents.remove(self.deliverer)
+                    self.model.agents.remove(self.receiver)
+
 
             elif self.deliverer.get_amount() == 0 or self.receiver.get_amount() == 0:
                 #will do nothing if there is no cash or securities available
@@ -103,11 +108,19 @@ class TransactionAgent(Agent):
         self.status = "Cancelled due to timeout"
         # logging
         self.model.log_event(f"Transaction {self.transactionID} cancelled due to timeout.", self.transactionID, is_transaction=True)
-        pass
+        # remove transition and instructions from the model when cancelled
+        self.model.agents.remove(self)
+        self.model.agents.remove(self.deliverer)
+        self.model.agents.remove(self.receiver)
+
 
     def cancel_partial(self):
         self.status = "Cancelled due to partial settlement"
+
         #logging
         self.model.log_event(f"Transaction {self.transactionID} cancelled due to partial settlement.", self.transactionID, is_transaction = True)
-
+        #remove transition and instructions from the model when cancelled
+        self.model.agents.remove(self)
+        self.model.agents.remove(self.deliverer)
+        self.model.agents.remove(self.receiver)
 
