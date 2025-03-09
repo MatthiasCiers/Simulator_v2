@@ -23,7 +23,8 @@ class SettlementModel(Model):
         self.num_institutions = 5
         self.min_total_accounts = 2
         self.max_total_accounts = 6
-        self.simulation_duration_days = 0.3
+        self.simulation_duration_days = 0.02
+        self.min_settlement_amount = 100
         self.bond_types = ["Bond-A", "Bond-B", "Bond-C", "Bond-D"]
         self.steps_per_day = 500 #random chosen
 
@@ -73,28 +74,36 @@ class SettlementModel(Model):
         print(f"Event Log saved to {filename}")
 
     def generate_data(self):
+        print("Generated Data:")
+        print("-----------------------------------------")
         for i in range(1, self.num_institutions+ 1):
+            print("-------------------------------------")
             inst_id = f"INST-{i}"
             inst_accounts = []
             total_accounts = random.randint(self.min_total_accounts, self.max_total_accounts)
             #generate cash account => there has to be at least 1 cash account
             new_cash_accountID = generate_iban()
             new_cash_accountType = "Cash"
-            new_cash_balance =  round(random.uniform(5000, 200000), 2)
+            new_cash_balance =  round(random.uniform(100000, 200000), 2)
             new_cash_creditLimit = round(random.uniform(100000, 500000), 2)
             new_cash_Account = Account.Account(accountID=new_cash_accountID, accountType= new_cash_accountType, balance= new_cash_balance, creditLimit=new_cash_creditLimit)
             inst_accounts.append(new_cash_Account)
             self.accounts.append(new_cash_Account)
+            print(new_cash_Account.__repr__())
             for _ in range(total_accounts - 1):
                 new_security_accountID = generate_iban()
                 new_security_accountType = random.choice(self.bond_types)
-                new_security_balance = round(random.uniform(5000, 200000), 2)
+                new_security_balance = round(random.uniform(100000, 200000), 2)
                 new_security_creditLimit = 0
                 new_security_Account = Account.Account(accountID=new_security_accountID, accountType= new_security_accountType, balance= new_security_balance, creditLimit= new_security_creditLimit)
                 inst_accounts.append(new_security_Account)
                 self.accounts.append(new_security_Account)
+                print(new_security_Account.__repr__())
             new_institution = InstitutionAgent.InstitutionAgent(institutionID= inst_id, accounts= inst_accounts, model=self, allowPartial=True)
             self.institutions.append(new_institution)
+            print(new_institution.__repr__())
+        print("-------------------------------------------------------")
+        print("Data generation ended")
 
 
 
@@ -138,8 +147,11 @@ if __name__ == "__main__":
     if not log_path.strip():
         log_path = "event_log.csv"
     model = SettlementModel()
-    while model.simulated_time < model.simulation_end:
-        model.step()
+    try:
+        while model.simulated_time < model.simulation_end:
+            model.step()
+    except RecursionError:
+        print("RecursionError encountered: maximum recursion depth exceeded. Terminating simulation gracefully.")
 
     print("Final Event Log:")
     for event in model.event_log:

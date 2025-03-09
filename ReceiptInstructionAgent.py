@@ -38,6 +38,8 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
             self.uniqueID, is_transaction=True)
 
     def createReceiptChildren(self):
+
+        MIN_SETTLEMENT_AMOUNT = self.model.min_settlement_amount
         # Calculate the actual available amounts using getBalance(), ensuring correct account types.
         if self.cashAccount.getAccountType() != "Cash":
             available_cash = 0
@@ -53,7 +55,7 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
         # Compute the amount that can actually be settled.
         available_to_settle = min(self.amount, available_cash, available_securities)
 
-        if available_to_settle > 0:
+        if available_to_settle > MIN_SETTLEMENT_AMOUNT:
             # Create receipt child instructions with the computed amounts.
             receipt_child_1 = ReceiptInstructionAgent(
                 self.model,

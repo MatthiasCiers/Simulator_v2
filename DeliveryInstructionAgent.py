@@ -32,14 +32,23 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
         self.model.log_event(f"Delivery instruction with ID {uniqueID} created by institution {institution.institutionID} for {securityType} for amount {amount}", self.uniqueID, is_transaction = True)
 
     def createDeliveryChildren(self):
-        available_securities = self.securitiesAccount.checkBalance(self.amount, self.securityType)
 
-        #takes the minimum of available securities of deliverer and available cash of seller
-        available_to_settle = min(self.securitiesAccount.checkBalance(self.amount, self.securityType),
-                                  self.linkedTransaction.receiver.cashAccount.checkBalance(self.amount, self.securityType)
-                                  )
+        MIN_SETTLEMENT_AMOUNT = self.model.min_settlement_amount  # Define a minimum settlement threshold
+        if self.securitiesAccount.getAccountType() != self.securityType:
+            available_securities = 0
+        else:
+            available_securities = self.securitiesAccount.getBalance()
 
-        if available_securities > 0:
+        receiver = self.linkedTransaction.receiver
+        if receiver.cashAccount.getAccountType() != "Cash":
+            available_cash = 0
+        else:
+            available_cash = receiver.cashAccount.getBalance()
+
+        #takes the minimum of available securities of deliverer and available cash of seller and not more than the amount
+        available_to_settle = min(self.amount, available_cash, available_securities)
+
+        if available_securities > MIN_SETTLEMENT_AMOUNT:
             #create delivery children instructions
 
             #instant matching and settlement of first child not yet possible, because receipt_child_1 does not yet exist
@@ -57,6 +66,14 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
             self.model.instructions.append(delivery_child_1)
             self.model.instructions.append(delivery_child_2)
             return delivery_child_1, delivery_child_2
+        else:
+            # Log insufficient funds and return a tuple of Nones.
+            self.model.log_event(
+                f"ReceiptInstruction {self.uniqueID}: insufficient funds for partial settlement.",
+                self.uniqueID,
+                is_transaction=True
+            )
+            return (None, None)
 
     def match(self):
         """Matches this DeliveryInstructionAgent with a ReceiptInstructionAgent

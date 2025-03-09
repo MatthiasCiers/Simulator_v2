@@ -57,7 +57,7 @@ class InstitutionAgent(Agent):
             raise ValueError("No security accounts available for institution " + self.institutionID)
         security_account = random.choice(security_accounts)
         random_security = security_account.accountType  # Use the type from the chosen account
-        amount = round(random.uniform(100, 10000), 2)
+        amount = round(random.uniform(10000, 100000), 2)
         model = self.model
         linkedTransaction = None
         uniqueID = len(self.model.instructions) + 1
@@ -128,4 +128,20 @@ class InstitutionAgent(Agent):
                 self.opt_in_partial()
         self.model.simulated_time = self.model.simulated_time + timedelta(seconds=1)
 
+    def get_full_institution_info(self):
+        """
+        Return a dictionary with all institution attributes,
+        including a detailed list of its accounts.
+        """
+        return {
+            "institutionID": self.institutionID,
+            "allowPartial": self.allowPartial,
+            "accounts": [account.get_full_account_info() for account in self.accounts]
+        }
 
+    def __repr__(self):
+        return (
+            f"InstitutionAgent(institutionID={self.institutionID}, "
+            f"allowPartial={self.allowPartial}, "
+            f"accounts={self.accounts})"
+        )
