@@ -74,7 +74,7 @@ class SettlementModel(Model):
         print(f"Event Log saved to {filename}")
 
     def generate_data(self):
-        print("Generated Data:")
+        print("Generate Accounts & Institutions:")
         print("-----------------------------------------")
         for i in range(1, self.num_institutions+ 1):
             print("-------------------------------------")
@@ -103,7 +103,7 @@ class SettlementModel(Model):
             self.institutions.append(new_institution)
             print(new_institution.__repr__())
         print("-------------------------------------------------------")
-        print("Data generation ended")
+        print("Accounts & Institutions generated")
 
 
 
