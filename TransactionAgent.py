@@ -24,7 +24,7 @@ class TransactionAgent(Agent):
     def settle(self):
         #logging
         self.model.log_event(f"Transaction {self.transactionID} attempting to settle.", self.transactionID, is_transaction = True)
-        if self.deliverer.get_status() == "Matched" and self.receiver.get_status() == "Matched":
+        if self.deliverer.get_status() == "Matched" and self.receiver.get_status() == "Matched" and self.status == "Matched":
             if (self.deliverer.securitiesAccount.checkBalance(self.deliverer.get_amount(), self.deliverer.get_securityType())
                     and self.receiver.cashAccount.checkBalance(self.receiver.get_amount(), "Cash")
             ):
@@ -82,11 +82,13 @@ class TransactionAgent(Agent):
                         self.model.log_event(
                             f"Transaction {self.transactionID} partially settled. Children {receipt_child_1.get_uniqueID()}, "
                             f"{receipt_child_2.get_uniqueID()}, {delivery_child_1.get_uniqueID()} and {delivery_child_2.get_uniqueID()} created. "
-                            f"Transactions {child_transaction_1} and {child_transaction_2} created.",
+                            f"Transactions {child_transaction_1.transactionID} and {child_transaction_2.transactionID} created.",
                             self.transactionID,
                             is_transaction=True
                         )
                         self.cancel_partial()
+        else:
+            self.model.log_event(f"One of the instructions or transaction not in the correct state", self.transactionID, is_transaction = True)
 
     def step(self):
         if self.deliverer.is_instruction_time_out() or self.receiver.is_instruction_time_out():

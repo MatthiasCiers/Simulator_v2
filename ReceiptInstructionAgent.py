@@ -130,7 +130,7 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
                 break
         else:
             self.model.log_event(
-                f"ERROR: ReceiptInstruction {self.uniqueID} failed to match, no matching DeliveryInstruction found",
+                f"ERROR: ReceiptInstruction {self.uniqueID} failed to match, DeliveryInstruction not yet validated",
                 self.uniqueID,
                 is_transaction=True,
             )

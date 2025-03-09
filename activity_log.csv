@@ -1,973 +1,940 @@
 Timestamp,Agent ID,Event
-2025-03-09 11:10:23,1,Delivery instruction with ID 1 created by institution INST-4 for Bond-B for amount 96452.66
-2025-03-09 11:10:23,2,Receipt instruction with ID 2 created by institution INST-3 for Bond-B for amount 96452.66
-2025-03-09 11:10:24,3,Delivery instruction with ID 3 created by institution INST-2 for Bond-B for amount 40582.24
-2025-03-09 11:10:24,4,Receipt instruction with ID 4 created by institution INST-5 for Bond-B for amount 40582.24
-2025-03-09 11:10:25,1,Instruction 1 inserted.
-2025-03-09 11:10:26,2,Instruction 2 inserted.
-2025-03-09 11:10:27,5,Receipt instruction with ID 5 created by institution INST-4 for Bond-A for amount 30304.85
-2025-03-09 11:10:27,6,Delivery instruction with ID 6 created by institution INST-2 for Bond-A for amount 30304.85
-2025-03-09 11:10:28,4,Instruction 4 inserted.
-2025-03-09 11:10:30,7,Delivery instruction with ID 7 created by institution INST-2 for Bond-B for amount 43802.65
-2025-03-09 11:10:30,8,Receipt instruction with ID 8 created by institution INST-4 for Bond-B for amount 43802.65
-2025-03-09 11:10:33,3,Instruction 3 inserted.
-2025-03-09 11:10:34,4,Instruction 4 validated.
-2025-03-09 11:10:35,5,Instruction 5 inserted.
-2025-03-09 11:10:36,1,Instruction 1 validated.
-2025-03-09 11:10:37,2,Instruction 2 validated.
-2025-03-09 11:10:38,7,Instruction 7 inserted.
-2025-03-09 11:10:39,9,Delivery instruction with ID 9 created by institution INST-4 for Bond-A for amount 92528.7
-2025-03-09 11:10:39,10,Receipt instruction with ID 10 created by institution INST-3 for Bond-A for amount 92528.7
-2025-03-09 11:10:41,6,Instruction 6 inserted.
-2025-03-09 11:10:42,8,Instruction 8 inserted.
-2025-03-09 11:10:43,11,Receipt instruction with ID 11 created by institution INST-5 for Bond-B for amount 94189.5
-2025-03-09 11:10:43,12,Delivery instruction with ID 12 created by institution INST-3 for Bond-B for amount 94189.5
-2025-03-09 11:10:44,13,Delivery instruction with ID 13 created by institution INST-2 for Bond-B for amount 54835.82
-2025-03-09 11:10:44,14,Receipt instruction with ID 14 created by institution INST-1 for Bond-B for amount 54835.82
-2025-03-09 11:10:46,3,Instruction 3 validated.
-2025-03-09 11:10:47,8,Instruction 8 validated.
-2025-03-09 11:10:48,5,Instruction 5 validated.
-2025-03-09 11:10:50,6,Instruction 6 validated.
-2025-03-09 11:10:51,3,Instruction 3 attempting to match
-2025-03-09 11:10:51,3,DeliveryInstruction 3 matched with ReceiptInstruction 4
-2025-03-09 11:10:53,9,Instruction 9 inserted.
-2025-03-09 11:10:54,7,Instruction 7 validated.
-2025-03-09 11:10:55,10,Instruction 10 inserted.
-2025-03-09 11:10:57,15,Receipt instruction with ID 15 created by institution INST-1 for Bond-D for amount 60846.83
-2025-03-09 11:10:57,16,Delivery instruction with ID 16 created by institution INST-5 for Bond-D for amount 60846.83
-2025-03-09 11:10:58,2,Instruction 2 attempting to match
-2025-03-09 11:10:58,2,ReceiptInstruction 2 matched with DeliveryInstruction 1
-2025-03-09 11:11:01,14,Instruction 14 inserted.
-2025-03-09 11:11:02,11,Instruction 11 inserted.
-2025-03-09 11:11:04,13,Instruction 13 inserted.
-2025-03-09 11:11:05,12,Instruction 12 inserted.
-2025-03-09 11:11:06,10,Instruction 10 validated.
-2025-03-09 11:11:07,13,Instruction 13 validated.
-2025-03-09 11:11:08,8,Instruction 8 attempting to match
-2025-03-09 11:11:08,8,ReceiptInstruction 8 matched with DeliveryInstruction 7
-2025-03-09 11:11:11,14,Instruction 14 validated.
-2025-03-09 11:11:12,15,Instruction 15 inserted.
-2025-03-09 11:11:13,5,Instruction 5 attempting to match
-2025-03-09 11:11:13,5,ReceiptInstruction 5 matched with DeliveryInstruction 6
-2025-03-09 11:11:15,16,Instruction 16 inserted.
-2025-03-09 11:11:18,17,Receipt instruction with ID 17 created by institution INST-4 for Bond-B for amount 57785.85
-2025-03-09 11:11:18,18,Delivery instruction with ID 18 created by institution INST-3 for Bond-B for amount 57785.85
-2025-03-09 11:11:19,12,Instruction 12 validated.
-2025-03-09 11:11:23,9,Instruction 9 validated.
-2025-03-09 11:11:24,11,Instruction 11 validated.
-2025-03-09 11:11:25,2_1,Transaction 2_1 attempting to settle.
-2025-03-09 11:11:25,2_1,Transaction 2_1 settled fully.
-2025-03-09 11:11:26,19,Delivery instruction with ID 19 created by institution INST-5 for Bond-B for amount 33211.72
-2025-03-09 11:11:26,20,Receipt instruction with ID 20 created by institution INST-3 for Bond-B for amount 33211.72
-2025-03-09 11:11:28,3_4,Transaction 3_4 attempting to settle.
-2025-03-09 11:11:28,3_4,Transaction 3_4 settled fully.
-2025-03-09 11:11:30,19,Instruction 19 inserted.
-2025-03-09 11:11:32,8_7,Transaction 8_7 attempting to settle.
-2025-03-09 11:11:32,8_7,Transaction 8_7 settled fully.
-2025-03-09 11:11:36,21,Delivery instruction with ID 21 created by institution INST-1 for Bond-D for amount 23071.93
-2025-03-09 11:11:36,22,Receipt instruction with ID 22 created by institution INST-5 for Bond-D for amount 23071.93
-2025-03-09 11:11:37,14,Instruction 14 attempting to match
-2025-03-09 11:11:37,14,ReceiptInstruction 14 matched with DeliveryInstruction 13
-2025-03-09 11:11:38,11,Instruction 11 attempting to match
-2025-03-09 11:11:38,11,ReceiptInstruction 11 matched with DeliveryInstruction 12
-2025-03-09 11:11:39,16,Instruction 16 validated.
-2025-03-09 11:11:40,17,Instruction 17 inserted.
-2025-03-09 11:11:41,23,Receipt instruction with ID 23 created by institution INST-3 for Bond-A for amount 38779.2
-2025-03-09 11:11:41,24,Delivery instruction with ID 24 created by institution INST-4 for Bond-A for amount 38779.2
-2025-03-09 11:11:44,20,Instruction 20 inserted.
-2025-03-09 11:11:45,10,Instruction 10 attempting to match
-2025-03-09 11:11:45,10,ReceiptInstruction 10 matched with DeliveryInstruction 9
-2025-03-09 11:11:47,18,Instruction 18 inserted.
-2025-03-09 11:11:49,25,Receipt instruction with ID 25 created by institution INST-2 for Bond-B for amount 44608.53
-2025-03-09 11:11:49,26,Delivery instruction with ID 26 created by institution INST-1 for Bond-B for amount 44608.53
-2025-03-09 11:11:50,27,Delivery instruction with ID 27 created by institution INST-5 for Bond-A for amount 83212.44
-2025-03-09 11:11:50,28,Receipt instruction with ID 28 created by institution INST-1 for Bond-A for amount 83212.44
-2025-03-09 11:11:53,5_6,Transaction 5_6 attempting to settle.
-2025-03-09 11:11:53,5_6,Transaction 5_6 settled fully.
-2025-03-09 11:11:55,29,Delivery instruction with ID 29 created by institution INST-4 for Bond-A for amount 57282.56
-2025-03-09 11:11:55,30,Receipt instruction with ID 30 created by institution INST-1 for Bond-A for amount 57282.56
-2025-03-09 11:11:56,15,Instruction 15 validated.
-2025-03-09 11:11:59,11_12,Transaction 11_12 attempting to settle.
-2025-03-09 11:11:59,11_12,Transaction 11_12 settled fully.
-2025-03-09 11:12:01,26,Instruction 26 inserted.
-2025-03-09 11:12:02,21,Instruction 21 inserted.
-2025-03-09 11:12:03,17,Instruction 17 validated.
-2025-03-09 11:12:04,14_13,Transaction 14_13 attempting to settle.
-2025-03-09 11:12:04,13_1,Delivery instruction with ID 13_1 created by institution INST-2 for Bond-B for amount 21080.28
-2025-03-09 11:12:04,13_2,Delivery instruction with ID 13_2 created by institution INST-2 for Bond-B for amount 33755.54
-2025-03-09 11:12:04,14_1,Receipt instruction with ID 14_1 created by institution INST-1 for Bond-B for amount 21080.28
-2025-03-09 11:12:04,14_2,Receipt instruction with ID 14_2 created by institution INST-1 for Bond-B for amount 33755.54
-2025-03-09 11:12:04,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:12:04,13_1,DeliveryInstruction 13_1 matched with ReceiptInstruction 14_1
-2025-03-09 11:12:04,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:12:04,13_2,DeliveryInstruction 13_2 matched with ReceiptInstruction 14_2
-2025-03-09 11:12:04,13_1_14_1,Transaction 13_1_14_1 attempting to settle.
-2025-03-09 11:12:04,13_1_14_1,Transaction 13_1_14_1 settled fully.
-2025-03-09 11:12:04,14_13,"Transaction 14_13 partially settled. Children 14_1, 14_2, 13_1 and 13_2 created. Transactions <TransactionAgent.TransactionAgent object at 0x0000025245D328B0> and <TransactionAgent.TransactionAgent object at 0x0000025245D46650> created."
-2025-03-09 11:12:04,14_13,Transaction 14_13 cancelled due to partial settlement.
-2025-03-09 11:12:08,22,Instruction 22 inserted.
-2025-03-09 11:12:10,25,Instruction 25 inserted.
-2025-03-09 11:12:11,29,Instruction 29 inserted.
-2025-03-09 11:12:14,27,Instruction 27 inserted.
-2025-03-09 11:12:17,15,Instruction 15 attempting to match
-2025-03-09 11:12:17,15,ReceiptInstruction 15 matched with DeliveryInstruction 16
-2025-03-09 11:12:18,10_9,Transaction 10_9 attempting to settle.
-2025-03-09 11:12:18,10_9,Transaction 10_9 settled fully.
-2025-03-09 11:12:21,33,Receipt instruction with ID 33 created by institution INST-4 for Bond-B for amount 66542.55
-2025-03-09 11:12:21,34,Delivery instruction with ID 34 created by institution INST-3 for Bond-B for amount 66542.55
-2025-03-09 11:12:22,35,Receipt instruction with ID 35 created by institution INST-5 for Bond-A for amount 97804.08
-2025-03-09 11:12:22,36,Delivery instruction with ID 36 created by institution INST-4 for Bond-A for amount 97804.08
-2025-03-09 11:12:25,23,Instruction 23 inserted.
-2025-03-09 11:12:28,18,Instruction 18 validated.
-2025-03-09 11:12:29,37,Receipt instruction with ID 37 created by institution INST-3 for Bond-D for amount 53458.98
-2025-03-09 11:12:29,38,Delivery instruction with ID 38 created by institution INST-1 for Bond-D for amount 53458.98
-2025-03-09 11:12:32,20,Instruction 20 validated.
-2025-03-09 11:12:33,30,Instruction 30 inserted.
-2025-03-09 11:12:36,19,Instruction 19 validated.
-2025-03-09 11:12:37,28,Instruction 28 inserted.
-2025-03-09 11:12:38,24,Instruction 24 inserted.
-2025-03-09 11:12:41,24,Instruction 24 validated.
-2025-03-09 11:12:42,19,Instruction 19 attempting to match
-2025-03-09 11:12:42,19,DeliveryInstruction 19 matched with ReceiptInstruction 20
-2025-03-09 11:12:43,22,Instruction 22 validated.
-2025-03-09 11:12:46,14_13,Transaction 14_13 attempting to settle.
-2025-03-09 11:12:46,13,ReceiptInstruction 13: insufficient funds for partial settlement.
-2025-03-09 11:12:46,14,ReceiptInstruction 14: insufficient funds for partial settlement.
-2025-03-09 11:12:46,14_13,Transaction 14_13 partial settlement aborted due to insufficient funds.
-2025-03-09 11:12:47,39,Delivery instruction with ID 39 created by institution INST-5 for Bond-B for amount 67087.94
-2025-03-09 11:12:47,40,Receipt instruction with ID 40 created by institution INST-4 for Bond-B for amount 67087.94
-2025-03-09 11:12:48,37,Instruction 37 inserted.
-2025-03-09 11:12:51,30,Instruction 30 validated.
-2025-03-09 11:12:53,38,Instruction 38 inserted.
-2025-03-09 11:12:54,41,Receipt instruction with ID 41 created by institution INST-4 for Bond-A for amount 21819.3
-2025-03-09 11:12:54,42,Delivery instruction with ID 42 created by institution INST-1 for Bond-A for amount 21819.3
-2025-03-09 11:12:56,15_16,Transaction 15_16 attempting to settle.
-2025-03-09 11:12:56,15_16,Transaction 15_16 settled fully.
-2025-03-09 11:12:58,28,Instruction 28 validated.
-2025-03-09 11:13:01,25,Instruction 25 validated.
-2025-03-09 11:13:04,36,Instruction 36 inserted.
-2025-03-09 11:13:05,43,Delivery instruction with ID 43 created by institution INST-3 for Bond-C for amount 75029.2
-2025-03-09 11:13:05,44,Receipt instruction with ID 44 created by institution INST-1 for Bond-C for amount 75029.2
-2025-03-09 11:13:06,23,Instruction 23 validated.
-2025-03-09 11:13:09,13_2_14_2,Transaction 13_2_14_2 attempting to settle.
-2025-03-09 11:13:09,13_2,ReceiptInstruction 13_2: insufficient funds for partial settlement.
-2025-03-09 11:13:09,14_2,ReceiptInstruction 14_2: insufficient funds for partial settlement.
-2025-03-09 11:13:09,13_2_14_2,Transaction 13_2_14_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:13:10,17,Instruction 17 attempting to match
-2025-03-09 11:13:10,17,ReceiptInstruction 17 matched with DeliveryInstruction 18
-2025-03-09 11:13:12,27,Instruction 27 validated.
-2025-03-09 11:13:17,34,Instruction 34 inserted.
-2025-03-09 11:13:20,29,Instruction 29 validated.
-2025-03-09 11:13:27,33,Instruction 33 inserted.
-2025-03-09 11:13:31,21,Instruction 21 validated.
-2025-03-09 11:13:32,26,Instruction 26 validated.
-2025-03-09 11:13:33,35,Instruction 35 inserted.
-2025-03-09 11:13:35,45,Delivery instruction with ID 45 created by institution INST-5 for Bond-A for amount 23065.87
-2025-03-09 11:13:35,46,Receipt instruction with ID 46 created by institution INST-1 for Bond-A for amount 23065.87
-2025-03-09 11:13:36,23,Instruction 23 attempting to match
-2025-03-09 11:13:36,23,ReceiptInstruction 23 matched with DeliveryInstruction 24
-2025-03-09 11:13:37,40,Instruction 40 inserted.
-2025-03-09 11:13:39,33,Instruction 33 validated.
-2025-03-09 11:13:40,27,Instruction 27 attempting to match
-2025-03-09 11:13:40,27,DeliveryInstruction 27 matched with ReceiptInstruction 28
-2025-03-09 11:13:42,17_18,Transaction 17_18 attempting to settle.
-2025-03-09 11:13:42,17_18,Transaction 17_18 settled fully.
-2025-03-09 11:13:43,29,Instruction 29 attempting to match
-2025-03-09 11:13:43,29,DeliveryInstruction 29 matched with ReceiptInstruction 30
-2025-03-09 11:13:44,37,Instruction 37 validated.
-2025-03-09 11:13:45,42,Instruction 42 inserted.
-2025-03-09 11:13:46,41,Instruction 41 inserted.
-2025-03-09 11:13:51,39,Instruction 39 inserted.
-2025-03-09 11:13:54,38,Instruction 38 validated.
-2025-03-09 11:13:57,47,Receipt instruction with ID 47 created by institution INST-1 for Bond-D for amount 31342.78
-2025-03-09 11:13:57,48,Delivery instruction with ID 48 created by institution INST-2 for Bond-D for amount 31342.78
-2025-03-09 11:14:00,35,Instruction 35 validated.
-2025-03-09 11:14:01,44,Instruction 44 inserted.
-2025-03-09 11:14:10,49,Receipt instruction with ID 49 created by institution INST-4 for Bond-B for amount 53983.02
-2025-03-09 11:14:10,50,Delivery instruction with ID 50 created by institution INST-5 for Bond-B for amount 53983.02
-2025-03-09 11:14:12,34,Instruction 34 validated.
-2025-03-09 11:14:15,25,Instruction 25 attempting to match
-2025-03-09 11:14:15,25,ReceiptInstruction 25 matched with DeliveryInstruction 26
-2025-03-09 11:14:24,36,Instruction 36 validated.
-2025-03-09 11:14:25,43,Instruction 43 inserted.
-2025-03-09 11:14:30,21,Instruction 21 attempting to match
-2025-03-09 11:14:30,21,DeliveryInstruction 21 matched with ReceiptInstruction 22
-2025-03-09 11:14:31,51,Delivery instruction with ID 51 created by institution INST-3 for Bond-C for amount 66644.53
-2025-03-09 11:14:31,52,Receipt instruction with ID 52 created by institution INST-5 for Bond-C for amount 66644.53
-2025-03-09 11:14:33,19_20,Transaction 19_20 attempting to settle.
-2025-03-09 11:14:33,19_20,Transaction 19_20 settled fully.
-2025-03-09 11:14:35,14_13,Transaction 14_13 attempting to settle.
-2025-03-09 11:14:35,13,ReceiptInstruction 13: insufficient funds for partial settlement.
-2025-03-09 11:14:35,14,ReceiptInstruction 14: insufficient funds for partial settlement.
-2025-03-09 11:14:35,14_13,Transaction 14_13 partial settlement aborted due to insufficient funds.
-2025-03-09 11:14:37,13_2_14_2,Transaction 13_2_14_2 attempting to settle.
-2025-03-09 11:14:37,13_2,ReceiptInstruction 13_2: insufficient funds for partial settlement.
-2025-03-09 11:14:37,14_2,ReceiptInstruction 14_2: insufficient funds for partial settlement.
-2025-03-09 11:14:37,13_2_14_2,Transaction 13_2_14_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:14:39,46,Instruction 46 inserted.
-2025-03-09 11:14:43,53,Receipt instruction with ID 53 created by institution INST-2 for Bond-B for amount 76521.09
-2025-03-09 11:14:43,54,Delivery instruction with ID 54 created by institution INST-1 for Bond-B for amount 76521.09
-2025-03-09 11:14:45,38,Instruction 38 attempting to match
-2025-03-09 11:14:45,38,DeliveryInstruction 38 matched with ReceiptInstruction 37
-2025-03-09 11:14:47,44,Instruction 44 validated.
-2025-03-09 11:14:48,34,Instruction 34 attempting to match
-2025-03-09 11:14:48,34,DeliveryInstruction 34 matched with ReceiptInstruction 33
-2025-03-09 11:14:49,48,Instruction 48 inserted.
-2025-03-09 11:14:50,43,Instruction 43 validated.
-2025-03-09 11:14:51,21_22,Transaction 21_22 attempting to settle.
-2025-03-09 11:14:51,21_22,Transaction 21_22 settled fully.
-2025-03-09 11:14:53,29_30,Transaction 29_30 attempting to settle.
-2025-03-09 11:14:53,29_30,Transaction 29_30 settled fully.
-2025-03-09 11:15:00,50,Instruction 50 inserted.
-2025-03-09 11:15:03,39,Instruction 39 validated.
-2025-03-09 11:15:06,47,Instruction 47 inserted.
-2025-03-09 11:15:08,45,Instruction 45 inserted.
-2025-03-09 11:15:10,41,Instruction 41 validated.
-2025-03-09 11:15:12,13_2_14_2,Transaction 13_2_14_2 attempting to settle.
-2025-03-09 11:15:12,13_2,ReceiptInstruction 13_2: insufficient funds for partial settlement.
-2025-03-09 11:15:12,14_2,ReceiptInstruction 14_2: insufficient funds for partial settlement.
-2025-03-09 11:15:12,13_2_14_2,Transaction 13_2_14_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:15:15,14_13,Transaction 14_13 attempting to settle.
-2025-03-09 11:15:15,13,ReceiptInstruction 13: insufficient funds for partial settlement.
-2025-03-09 11:15:15,14,ReceiptInstruction 14: insufficient funds for partial settlement.
-2025-03-09 11:15:15,14_13,Transaction 14_13 partial settlement aborted due to insufficient funds.
-2025-03-09 11:15:17,23_24,Transaction 23_24 attempting to settle.
-2025-03-09 11:15:17,23_24,Transaction 23_24 settled fully.
-2025-03-09 11:15:19,40,Instruction 40 validated.
-2025-03-09 11:15:20,25_26,Transaction 25_26 attempting to settle.
-2025-03-09 11:15:20,25_26,Transaction 25_26 settled fully.
-2025-03-09 11:15:25,49,Instruction 49 inserted.
-2025-03-09 11:15:26,51,Instruction 51 inserted.
-2025-03-09 11:15:32,36,Instruction 36 attempting to match
-2025-03-09 11:15:32,36,DeliveryInstruction 36 matched with ReceiptInstruction 35
-2025-03-09 11:15:37,27_28,Transaction 27_28 attempting to settle.
-2025-03-09 11:15:37,27_28,Transaction 27_28 settled fully.
-2025-03-09 11:15:38,42,Instruction 42 validated.
-2025-03-09 11:15:43,55,Receipt instruction with ID 55 created by institution INST-4 for Bond-A for amount 98330.91
-2025-03-09 11:15:43,56,Delivery instruction with ID 56 created by institution INST-1 for Bond-A for amount 98330.91
-2025-03-09 11:15:47,57,Delivery instruction with ID 57 created by institution INST-3 for Bond-B for amount 61789.17
-2025-03-09 11:15:47,58,Receipt instruction with ID 58 created by institution INST-5 for Bond-B for amount 61789.17
-2025-03-09 11:15:50,59,Delivery instruction with ID 59 created by institution INST-5 for Bond-B for amount 59436.91
-2025-03-09 11:15:50,60,Receipt instruction with ID 60 created by institution INST-1 for Bond-B for amount 59436.91
-2025-03-09 11:15:52,52,Instruction 52 inserted.
-2025-03-09 11:15:54,36_35,Transaction 36_35 attempting to settle.
-2025-03-09 11:15:54,36_1,Delivery instruction with ID 36_1 created by institution INST-4 for Bond-A for amount 12133.160000000003
-2025-03-09 11:15:54,36_2,Delivery instruction with ID 36_2 created by institution INST-4 for Bond-A for amount 85670.92
-2025-03-09 11:15:54,35_1,Receipt instruction with ID 35_1 created by institution INST-5 for Bond-A for amount 12133.160000000003
-2025-03-09 11:15:54,35_2,Receipt instruction with ID 35_2 created by institution INST-5 for Bond-A for amount 85670.92
-2025-03-09 11:15:54,36_1,Instruction 36_1 attempting to match
-2025-03-09 11:15:54,36_1,DeliveryInstruction 36_1 matched with ReceiptInstruction 35_1
-2025-03-09 11:15:54,36_2,Instruction 36_2 attempting to match
-2025-03-09 11:15:54,36_2,DeliveryInstruction 36_2 matched with ReceiptInstruction 35_2
-2025-03-09 11:15:54,36_1_35_1,Transaction 36_1_35_1 attempting to settle.
-2025-03-09 11:15:54,36_1_35_1,Transaction 36_1_35_1 settled fully.
-2025-03-09 11:15:54,36_35,"Transaction 36_35 partially settled. Children 35_1, 35_2, 36_1 and 36_2 created. Transactions <TransactionAgent.TransactionAgent object at 0x0000025245D9BE30> and <TransactionAgent.TransactionAgent object at 0x0000025245DC5760> created."
-2025-03-09 11:15:54,36_35,Transaction 36_35 cancelled due to partial settlement.
-2025-03-09 11:15:55,63,Delivery instruction with ID 63 created by institution INST-2 for Bond-B for amount 27770.22
-2025-03-09 11:15:55,64,Receipt instruction with ID 64 created by institution INST-3 for Bond-B for amount 27770.22
-2025-03-09 11:15:58,57,Instruction 57 inserted.
-2025-03-09 11:16:03,50,Instruction 50 validated.
-2025-03-09 11:16:07,41,Instruction 41 attempting to match
-2025-03-09 11:16:07,41,ReceiptInstruction 41 matched with DeliveryInstruction 42
-2025-03-09 11:16:09,13_2_14_2,Transaction 13_2_14_2 attempting to settle.
-2025-03-09 11:16:09,13_2_14_2,Transaction 13_2_14_2 settled fully.
-2025-03-09 11:16:14,38_37,Transaction 38_37 attempting to settle.
-2025-03-09 11:16:14,38_37,Transaction 38_37 settled fully.
-2025-03-09 11:16:15,39,Instruction 39 attempting to match
-2025-03-09 11:16:15,39,DeliveryInstruction 39 matched with ReceiptInstruction 40
-2025-03-09 11:16:18,43,Instruction 43 attempting to match
-2025-03-09 11:16:18,43,DeliveryInstruction 43 matched with ReceiptInstruction 44
-2025-03-09 11:16:21,53,Instruction 53 inserted.
-2025-03-09 11:16:25,60,Instruction 60 inserted.
-2025-03-09 11:16:29,54,Instruction 54 inserted.
-2025-03-09 11:16:33,65,Delivery instruction with ID 65 created by institution INST-3 for Bond-B for amount 31886.1
-2025-03-09 11:16:33,66,Receipt instruction with ID 66 created by institution INST-4 for Bond-B for amount 31886.1
-2025-03-09 11:16:39,14_13,Transaction 14_13 attempting to settle.
-2025-03-09 11:16:39,13_1,Delivery instruction with ID 13_1 created by institution INST-2 for Bond-B for amount 0
-2025-03-09 11:16:39,13_2,Delivery instruction with ID 13_2 created by institution INST-2 for Bond-B for amount 54835.82
-2025-03-09 11:16:39,14,ReceiptInstruction 14: insufficient funds for partial settlement.
-2025-03-09 11:16:39,14_13,Transaction 14_13 partial settlement aborted due to insufficient funds.
-2025-03-09 11:16:40,46,Instruction 46 validated.
-2025-03-09 11:16:41,47,Instruction 47 validated.
-2025-03-09 11:16:45,49,Instruction 49 validated.
-2025-03-09 11:16:46,52,Instruction 52 validated.
-2025-03-09 11:16:47,51,Instruction 51 validated.
-2025-03-09 11:16:48,56,Instruction 56 inserted.
-2025-03-09 11:16:49,58,Instruction 58 inserted.
-2025-03-09 11:16:50,59,Instruction 59 inserted.
-2025-03-09 11:16:53,48,Instruction 48 validated.
-2025-03-09 11:16:56,45,Instruction 45 validated.
-2025-03-09 11:17:10,69,Delivery instruction with ID 69 created by institution INST-4 for Bond-B for amount 81562.75
-2025-03-09 11:17:10,70,Receipt instruction with ID 70 created by institution INST-3 for Bond-B for amount 81562.75
-2025-03-09 11:17:15,55,Instruction 55 inserted.
-2025-03-09 11:17:17,34_33,Transaction 34_33 attempting to settle.
-2025-03-09 11:17:17,34_1,Delivery instruction with ID 34_1 created by institution INST-3 for Bond-B for amount 50535.789999999986
-2025-03-09 11:17:17,34_2,Delivery instruction with ID 34_2 created by institution INST-3 for Bond-B for amount 16006.760000000017
-2025-03-09 11:17:17,33_1,Receipt instruction with ID 33_1 created by institution INST-4 for Bond-B for amount 50535.789999999986
-2025-03-09 11:17:17,33_2,Receipt instruction with ID 33_2 created by institution INST-4 for Bond-B for amount 16006.760000000017
-2025-03-09 11:17:17,34_1,Instruction 34_1 attempting to match
-2025-03-09 11:17:17,34_1,DeliveryInstruction 34_1 matched with ReceiptInstruction 33_1
-2025-03-09 11:17:17,34_2,Instruction 34_2 attempting to match
-2025-03-09 11:17:17,34_2,DeliveryInstruction 34_2 matched with ReceiptInstruction 33_2
-2025-03-09 11:17:17,34_1_33_1,Transaction 34_1_33_1 attempting to settle.
-2025-03-09 11:17:17,34_1_33_1,Transaction 34_1_33_1 settled fully.
-2025-03-09 11:17:17,34_33,"Transaction 34_33 partially settled. Children 33_1, 33_2, 34_1 and 34_2 created. Transactions <TransactionAgent.TransactionAgent object at 0x0000025245DEC0D0> and <TransactionAgent.TransactionAgent object at 0x0000025245DEC250> created."
-2025-03-09 11:17:17,34_33,Transaction 34_33 cancelled due to partial settlement.
-2025-03-09 11:17:22,45,Instruction 45 attempting to match
-2025-03-09 11:17:22,45,DeliveryInstruction 45 matched with ReceiptInstruction 46
-2025-03-09 11:17:28,64,Instruction 64 inserted.
-2025-03-09 11:17:29,54,Instruction 54 validated.
-2025-03-09 11:17:31,36_35,Transaction 36_35 attempting to settle.
-2025-03-09 11:17:31,36,ReceiptInstruction 36: insufficient funds for partial settlement.
-2025-03-09 11:17:31,35,ReceiptInstruction 35: insufficient funds for partial settlement.
-2025-03-09 11:17:31,36_35,Transaction 36_35 partial settlement aborted due to insufficient funds.
-2025-03-09 11:17:35,14_13,Transaction 14_13 attempting to settle.
-2025-03-09 11:17:35,13_1,Delivery instruction with ID 13_1 created by institution INST-2 for Bond-B for amount 0
-2025-03-09 11:17:35,13_2,Delivery instruction with ID 13_2 created by institution INST-2 for Bond-B for amount 54835.82
-2025-03-09 11:17:35,14,ReceiptInstruction 14: insufficient funds for partial settlement.
-2025-03-09 11:17:35,14_13,Transaction 14_13 partial settlement aborted due to insufficient funds.
-2025-03-09 11:17:39,51,Instruction 51 attempting to match
-2025-03-09 11:17:39,51,DeliveryInstruction 51 matched with ReceiptInstruction 52
-2025-03-09 11:17:43,49,Instruction 49 attempting to match
-2025-03-09 11:17:43,49,ReceiptInstruction 49 matched with DeliveryInstruction 50
-2025-03-09 11:17:49,53,Instruction 53 validated.
-2025-03-09 11:17:52,66,Instruction 66 inserted.
-2025-03-09 11:17:58,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:17:58,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:18:04,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:18:04,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
-2025-03-09 11:18:04,35_2,ReceiptInstruction 35_2: insufficient funds for partial settlement.
-2025-03-09 11:18:04,36_2_35_2,Transaction 36_2_35_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:18:06,75,Delivery instruction with ID 75 created by institution INST-1 for Bond-D for amount 24043.39
-2025-03-09 11:18:06,76,Receipt instruction with ID 76 created by institution INST-3 for Bond-D for amount 24043.39
-2025-03-09 11:18:09,48,Instruction 48 attempting to match
-2025-03-09 11:18:09,48,DeliveryInstruction 48 matched with ReceiptInstruction 47
-2025-03-09 11:18:10,34_33,Transaction 34_33 attempting to settle.
-2025-03-09 11:18:10,34,ReceiptInstruction 34: insufficient funds for partial settlement.
-2025-03-09 11:18:10,33,ReceiptInstruction 33: insufficient funds for partial settlement.
-2025-03-09 11:18:10,34_33,Transaction 34_33 partial settlement aborted due to insufficient funds.
-2025-03-09 11:18:11,69,Instruction 69 inserted.
-2025-03-09 11:18:33,56,Instruction 56 validated.
-2025-03-09 11:18:36,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:18:36,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:18:36,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:18:36,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:18:38,58,Instruction 58 validated.
-2025-03-09 11:18:41,70,Instruction 70 inserted.
-2025-03-09 11:18:46,57,Instruction 57 validated.
-2025-03-09 11:18:47,43_44,Transaction 43_44 attempting to settle.
-2025-03-09 11:18:47,43_44,Transaction 43_44 settled fully.
-2025-03-09 11:18:50,59,Instruction 59 validated.
-2025-03-09 11:18:53,65,Instruction 65 inserted.
-2025-03-09 11:18:57,55,Instruction 55 validated.
-2025-03-09 11:19:00,63,Instruction 63 inserted.
-2025-03-09 11:19:04,60,Instruction 60 validated.
-2025-03-09 11:19:05,39_40,Transaction 39_40 attempting to settle.
-2025-03-09 11:19:05,39_40,Transaction 39_40 settled fully.
-2025-03-09 11:19:06,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:19:06,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:19:07,41_42,Transaction 41_42 attempting to settle.
-2025-03-09 11:19:07,41_42,Transaction 41_42 settled fully.
-2025-03-09 11:19:11,36_35,Transaction 36_35 attempting to settle.
-2025-03-09 11:19:11,36_1,Delivery instruction with ID 36_1 created by institution INST-4 for Bond-A for amount 21819.3
-2025-03-09 11:19:11,36_2,Delivery instruction with ID 36_2 created by institution INST-4 for Bond-A for amount 75984.78
-2025-03-09 11:19:11,35_1,Receipt instruction with ID 35_1 created by institution INST-5 for Bond-A for amount 21819.3
-2025-03-09 11:19:11,35_2,Receipt instruction with ID 35_2 created by institution INST-5 for Bond-A for amount 75984.78
-2025-03-09 11:19:11,36_1,Instruction 36_1 attempting to match
-2025-03-09 11:19:11,36_1,DeliveryInstruction 36_1 matched with ReceiptInstruction 35_1
-2025-03-09 11:19:11,36_2,Instruction 36_2 attempting to match
-2025-03-09 11:19:11,36_2,DeliveryInstruction 36_2 matched with ReceiptInstruction 35_2
-2025-03-09 11:19:11,36_1_35_1,Transaction 36_1_35_1 attempting to settle.
-2025-03-09 11:19:11,36_1_35_1,Transaction 36_1_35_1 settled fully.
-2025-03-09 11:19:11,36_35,"Transaction 36_35 partially settled. Children 35_1, 35_2, 36_1 and 36_2 created. Transactions <TransactionAgent.TransactionAgent object at 0x0000025245DEE850> and <TransactionAgent.TransactionAgent object at 0x0000025245DEE9D0> created."
-2025-03-09 11:19:11,36_35,Transaction 36_35 cancelled due to partial settlement.
-2025-03-09 11:19:17,45_46,Transaction 45_46 attempting to settle.
-2025-03-09 11:19:17,45_46,Transaction 45_46 settled fully.
-2025-03-09 11:19:18,51_52,Transaction 51_52 attempting to settle.
-2025-03-09 11:19:18,51_52,Transaction 51_52 settled fully.
-2025-03-09 11:19:25,48_47,Transaction 48_47 attempting to settle.
-2025-03-09 11:19:25,48_47,Transaction 48_47 settled fully.
-2025-03-09 11:19:29,58,Instruction 58 attempting to match
-2025-03-09 11:19:29,58,ReceiptInstruction 58 matched with DeliveryInstruction 57
-2025-03-09 11:19:30,55,Instruction 55 attempting to match
-2025-03-09 11:19:30,55,ReceiptInstruction 55 matched with DeliveryInstruction 56
-2025-03-09 11:19:31,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:19:31,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:19:31,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:19:31,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:19:34,75,Instruction 75 inserted.
-2025-03-09 11:19:36,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:19:36,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:19:53,69,Instruction 69 validated.
-2025-03-09 11:19:54,63,Instruction 63 validated.
-2025-03-09 11:19:55,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:19:55,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:19:58,59,Instruction 59 attempting to match
-2025-03-09 11:19:58,59,DeliveryInstruction 59 matched with ReceiptInstruction 60
-2025-03-09 11:20:00,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:20:00,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:20:02,54,Instruction 54 attempting to match
-2025-03-09 11:20:02,54,DeliveryInstruction 54 matched with ReceiptInstruction 53
-2025-03-09 11:20:05,70,Instruction 70 validated.
-2025-03-09 11:20:12,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:20:12,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
-2025-03-09 11:20:12,35_2,ReceiptInstruction 35_2: insufficient funds for partial settlement.
-2025-03-09 11:20:12,36_2_35_2,Transaction 36_2_35_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:20:14,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:20:14,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:20:22,65,Instruction 65 validated.
-2025-03-09 11:20:32,49_50,Transaction 49_50 attempting to settle.
-2025-03-09 11:20:32,49_50,Transaction 49_50 settled fully.
-2025-03-09 11:20:36,64,Instruction 64 validated.
-2025-03-09 11:20:50,34_33,Transaction 34_33 attempting to settle.
-2025-03-09 11:20:50,34,ReceiptInstruction 34: insufficient funds for partial settlement.
-2025-03-09 11:20:50,33,ReceiptInstruction 33: insufficient funds for partial settlement.
-2025-03-09 11:20:50,34_33,Transaction 34_33 partial settlement aborted due to insufficient funds.
-2025-03-09 11:20:56,66,Instruction 66 validated.
-2025-03-09 11:21:04,76,Instruction 76 inserted.
-2025-03-09 11:21:05,79,Receipt instruction with ID 79 created by institution INST-4 for Bond-B for amount 62259.67
-2025-03-09 11:21:05,80,Delivery instruction with ID 80 created by institution INST-1 for Bond-B for amount 62259.67
-2025-03-09 11:21:06,14_13,Transaction 14_13 attempting to settle.
-2025-03-09 11:21:06,13_1,Delivery instruction with ID 13_1 created by institution INST-2 for Bond-B for amount 0
-2025-03-09 11:21:06,13_2,Delivery instruction with ID 13_2 created by institution INST-2 for Bond-B for amount 54835.82
-2025-03-09 11:21:06,14,ReceiptInstruction 14: insufficient funds for partial settlement.
-2025-03-09 11:21:06,14_13,Transaction 14_13 partial settlement aborted due to insufficient funds.
-2025-03-09 11:21:10,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:21:10,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
-2025-03-09 11:21:10,35_2,ReceiptInstruction 35_2: insufficient funds for partial settlement.
-2025-03-09 11:21:10,36_2_35_2,Transaction 36_2_35_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:21:16,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:21:16,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:21:17,58_57,Transaction 58_57 attempting to settle.
-2025-03-09 11:21:17,57,ReceiptInstruction 57: insufficient funds for partial settlement.
-2025-03-09 11:21:17,58,ReceiptInstruction 58: insufficient funds for partial settlement.
-2025-03-09 11:21:17,58_57,Transaction 58_57 partial settlement aborted due to insufficient funds.
-2025-03-09 11:21:18,69,Instruction 69 attempting to match
-2025-03-09 11:21:18,69,DeliveryInstruction 69 matched with ReceiptInstruction 70
-2025-03-09 11:21:20,63,Instruction 63 attempting to match
-2025-03-09 11:21:20,63,DeliveryInstruction 63 matched with ReceiptInstruction 64
-2025-03-09 11:21:21,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:21:21,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
-2025-03-09 11:21:21,35_2,ReceiptInstruction 35_2: insufficient funds for partial settlement.
-2025-03-09 11:21:21,36_2_35_2,Transaction 36_2_35_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:21:32,83,Receipt instruction with ID 83 created by institution INST-2 for Bond-D for amount 95923.73
-2025-03-09 11:21:32,84,Delivery instruction with ID 84 created by institution INST-1 for Bond-D for amount 95923.73
-2025-03-09 11:21:47,85,Receipt instruction with ID 85 created by institution INST-1 for Bond-D for amount 93078.54
-2025-03-09 11:21:47,86,Delivery instruction with ID 86 created by institution INST-4 for Bond-D for amount 93078.54
-2025-03-09 11:21:48,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:21:48,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:21:52,80,Instruction 80 inserted.
-2025-03-09 11:21:53,66,Instruction 66 attempting to match
-2025-03-09 11:21:53,66,ReceiptInstruction 66 matched with DeliveryInstruction 65
-2025-03-09 11:21:55,34_33,Transaction 34_33 attempting to settle.
-2025-03-09 11:21:55,34,ReceiptInstruction 34: insufficient funds for partial settlement.
-2025-03-09 11:21:55,33,ReceiptInstruction 33: insufficient funds for partial settlement.
-2025-03-09 11:21:55,34_33,Transaction 34_33 partial settlement aborted due to insufficient funds.
-2025-03-09 11:21:58,14_13,Transaction 14_13 attempting to settle.
-2025-03-09 11:21:58,13_1,Delivery instruction with ID 13_1 created by institution INST-2 for Bond-B for amount 0
-2025-03-09 11:21:58,13_2,Delivery instruction with ID 13_2 created by institution INST-2 for Bond-B for amount 54835.82
-2025-03-09 11:21:58,14,ReceiptInstruction 14: insufficient funds for partial settlement.
-2025-03-09 11:21:58,14_13,Transaction 14_13 partial settlement aborted due to insufficient funds.
-2025-03-09 11:22:03,89,Receipt instruction with ID 89 created by institution INST-3 for Bond-D for amount 97207.71
-2025-03-09 11:22:03,90,Delivery instruction with ID 90 created by institution INST-2 for Bond-D for amount 97207.71
-2025-03-09 11:22:04,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:22:04,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:22:04,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:22:04,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:22:07,36_35,Transaction 36_35 attempting to settle.
-2025-03-09 11:22:07,36,ReceiptInstruction 36: insufficient funds for partial settlement.
-2025-03-09 11:22:07,35,ReceiptInstruction 35: insufficient funds for partial settlement.
-2025-03-09 11:22:07,36_35,Transaction 36_35 partial settlement aborted due to insufficient funds.
-2025-03-09 11:22:14,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:22:14,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:22:20,54_53,Transaction 54_53 attempting to settle.
-2025-03-09 11:22:20,54_53,Transaction 54_53 settled fully.
-2025-03-09 11:22:27,79,Instruction 79 inserted.
-2025-03-09 11:22:34,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:22:34,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:22:49,76,Instruction 76 validated.
-2025-03-09 11:22:51,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:22:51,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:23:00,75,Instruction 75 validated.
-2025-03-09 11:23:09,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:23:09,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:23:13,55_56,Transaction 55_56 attempting to settle.
-2025-03-09 11:23:13,55_56,Transaction 55_56 settled fully.
-2025-03-09 11:23:20,59_60,Transaction 59_60 attempting to settle.
-2025-03-09 11:23:20,59_60,Transaction 59_60 settled fully.
-2025-03-09 11:23:22,14_13,Transaction 14_13 attempting to settle.
-2025-03-09 11:23:22,14_13,Transaction 14_13 settled fully.
-2025-03-09 11:23:33,91,Delivery instruction with ID 91 created by institution INST-2 for Bond-D for amount 79944.39
-2025-03-09 11:23:33,92,Receipt instruction with ID 92 created by institution INST-4 for Bond-D for amount 79944.39
-2025-03-09 11:23:36,84,Instruction 84 inserted.
-2025-03-09 11:23:50,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:23:50,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:23:55,89,Instruction 89 inserted.
-2025-03-09 11:23:57,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:23:57,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:24:02,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:24:02,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:24:04,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:24:04,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:24:04,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:24:04,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:24:17,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:24:17,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:24:19,93,Receipt instruction with ID 93 created by institution INST-5 for Bond-D for amount 23034.89
-2025-03-09 11:24:19,94,Delivery instruction with ID 94 created by institution INST-3 for Bond-D for amount 23034.89
-2025-03-09 11:24:20,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:24:20,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:24:21,69_70,Transaction 69_70 attempting to settle.
-2025-03-09 11:24:21,69_70,Transaction 69_70 settled fully.
-2025-03-09 11:24:25,90,Instruction 90 inserted.
-2025-03-09 11:24:32,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:24:32,36_2_35_2,Transaction 36_2_35_2 settled fully.
-2025-03-09 11:24:36,76,Instruction 76 attempting to match
-2025-03-09 11:24:36,76,ReceiptInstruction 76 matched with DeliveryInstruction 75
-2025-03-09 11:24:40,79,Instruction 79 validated.
-2025-03-09 11:24:44,66_65,Transaction 66_65 attempting to settle.
-2025-03-09 11:24:44,66_65,Transaction 66_65 settled fully.
-2025-03-09 11:24:51,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:24:51,36_2_1,Delivery instruction with ID 36_2_1 created by institution INST-4 for Bond-A for amount 12659.990000000005
-2025-03-09 11:24:51,36_2_2,Delivery instruction with ID 36_2_2 created by institution INST-4 for Bond-A for amount 63324.78999999999
-2025-03-09 11:24:51,35_2_1,Receipt instruction with ID 35_2_1 created by institution INST-5 for Bond-A for amount 12659.990000000005
-2025-03-09 11:24:51,35_2_2,Receipt instruction with ID 35_2_2 created by institution INST-5 for Bond-A for amount 63324.78999999999
-2025-03-09 11:24:51,36_2_1,Instruction 36_2_1 attempting to match
-2025-03-09 11:24:51,36_2_1,DeliveryInstruction 36_2_1 matched with ReceiptInstruction 35_2_1
-2025-03-09 11:24:51,36_2_2,Instruction 36_2_2 attempting to match
-2025-03-09 11:24:51,36_2_2,DeliveryInstruction 36_2_2 matched with ReceiptInstruction 35_2_2
-2025-03-09 11:24:51,36_2_1_35_2_1,Transaction 36_2_1_35_2_1 attempting to settle.
-2025-03-09 11:24:51,36_2_1_35_2_1,Transaction 36_2_1_35_2_1 settled fully.
-2025-03-09 11:24:51,36_2_35_2,"Transaction 36_2_35_2 partially settled. Children 35_2_1, 35_2_2, 36_2_1 and 36_2_2 created. Transactions <TransactionAgent.TransactionAgent object at 0x0000025245E00950> and <TransactionAgent.TransactionAgent object at 0x0000025245E00AD0> created."
-2025-03-09 11:24:51,36_2_35_2,Transaction 36_2_35_2 cancelled due to partial settlement.
-2025-03-09 11:24:59,58_57,Transaction 58_57 attempting to settle.
-2025-03-09 11:24:59,57_1,Delivery instruction with ID 57_1 created by institution INST-3 for Bond-B for amount 49676.65
-2025-03-09 11:24:59,57_2,Delivery instruction with ID 57_2 created by institution INST-3 for Bond-B for amount 12112.519999999997
-2025-03-09 11:24:59,58_1,Receipt instruction with ID 58_1 created by institution INST-5 for Bond-B for amount 49676.65
-2025-03-09 11:24:59,58_2,Receipt instruction with ID 58_2 created by institution INST-5 for Bond-B for amount 12112.519999999997
-2025-03-09 11:24:59,57_1,Instruction 57_1 attempting to match
-2025-03-09 11:24:59,57_1,DeliveryInstruction 57_1 matched with ReceiptInstruction 58_1
-2025-03-09 11:24:59,57_2,Instruction 57_2 attempting to match
-2025-03-09 11:24:59,57_2,DeliveryInstruction 57_2 matched with ReceiptInstruction 58_2
-2025-03-09 11:24:59,57_1_58_1,Transaction 57_1_58_1 attempting to settle.
-2025-03-09 11:24:59,57_1_58_1,Transaction 57_1_58_1 settled fully.
-2025-03-09 11:24:59,58_57,"Transaction 58_57 partially settled. Children 58_1, 58_2, 57_1 and 57_2 created. Transactions <TransactionAgent.TransactionAgent object at 0x0000025245E010D0> and <TransactionAgent.TransactionAgent object at 0x0000025245E01250> created."
-2025-03-09 11:24:59,58_57,Transaction 58_57 cancelled due to partial settlement.
-2025-03-09 11:25:03,83,Instruction 83 inserted.
-2025-03-09 11:25:08,36_35,Transaction 36_35 attempting to settle.
-2025-03-09 11:25:08,36,ReceiptInstruction 36: insufficient funds for partial settlement.
-2025-03-09 11:25:08,35,ReceiptInstruction 35: insufficient funds for partial settlement.
-2025-03-09 11:25:08,36_35,Transaction 36_35 partial settlement aborted due to insufficient funds.
-2025-03-09 11:25:15,63_64,Transaction 63_64 attempting to settle.
-2025-03-09 11:25:15,63_64,Transaction 63_64 settled fully.
-2025-03-09 11:25:16,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:25:16,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:25:17,80,Instruction 80 validated.
-2025-03-09 11:25:18,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:25:18,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:25:24,85,Instruction 85 inserted.
-2025-03-09 11:25:34,86,Instruction 86 inserted.
-2025-03-09 11:25:36,34_33,Transaction 34_33 attempting to settle.
-2025-03-09 11:25:36,34_1,Delivery instruction with ID 34_1 created by institution INST-3 for Bond-B for amount 27770.22
-2025-03-09 11:25:36,34_2,Delivery instruction with ID 34_2 created by institution INST-3 for Bond-B for amount 38772.33
-2025-03-09 11:25:36,33_1,Receipt instruction with ID 33_1 created by institution INST-4 for Bond-B for amount 27770.22
-2025-03-09 11:25:36,33_2,Receipt instruction with ID 33_2 created by institution INST-4 for Bond-B for amount 38772.33
-2025-03-09 11:25:36,34_1,Instruction 34_1 attempting to match
-2025-03-09 11:25:36,34_1,DeliveryInstruction 34_1 matched with ReceiptInstruction 33_1
-2025-03-09 11:25:36,34_2,Instruction 34_2 attempting to match
-2025-03-09 11:25:36,34_2,DeliveryInstruction 34_2 matched with ReceiptInstruction 33_2
-2025-03-09 11:25:36,34_1_33_1,Transaction 34_1_33_1 attempting to settle.
-2025-03-09 11:25:36,34_1_33_1,Transaction 34_1_33_1 settled fully.
-2025-03-09 11:25:36,34_33,"Transaction 34_33 partially settled. Children 33_1, 33_2, 34_1 and 34_2 created. Transactions <TransactionAgent.TransactionAgent object at 0x0000025245E02050> and <TransactionAgent.TransactionAgent object at 0x0000025245E021D0> created."
-2025-03-09 11:25:36,34_33,Transaction 34_33 cancelled due to partial settlement.
-2025-03-09 11:25:42,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:25:42,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:25:46,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:25:46,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
-2025-03-09 11:25:46,35_2,ReceiptInstruction 35_2: insufficient funds for partial settlement.
-2025-03-09 11:25:46,36_2_35_2,Transaction 36_2_35_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:25:52,34_33,Transaction 34_33 attempting to settle.
-2025-03-09 11:25:52,34,ReceiptInstruction 34: insufficient funds for partial settlement.
-2025-03-09 11:25:52,33,ReceiptInstruction 33: insufficient funds for partial settlement.
-2025-03-09 11:25:52,34_33,Transaction 34_33 partial settlement aborted due to insufficient funds.
-2025-03-09 11:25:54,101,Delivery instruction with ID 101 created by institution INST-4 for Bond-B for amount 63919.43
-2025-03-09 11:25:54,102,Receipt instruction with ID 102 created by institution INST-5 for Bond-B for amount 63919.43
-2025-03-09 11:25:57,84,Instruction 84 validated.
-2025-03-09 11:26:00,58_57,Transaction 58_57 attempting to settle.
-2025-03-09 11:26:00,57,ReceiptInstruction 57: insufficient funds for partial settlement.
-2025-03-09 11:26:00,58,ReceiptInstruction 58: insufficient funds for partial settlement.
-2025-03-09 11:26:00,58_57,Transaction 58_57 partial settlement aborted due to insufficient funds.
-2025-03-09 11:26:01,86,Instruction 86 validated.
-2025-03-09 11:26:03,80,Instruction 80 attempting to match
-2025-03-09 11:26:03,80,DeliveryInstruction 80 matched with ReceiptInstruction 79
-2025-03-09 11:26:06,76_75,Transaction 76_75 attempting to settle.
-2025-03-09 11:26:06,76_75,Transaction 76_75 settled fully.
-2025-03-09 11:26:11,103,Receipt instruction with ID 103 created by institution INST-5 for Bond-A for amount 55768.13
-2025-03-09 11:26:11,104,Delivery instruction with ID 104 created by institution INST-1 for Bond-A for amount 55768.13
-2025-03-09 11:26:17,83,Instruction 83 validated.
-2025-03-09 11:26:25,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:26:25,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:26:27,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:26:27,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:26:30,89,Instruction 89 validated.
-2025-03-09 11:26:37,105,Receipt instruction with ID 105 created by institution INST-3 for Bond-C for amount 19735.8
-2025-03-09 11:26:37,106,Delivery instruction with ID 106 created by institution INST-5 for Bond-C for amount 19735.8
-2025-03-09 11:26:43,93,Instruction 93 inserted.
-2025-03-09 11:26:52,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:26:52,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:26:53,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:26:53,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:27:05,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:27:05,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:27:09,85,Instruction 85 validated.
-2025-03-09 11:27:14,90,Instruction 90 validated.
-2025-03-09 11:27:16,57_2_58_2,Transaction 57_2_58_2 attempting to settle.
-2025-03-09 11:27:16,57_2,ReceiptInstruction 57_2: insufficient funds for partial settlement.
-2025-03-09 11:27:16,58_2,ReceiptInstruction 58_2: insufficient funds for partial settlement.
-2025-03-09 11:27:16,57_2_58_2,Transaction 57_2_58_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:27:26,94,Instruction 94 inserted.
-2025-03-09 11:27:29,36_35,Transaction 36_35 attempting to settle.
-2025-03-09 11:27:29,36,ReceiptInstruction 36: insufficient funds for partial settlement.
-2025-03-09 11:27:29,35,ReceiptInstruction 35: insufficient funds for partial settlement.
-2025-03-09 11:27:29,36_35,Transaction 36_35 partial settlement aborted due to insufficient funds.
-2025-03-09 11:27:37,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:27:37,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:27:37,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:27:37,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:27:44,91,Instruction 91 inserted.
-2025-03-09 11:28:02,36_2_2_35_2_2,Transaction 36_2_2_35_2_2 attempting to settle.
-2025-03-09 11:28:02,36_2_2,ReceiptInstruction 36_2_2: insufficient funds for partial settlement.
-2025-03-09 11:28:02,35_2_2,ReceiptInstruction 35_2_2: insufficient funds for partial settlement.
-2025-03-09 11:28:02,36_2_2_35_2_2,Transaction 36_2_2_35_2_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:28:03,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:28:03,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:28:03,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:28:03,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:28:08,92,Instruction 92 inserted.
-2025-03-09 11:28:13,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:28:13,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:28:19,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:28:19,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:28:23,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:28:23,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:28:35,36_2_2_35_2_2,Transaction 36_2_2_35_2_2 attempting to settle.
-2025-03-09 11:28:35,36_2_2,ReceiptInstruction 36_2_2: insufficient funds for partial settlement.
-2025-03-09 11:28:35,35_2_2,ReceiptInstruction 35_2_2: insufficient funds for partial settlement.
-2025-03-09 11:28:35,36_2_2_35_2_2,Transaction 36_2_2_35_2_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:28:36,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:28:36,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:28:38,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:28:38,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
-2025-03-09 11:28:38,35_2,ReceiptInstruction 35_2: insufficient funds for partial settlement.
-2025-03-09 11:28:38,36_2_35_2,Transaction 36_2_35_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:28:41,94,Instruction 94 validated.
-2025-03-09 11:28:43,103,Instruction 103 inserted.
-2025-03-09 11:28:47,83,Instruction 83 attempting to match
-2025-03-09 11:28:47,83,ReceiptInstruction 83 matched with DeliveryInstruction 84
-2025-03-09 11:28:48,105,Instruction 105 inserted.
-2025-03-09 11:28:50,86,Instruction 86 attempting to match
-2025-03-09 11:28:50,86,DeliveryInstruction 86 matched with ReceiptInstruction 85
-2025-03-09 11:28:52,101,Instruction 101 inserted.
-2025-03-09 11:29:06,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:29:06,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:29:12,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:29:12,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:29:12,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:29:12,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:29:16,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:29:16,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:29:26,80_79,Transaction 80_79 attempting to settle.
-2025-03-09 11:29:26,80_79,Transaction 80_79 settled fully.
-2025-03-09 11:29:30,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:29:30,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:29:41,107,Delivery instruction with ID 107 created by institution INST-5 for Bond-B for amount 99890.57
-2025-03-09 11:29:41,108,Receipt instruction with ID 108 created by institution INST-2 for Bond-B for amount 99890.57
-2025-03-09 11:29:42,89,Instruction 89 attempting to match
-2025-03-09 11:29:42,89,ReceiptInstruction 89 matched with DeliveryInstruction 90
-2025-03-09 11:29:45,58_57,Transaction 58_57 attempting to settle.
-2025-03-09 11:29:45,57,ReceiptInstruction 57: insufficient funds for partial settlement.
-2025-03-09 11:29:45,58,ReceiptInstruction 58: insufficient funds for partial settlement.
-2025-03-09 11:29:45,58_57,Transaction 58_57 partial settlement aborted due to insufficient funds.
-2025-03-09 11:30:01,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:30:01,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:30:11,109,Delivery instruction with ID 109 created by institution INST-3 for Bond-D for amount 79255.35
-2025-03-09 11:30:11,110,Receipt instruction with ID 110 created by institution INST-1 for Bond-D for amount 79255.35
-2025-03-09 11:30:19,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:30:19,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:30:27,91,Instruction 91 validated.
-2025-03-09 11:30:37,106,Instruction 106 inserted.
-2025-03-09 11:30:42,104,Instruction 104 inserted.
-2025-03-09 11:30:43,102,Instruction 102 inserted.
-2025-03-09 11:30:48,34_33,Transaction 34_33 attempting to settle.
-2025-03-09 11:30:48,34,ReceiptInstruction 34: insufficient funds for partial settlement.
-2025-03-09 11:30:48,33,ReceiptInstruction 33: insufficient funds for partial settlement.
-2025-03-09 11:30:48,34_33,Transaction 34_33 partial settlement aborted due to insufficient funds.
-2025-03-09 11:30:50,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:30:50,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:30:59,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:30:59,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:30:59,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:30:59,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:31:10,92,Instruction 92 validated.
-2025-03-09 11:31:12,57_2_58_2,Transaction 57_2_58_2 attempting to settle.
-2025-03-09 11:31:12,57_2,ReceiptInstruction 57_2: insufficient funds for partial settlement.
-2025-03-09 11:31:12,58_2,ReceiptInstruction 58_2: insufficient funds for partial settlement.
-2025-03-09 11:31:12,57_2_58_2,Transaction 57_2_58_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:31:16,36_35,Transaction 36_35 attempting to settle.
-2025-03-09 11:31:16,36,ReceiptInstruction 36: insufficient funds for partial settlement.
-2025-03-09 11:31:16,35,ReceiptInstruction 35: insufficient funds for partial settlement.
-2025-03-09 11:31:16,36_35,Transaction 36_35 partial settlement aborted due to insufficient funds.
-2025-03-09 11:31:17,93,Instruction 93 validated.
-2025-03-09 11:31:20,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:31:20,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:31:26,86_85,Transaction 86_85 attempting to settle.
-2025-03-09 11:31:26,86_85,Transaction 86_85 settled fully.
-2025-03-09 11:31:30,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:31:30,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:31:31,102,Instruction 102 validated.
-2025-03-09 11:31:32,109,Instruction 109 inserted.
-2025-03-09 11:31:38,58_57,Transaction 58_57 attempting to settle.
-2025-03-09 11:31:38,57,ReceiptInstruction 57: insufficient funds for partial settlement.
-2025-03-09 11:31:38,58,ReceiptInstruction 58: insufficient funds for partial settlement.
-2025-03-09 11:31:38,58_57,Transaction 58_57 partial settlement aborted due to insufficient funds.
-2025-03-09 11:31:39,36_35,Transaction 36_35 attempting to settle.
-2025-03-09 11:31:39,36,ReceiptInstruction 36: insufficient funds for partial settlement.
-2025-03-09 11:31:39,35,ReceiptInstruction 35: insufficient funds for partial settlement.
-2025-03-09 11:31:39,36_35,Transaction 36_35 partial settlement aborted due to insufficient funds.
-2025-03-09 11:31:40,111,Receipt instruction with ID 111 created by institution INST-4 for Bond-D for amount 61754.77
-2025-03-09 11:31:40,112,Delivery instruction with ID 112 created by institution INST-5 for Bond-D for amount 61754.77
-2025-03-09 11:31:48,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:31:48,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:32:10,34_33,Transaction 34_33 attempting to settle.
-2025-03-09 11:32:10,34,ReceiptInstruction 34: insufficient funds for partial settlement.
-2025-03-09 11:32:10,33,ReceiptInstruction 33: insufficient funds for partial settlement.
-2025-03-09 11:32:10,34_33,Transaction 34_33 partial settlement aborted due to insufficient funds.
-2025-03-09 11:32:19,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:32:19,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:32:19,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:32:19,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:32:26,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:32:26,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:32:29,110,Instruction 110 inserted.
-2025-03-09 11:32:30,105,Instruction 105 validated.
-2025-03-09 11:32:31,93,Instruction 93 attempting to match
-2025-03-09 11:32:31,93,ReceiptInstruction 93 matched with DeliveryInstruction 94
-2025-03-09 11:32:40,92,Instruction 92 attempting to match
-2025-03-09 11:32:40,92,ReceiptInstruction 92 matched with DeliveryInstruction 91
-2025-03-09 11:32:41,89_90,Transaction 89_90 attempting to settle.
-2025-03-09 11:32:41,89_90,Transaction 89_90 settled fully.
-2025-03-09 11:32:43,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:32:43,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:32:54,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:32:54,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:33:00,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:33:00,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:33:01,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:33:01,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:33:01,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:33:01,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:33:02,83_84,Transaction 83_84 attempting to settle.
-2025-03-09 11:33:02,84_1,Delivery instruction with ID 84_1 created by institution INST-1 for Bond-D for amount 74388.45999999999
-2025-03-09 11:33:02,84_2,Delivery instruction with ID 84_2 created by institution INST-1 for Bond-D for amount 21535.270000000004
-2025-03-09 11:33:02,83_1,Receipt instruction with ID 83_1 created by institution INST-2 for Bond-D for amount 74388.45999999999
-2025-03-09 11:33:02,83_2,Receipt instruction with ID 83_2 created by institution INST-2 for Bond-D for amount 21535.270000000004
-2025-03-09 11:33:02,84_1,Instruction 84_1 attempting to match
-2025-03-09 11:33:02,84_1,DeliveryInstruction 84_1 matched with ReceiptInstruction 83_1
-2025-03-09 11:33:02,84_2,Instruction 84_2 attempting to match
-2025-03-09 11:33:02,84_2,DeliveryInstruction 84_2 matched with ReceiptInstruction 83_2
-2025-03-09 11:33:02,84_1_83_1,Transaction 84_1_83_1 attempting to settle.
-2025-03-09 11:33:02,84_1_83_1,Transaction 84_1_83_1 settled fully.
-2025-03-09 11:33:02,83_84,"Transaction 83_84 partially settled. Children 83_1, 83_2, 84_1 and 84_2 created. Transactions <TransactionAgent.TransactionAgent object at 0x0000025245E19A50> and <TransactionAgent.TransactionAgent object at 0x0000025245E19BD0> created."
-2025-03-09 11:33:02,83_84,Transaction 83_84 cancelled due to partial settlement.
-2025-03-09 11:33:09,115,Delivery instruction with ID 115 created by institution INST-2 for Bond-D for amount 15356.51
-2025-03-09 11:33:09,116,Receipt instruction with ID 116 created by institution INST-4 for Bond-D for amount 15356.51
-2025-03-09 11:33:10,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:33:10,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:33:12,57_2_58_2,Transaction 57_2_58_2 attempting to settle.
-2025-03-09 11:33:12,57_2,ReceiptInstruction 57_2: insufficient funds for partial settlement.
-2025-03-09 11:33:12,58_2,ReceiptInstruction 58_2: insufficient funds for partial settlement.
-2025-03-09 11:33:12,57_2_58_2,Transaction 57_2_58_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:33:24,103,Instruction 103 validated.
-2025-03-09 11:33:39,117,Receipt instruction with ID 117 created by institution INST-5 for Bond-D for amount 22240.65
-2025-03-09 11:33:39,118,Delivery instruction with ID 118 created by institution INST-4 for Bond-D for amount 22240.65
-2025-03-09 11:33:48,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:33:48,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
-2025-03-09 11:33:48,35_2,ReceiptInstruction 35_2: insufficient funds for partial settlement.
-2025-03-09 11:33:48,36_2_35_2,Transaction 36_2_35_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:33:50,107,Instruction 107 inserted.
-2025-03-09 11:33:56,108,Instruction 108 inserted.
-2025-03-09 11:34:02,104,Instruction 104 validated.
-2025-03-09 11:34:14,101,Instruction 101 validated.
-2025-03-09 11:34:15,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:34:15,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:34:16,106,Instruction 106 validated.
-2025-03-09 11:34:18,36_2_2_35_2_2,Transaction 36_2_2_35_2_2 attempting to settle.
-2025-03-09 11:34:18,36_2_2,ReceiptInstruction 36_2_2: insufficient funds for partial settlement.
-2025-03-09 11:34:18,35_2_2,ReceiptInstruction 35_2_2: insufficient funds for partial settlement.
-2025-03-09 11:34:18,36_2_2_35_2_2,Transaction 36_2_2_35_2_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:34:32,101,Instruction 101 attempting to match
-2025-03-09 11:34:32,101,DeliveryInstruction 101 matched with ReceiptInstruction 102
-2025-03-09 11:34:38,36_2_2_35_2_2,Transaction 36_2_2_35_2_2 attempting to settle.
-2025-03-09 11:34:38,36_2_2,ReceiptInstruction 36_2_2: insufficient funds for partial settlement.
-2025-03-09 11:34:38,35_2_2,ReceiptInstruction 35_2_2: insufficient funds for partial settlement.
-2025-03-09 11:34:38,36_2_2_35_2_2,Transaction 36_2_2_35_2_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:34:40,119,Receipt instruction with ID 119 created by institution INST-4 for Bond-D for amount 91630.57
-2025-03-09 11:34:40,120,Delivery instruction with ID 120 created by institution INST-1 for Bond-D for amount 91630.57
-2025-03-09 11:34:42,109,Instruction 109 validated.
-2025-03-09 11:34:43,93_94,Transaction 93_94 attempting to settle.
-2025-03-09 11:34:43,93_94,Transaction 93_94 settled fully.
-2025-03-09 11:34:46,58_57,Transaction 58_57 attempting to settle.
-2025-03-09 11:34:46,57,ReceiptInstruction 57: insufficient funds for partial settlement.
-2025-03-09 11:34:46,58,ReceiptInstruction 58: insufficient funds for partial settlement.
-2025-03-09 11:34:46,58_57,Transaction 58_57 partial settlement aborted due to insufficient funds.
-2025-03-09 11:34:48,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:34:48,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:34:55,108,Instruction 108 validated.
-2025-03-09 11:35:00,84_2_83_2,Transaction 84_2_83_2 attempting to settle.
-2025-03-09 11:35:00,84_2,ReceiptInstruction 84_2: insufficient funds for partial settlement.
-2025-03-09 11:35:00,83_2,ReceiptInstruction 83_2: insufficient funds for partial settlement.
-2025-03-09 11:35:00,84_2_83_2,Transaction 84_2_83_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:35:08,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:35:08,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:35:18,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:35:18,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:35:20,107,Instruction 107 validated.
-2025-03-09 11:35:22,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:35:22,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
-2025-03-09 11:35:22,35_2,ReceiptInstruction 35_2: insufficient funds for partial settlement.
-2025-03-09 11:35:22,36_2_35_2,Transaction 36_2_35_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:35:29,103,Instruction 103 attempting to match
-2025-03-09 11:35:29,103,ReceiptInstruction 103 matched with DeliveryInstruction 104
-2025-03-09 11:35:35,92_91,Transaction 92_91 attempting to settle.
-2025-03-09 11:35:35,92_91,Transaction 92_91 settled fully.
-2025-03-09 11:35:38,121,Delivery instruction with ID 121 created by institution INST-5 for Bond-A for amount 98417.25
-2025-03-09 11:35:38,122,Receipt instruction with ID 122 created by institution INST-3 for Bond-A for amount 98417.25
-2025-03-09 11:35:44,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:35:44,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:35:44,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:35:44,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:35:48,110,Instruction 110 validated.
-2025-03-09 11:35:52,116,Instruction 116 inserted.
-2025-03-09 11:35:53,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:35:53,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:36:00,112,Instruction 112 inserted.
-2025-03-09 11:36:01,117,Instruction 117 inserted.
-2025-03-09 11:36:12,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:36:12,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:36:33,118,Instruction 118 inserted.
-2025-03-09 11:36:37,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:36:37,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:36:38,57_2_58_2,Transaction 57_2_58_2 attempting to settle.
-2025-03-09 11:36:38,57_2,ReceiptInstruction 57_2: insufficient funds for partial settlement.
-2025-03-09 11:36:38,58_2,ReceiptInstruction 58_2: insufficient funds for partial settlement.
-2025-03-09 11:36:38,57_2_58_2,Transaction 57_2_58_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:36:42,83_84,Transaction 83_84 attempting to settle.
-2025-03-09 11:36:42,84,ReceiptInstruction 84: insufficient funds for partial settlement.
-2025-03-09 11:36:42,83,ReceiptInstruction 83: insufficient funds for partial settlement.
-2025-03-09 11:36:42,83_84,Transaction 83_84 partial settlement aborted due to insufficient funds.
-2025-03-09 11:36:43,106,Instruction 106 attempting to match
-2025-03-09 11:36:43,106,DeliveryInstruction 106 matched with ReceiptInstruction 105
-2025-03-09 11:36:47,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:36:47,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:36:47,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:36:47,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:36:48,34_33,Transaction 34_33 attempting to settle.
-2025-03-09 11:36:48,34,ReceiptInstruction 34: insufficient funds for partial settlement.
-2025-03-09 11:36:48,33,ReceiptInstruction 33: insufficient funds for partial settlement.
-2025-03-09 11:36:48,34_33,Transaction 34_33 partial settlement aborted due to insufficient funds.
-2025-03-09 11:36:49,115,Instruction 115 inserted.
-2025-03-09 11:36:53,123,Receipt instruction with ID 123 created by institution INST-3 for Bond-C for amount 63875.15
-2025-03-09 11:36:53,124,Delivery instruction with ID 124 created by institution INST-2 for Bond-C for amount 63875.15
-2025-03-09 11:36:55,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:36:55,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:37:01,111,Instruction 111 inserted.
-2025-03-09 11:37:04,36_35,Transaction 36_35 attempting to settle.
-2025-03-09 11:37:04,36,ReceiptInstruction 36: insufficient funds for partial settlement.
-2025-03-09 11:37:04,35,ReceiptInstruction 35: insufficient funds for partial settlement.
-2025-03-09 11:37:04,36_35,Transaction 36_35 partial settlement aborted due to insufficient funds.
-2025-03-09 11:37:06,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:37:06,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:37:52,125,Delivery instruction with ID 125 created by institution INST-5 for Bond-C for amount 57722.59
-2025-03-09 11:37:52,126,Receipt instruction with ID 126 created by institution INST-2 for Bond-C for amount 57722.59
-2025-03-09 11:37:57,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:37:57,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:37:57,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:37:57,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:38:10,36_2_35_2,Transaction 36_2_35_2 attempting to settle.
-2025-03-09 11:38:10,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
-2025-03-09 11:38:10,35_2,ReceiptInstruction 35_2: insufficient funds for partial settlement.
-2025-03-09 11:38:10,36_2_35_2,Transaction 36_2_35_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:38:15,112,Instruction 112 validated.
-2025-03-09 11:38:22,124,Instruction 124 inserted.
-2025-03-09 11:38:27,120,Instruction 120 inserted.
-2025-03-09 11:38:28,107,Instruction 107 attempting to match
-2025-03-09 11:38:28,107,DeliveryInstruction 107 matched with ReceiptInstruction 108
-2025-03-09 11:38:31,115,Instruction 115 validated.
-2025-03-09 11:38:32,57_2_58_2,Transaction 57_2_58_2 attempting to settle.
-2025-03-09 11:38:32,57_2,ReceiptInstruction 57_2: insufficient funds for partial settlement.
-2025-03-09 11:38:32,58_2,ReceiptInstruction 58_2: insufficient funds for partial settlement.
-2025-03-09 11:38:32,57_2_58_2,Transaction 57_2_58_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:38:33,58_57,Transaction 58_57 attempting to settle.
-2025-03-09 11:38:33,57,ReceiptInstruction 57: insufficient funds for partial settlement.
-2025-03-09 11:38:33,58,ReceiptInstruction 58: insufficient funds for partial settlement.
-2025-03-09 11:38:33,58_57,Transaction 58_57 partial settlement aborted due to insufficient funds.
-2025-03-09 11:38:36,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:38:36,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:38:42,106_105,Transaction 106_105 attempting to settle.
-2025-03-09 11:38:42,106_105,Transaction 106_105 settled fully.
-2025-03-09 11:38:45,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:38:45,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:39:06,118,Instruction 118 validated.
-2025-03-09 11:39:13,101_102,Transaction 101_102 attempting to settle.
-2025-03-09 11:39:13,101_102,Transaction 101_102 settled fully.
-2025-03-09 11:39:22,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:39:22,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:39:24,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:39:24,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:39:26,119,Instruction 119 inserted.
-2025-03-09 11:39:31,84_2_83_2,Transaction 84_2_83_2 attempting to settle.
-2025-03-09 11:39:31,84_2,ReceiptInstruction 84_2: insufficient funds for partial settlement.
-2025-03-09 11:39:31,83_2,ReceiptInstruction 83_2: insufficient funds for partial settlement.
-2025-03-09 11:39:31,84_2_83_2,Transaction 84_2_83_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:39:40,83_84,Transaction 83_84 attempting to settle.
-2025-03-09 11:39:40,84,ReceiptInstruction 84: insufficient funds for partial settlement.
-2025-03-09 11:39:40,83,ReceiptInstruction 83: insufficient funds for partial settlement.
-2025-03-09 11:39:40,83_84,Transaction 83_84 partial settlement aborted due to insufficient funds.
-2025-03-09 11:39:48,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:39:48,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:39:49,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:39:49,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:40:01,109,Instruction 109 attempting to match
-2025-03-09 11:40:01,109,DeliveryInstruction 109 matched with ReceiptInstruction 110
-2025-03-09 11:40:04,111,Instruction 111 validated.
-2025-03-09 11:40:05,13_2,Instruction 13_2 attempting to match
-2025-03-09 11:40:05,13_2,"ERROR: DeliveryInstruction 13_2 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:40:08,34_33,Transaction 34_33 attempting to settle.
-2025-03-09 11:40:08,34,ReceiptInstruction 34: insufficient funds for partial settlement.
-2025-03-09 11:40:08,33,ReceiptInstruction 33: insufficient funds for partial settlement.
-2025-03-09 11:40:08,34_33,Transaction 34_33 partial settlement aborted due to insufficient funds.
-2025-03-09 11:40:10,34_2_33_2,Transaction 34_2_33_2 attempting to settle.
-2025-03-09 11:40:10,34_2,ReceiptInstruction 34_2: insufficient funds for partial settlement.
-2025-03-09 11:40:10,33_2,ReceiptInstruction 33_2: insufficient funds for partial settlement.
-2025-03-09 11:40:10,34_2_33_2,Transaction 34_2_33_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:40:15,127,Delivery instruction with ID 127 created by institution INST-3 for Bond-A for amount 46406.22
-2025-03-09 11:40:15,128,Receipt instruction with ID 128 created by institution INST-5 for Bond-A for amount 46406.22
-2025-03-09 11:40:16,36_2_2_35_2_2,Transaction 36_2_2_35_2_2 attempting to settle.
-2025-03-09 11:40:16,36_2_2,ReceiptInstruction 36_2_2: insufficient funds for partial settlement.
-2025-03-09 11:40:16,35_2_2,ReceiptInstruction 35_2_2: insufficient funds for partial settlement.
-2025-03-09 11:40:16,36_2_2_35_2_2,Transaction 36_2_2_35_2_2 partial settlement aborted due to insufficient funds.
-2025-03-09 11:40:18,103_104,Transaction 103_104 attempting to settle.
-2025-03-09 11:40:18,103_104,Transaction 103_104 settled fully.
-2025-03-09 11:40:21,122,Instruction 122 inserted.
-2025-03-09 11:40:26,121,Instruction 121 inserted.
-2025-03-09 11:40:33,123,Instruction 123 inserted.
-2025-03-09 11:40:37,117,Instruction 117 validated.
-2025-03-09 11:40:40,129,Receipt instruction with ID 129 created by institution INST-1 for Bond-C for amount 32210.25
-2025-03-09 11:40:40,130,Delivery instruction with ID 130 created by institution INST-3 for Bond-C for amount 32210.25
-2025-03-09 11:40:42,116,Instruction 116 validated.
-2025-03-09 11:40:46,13_1,Instruction 13_1 attempting to match
-2025-03-09 11:40:46,13_1,"ERROR: DeliveryInstruction 13_1 failed to match, no matching ReceiptInstruction found"
-2025-03-09 11:40:49,36_35,Transaction 36_35 attempting to settle.
-2025-03-09 11:40:49,36,ReceiptInstruction 36: insufficient funds for partial settlement.
-2025-03-09 11:40:49,35,ReceiptInstruction 35: insufficient funds for partial settlement.
-2025-03-09 11:40:49,36_35,Transaction 36_35 partial settlement aborted due to insufficient funds.
+2025-03-09 14:41:25,1,Receipt instruction with ID 1 created by institution INST-4 for Bond-D for amount 69096.88
+2025-03-09 14:41:25,2,Delivery instruction with ID 2 created by institution INST-2 for Bond-D for amount 69096.88
+2025-03-09 14:41:26,3,Delivery instruction with ID 3 created by institution INST-5 for Bond-C for amount 62277.81
+2025-03-09 14:41:26,4,Receipt instruction with ID 4 created by institution INST-1 for Bond-C for amount 62277.81
+2025-03-09 14:41:27,5,Receipt instruction with ID 5 created by institution INST-1 for Bond-A for amount 93672.57
+2025-03-09 14:41:27,6,Delivery instruction with ID 6 created by institution INST-4 for Bond-A for amount 93672.57
+2025-03-09 14:41:29,7,Receipt instruction with ID 7 created by institution INST-4 for Bond-A for amount 30996.64
+2025-03-09 14:41:29,8,Delivery instruction with ID 8 created by institution INST-1 for Bond-A for amount 30996.64
+2025-03-09 14:41:32,9,Delivery instruction with ID 9 created by institution INST-1 for Bond-A for amount 34976.0
+2025-03-09 14:41:32,10,Receipt instruction with ID 10 created by institution INST-4 for Bond-A for amount 34976.0
+2025-03-09 14:41:33,1,Instruction 1 inserted.
+2025-03-09 14:41:34,3,Instruction 3 inserted.
+2025-03-09 14:41:35,5,Instruction 5 inserted.
+2025-03-09 14:41:37,11,Receipt instruction with ID 11 created by institution INST-2 for Bond-D for amount 68885.56
+2025-03-09 14:41:37,12,Delivery instruction with ID 12 created by institution INST-4 for Bond-D for amount 68885.56
+2025-03-09 14:41:38,2,Instruction 2 inserted.
+2025-03-09 14:41:41,8,Instruction 8 inserted.
+2025-03-09 14:41:43,6,Instruction 6 inserted.
+2025-03-09 14:41:44,2,Instruction 2 validated.
+2025-03-09 14:41:45,13,Receipt instruction with ID 13 created by institution INST-1 for Bond-B for amount 89012.92
+2025-03-09 14:41:45,14,Delivery instruction with ID 14 created by institution INST-4 for Bond-B for amount 89012.92
+2025-03-09 14:41:46,7,Instruction 7 inserted.
+2025-03-09 14:41:48,1,Instruction 1 validated.
+2025-03-09 14:41:49,5,Instruction 5 validated.
+2025-03-09 14:41:51,4,Instruction 4 inserted.
+2025-03-09 14:41:53,15,Delivery instruction with ID 15 created by institution INST-4 for Bond-B for amount 19767.07
+2025-03-09 14:41:53,16,Receipt instruction with ID 16 created by institution INST-3 for Bond-B for amount 19767.07
+2025-03-09 14:41:54,3,Instruction 3 validated.
+2025-03-09 14:41:55,17,Delivery instruction with ID 17 created by institution INST-5 for Bond-C for amount 49940.69
+2025-03-09 14:41:55,18,Receipt instruction with ID 18 created by institution INST-4 for Bond-C for amount 49940.69
+2025-03-09 14:41:57,4,Instruction 4 validated.
+2025-03-09 14:42:00,1,Instruction 1 attempting to match
+2025-03-09 14:42:00,1,ReceiptInstruction 1 matched with DeliveryInstruction 2
+2025-03-09 14:42:03,19,Delivery instruction with ID 19 created by institution INST-1 for Bond-A for amount 36875.97
+2025-03-09 14:42:03,20,Receipt instruction with ID 20 created by institution INST-3 for Bond-A for amount 36875.97
+2025-03-09 14:42:07,3,Instruction 3 attempting to match
+2025-03-09 14:42:07,3,DeliveryInstruction 3 matched with ReceiptInstruction 4
+2025-03-09 14:42:08,8,Instruction 8 validated.
+2025-03-09 14:42:09,7,Instruction 7 validated.
+2025-03-09 14:42:15,6,Instruction 6 validated.
+2025-03-09 14:42:16,11,Instruction 11 inserted.
+2025-03-09 14:42:17,21,Delivery instruction with ID 21 created by institution INST-5 for Bond-A for amount 33192.75
+2025-03-09 14:42:17,22,Receipt instruction with ID 22 created by institution INST-3 for Bond-A for amount 33192.75
+2025-03-09 14:42:19,5,Instruction 5 attempting to match
+2025-03-09 14:42:19,5,ReceiptInstruction 5 matched with DeliveryInstruction 6
+2025-03-09 14:42:20,1_2,Transaction 1_2 attempting to settle.
+2025-03-09 14:42:20,1_2,Transaction 1_2 settled fully.
+2025-03-09 14:42:22,11,Instruction 11 validated.
+2025-03-09 14:42:23,7,Instruction 7 attempting to match
+2025-03-09 14:42:23,7,ReceiptInstruction 7 matched with DeliveryInstruction 8
+2025-03-09 14:42:24,19,Instruction 19 inserted.
+2025-03-09 14:42:25,3_4,Transaction 3_4 attempting to settle.
+2025-03-09 14:42:25,3_4,Transaction 3_4 settled fully.
+2025-03-09 14:42:27,16,Instruction 16 inserted.
+2025-03-09 14:42:28,18,Instruction 18 inserted.
+2025-03-09 14:42:30,14,Instruction 14 inserted.
+2025-03-09 14:42:32,15,Instruction 15 inserted.
+2025-03-09 14:42:35,17,Instruction 17 inserted.
+2025-03-09 14:42:36,5_6,Transaction 5_6 attempting to settle.
+2025-03-09 14:42:36,5_6,Transaction 5_6 settled fully.
+2025-03-09 14:42:38,10,Instruction 10 inserted.
+2025-03-09 14:42:39,12,Instruction 12 inserted.
+2025-03-09 14:42:40,9,Instruction 9 inserted.
+2025-03-09 14:42:42,13,Instruction 13 inserted.
+2025-03-09 14:42:44,21,Instruction 21 inserted.
+2025-03-09 14:42:45,23,Delivery instruction with ID 23 created by institution INST-4 for Bond-D for amount 19726.12
+2025-03-09 14:42:45,24,Receipt instruction with ID 24 created by institution INST-5 for Bond-D for amount 19726.12
+2025-03-09 14:42:46,20,Instruction 20 inserted.
+2025-03-09 14:42:50,25,Receipt instruction with ID 25 created by institution INST-5 for Bond-A for amount 29491.43
+2025-03-09 14:42:50,26,Delivery instruction with ID 26 created by institution INST-1 for Bond-A for amount 29491.43
+2025-03-09 14:42:52,15,Instruction 15 validated.
+2025-03-09 14:42:55,22,Instruction 22 inserted.
+2025-03-09 14:42:56,16,Instruction 16 validated.
+2025-03-09 14:42:57,27,Receipt instruction with ID 27 created by institution INST-3 for Bond-A for amount 61381.47
+2025-03-09 14:42:57,28,Delivery instruction with ID 28 created by institution INST-2 for Bond-A for amount 61381.47
+2025-03-09 14:42:59,19,Instruction 19 validated.
+2025-03-09 14:43:00,12,Instruction 12 validated.
+2025-03-09 14:43:01,9,Instruction 9 validated.
+2025-03-09 14:43:02,21,Instruction 21 validated.
+2025-03-09 14:43:04,13,Instruction 13 validated.
+2025-03-09 14:43:05,7_8,Transaction 7_8 attempting to settle.
+2025-03-09 14:43:05,7_8,Transaction 7_8 settled fully.
+2025-03-09 14:43:07,14,Instruction 14 validated.
+2025-03-09 14:43:09,18,Instruction 18 validated.
+2025-03-09 14:43:12,11,Instruction 11 attempting to match
+2025-03-09 14:43:12,11,ReceiptInstruction 11 matched with DeliveryInstruction 12
+2025-03-09 14:43:13,29,Receipt instruction with ID 29 created by institution INST-2 for Bond-B for amount 55037.64
+2025-03-09 14:43:13,30,Delivery instruction with ID 30 created by institution INST-5 for Bond-B for amount 55037.64
+2025-03-09 14:43:14,10,Instruction 10 validated.
+2025-03-09 14:43:15,17,Instruction 17 validated.
+2025-03-09 14:43:18,20,Instruction 20 validated.
+2025-03-09 14:43:19,31,Delivery instruction with ID 31 created by institution INST-1 for Bond-A for amount 52019.31
+2025-03-09 14:43:19,32,Receipt instruction with ID 32 created by institution INST-5 for Bond-A for amount 52019.31
+2025-03-09 14:43:20,24,Instruction 24 inserted.
+2025-03-09 14:43:23,30,Instruction 30 inserted.
+2025-03-09 14:43:25,9,Instruction 9 attempting to match
+2025-03-09 14:43:25,9,DeliveryInstruction 9 matched with ReceiptInstruction 10
+2025-03-09 14:43:26,13,Instruction 13 attempting to match
+2025-03-09 14:43:26,13,ReceiptInstruction 13 matched with DeliveryInstruction 14
+2025-03-09 14:43:27,28,Instruction 28 inserted.
+2025-03-09 14:43:28,33,Receipt instruction with ID 33 created by institution INST-5 for Bond-D for amount 73047.42
+2025-03-09 14:43:28,34,Delivery instruction with ID 34 created by institution INST-2 for Bond-D for amount 73047.42
+2025-03-09 14:43:29,24,Instruction 24 validated.
+2025-03-09 14:43:31,25,Instruction 25 inserted.
+2025-03-09 14:43:33,21,Instruction 21 attempting to match
+2025-03-09 14:43:33,21,"ERROR: DeliveryInstruction 21 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:43:34,31,Instruction 31 inserted.
+2025-03-09 14:43:35,26,Instruction 26 inserted.
+2025-03-09 14:43:37,22,Instruction 22 validated.
+2025-03-09 14:43:38,32,Instruction 32 inserted.
+2025-03-09 14:43:40,17,Instruction 17 attempting to match
+2025-03-09 14:43:40,17,DeliveryInstruction 17 matched with ReceiptInstruction 18
+2025-03-09 14:43:42,19,Instruction 19 attempting to match
+2025-03-09 14:43:42,19,DeliveryInstruction 19 matched with ReceiptInstruction 20
+2025-03-09 14:43:43,35,Delivery instruction with ID 35 created by institution INST-4 for Bond-B for amount 81573.29
+2025-03-09 14:43:43,36,Receipt instruction with ID 36 created by institution INST-1 for Bond-B for amount 81573.29
+2025-03-09 14:43:46,23,Instruction 23 inserted.
+2025-03-09 14:43:47,37,Delivery instruction with ID 37 created by institution INST-3 for Bond-B for amount 25671.89
+2025-03-09 14:43:47,38,Receipt instruction with ID 38 created by institution INST-2 for Bond-B for amount 25671.89
+2025-03-09 14:43:48,16,Instruction 16 attempting to match
+2025-03-09 14:43:48,16,ReceiptInstruction 16 matched with DeliveryInstruction 15
+2025-03-09 14:43:54,11_12,Transaction 11_12 attempting to settle.
+2025-03-09 14:43:54,11_12,Transaction 11_12 settled fully.
+2025-03-09 14:43:57,39,Delivery instruction with ID 39 created by institution INST-2 for Bond-D for amount 31315.78
+2025-03-09 14:43:57,40,Receipt instruction with ID 40 created by institution INST-3 for Bond-D for amount 31315.78
+2025-03-09 14:44:00,27,Instruction 27 inserted.
+2025-03-09 14:44:04,29,Instruction 29 inserted.
+2025-03-09 14:44:05,16_15,Transaction 16_15 attempting to settle.
+2025-03-09 14:44:05,16_15,Transaction 16_15 settled fully.
+2025-03-09 14:44:12,29,Instruction 29 validated.
+2025-03-09 14:44:13,22,Instruction 22 attempting to match
+2025-03-09 14:44:13,22,ReceiptInstruction 22 matched with DeliveryInstruction 21
+2025-03-09 14:44:15,41,Delivery instruction with ID 41 created by institution INST-3 for Bond-A for amount 33872.09
+2025-03-09 14:44:15,42,Receipt instruction with ID 42 created by institution INST-5 for Bond-A for amount 33872.09
+2025-03-09 14:44:16,25,Instruction 25 validated.
+2025-03-09 14:44:17,13_14,Transaction 13_14 attempting to settle.
+2025-03-09 14:44:17,13_14,Transaction 13_14 settled fully.
+2025-03-09 14:44:22,38,Instruction 38 inserted.
+2025-03-09 14:44:24,9_10,Transaction 9_10 attempting to settle.
+2025-03-09 14:44:24,9_10,Transaction 9_10 settled fully.
+2025-03-09 14:44:25,26,Instruction 26 validated.
+2025-03-09 14:44:26,37,Instruction 37 inserted.
+2025-03-09 14:44:28,30,Instruction 30 validated.
+2025-03-09 14:44:29,43,Receipt instruction with ID 43 created by institution INST-2 for Bond-C for amount 32168.9
+2025-03-09 14:44:29,44,Delivery instruction with ID 44 created by institution INST-3 for Bond-C for amount 32168.9
+2025-03-09 14:44:33,17_18,Transaction 17_18 attempting to settle.
+2025-03-09 14:44:33,17_18,Transaction 17_18 settled fully.
+2025-03-09 14:44:35,39,Instruction 39 inserted.
+2025-03-09 14:44:36,45,Receipt instruction with ID 45 created by institution INST-4 for Bond-A for amount 64261.62
+2025-03-09 14:44:36,46,Delivery instruction with ID 46 created by institution INST-5 for Bond-A for amount 64261.62
+2025-03-09 14:44:37,24,Instruction 24 attempting to match
+2025-03-09 14:44:37,24,"ERROR: ReceiptInstruction 24 failed to match, DeliveryInstruction not yet validated"
+2025-03-09 14:44:38,19_20,Transaction 19_20 attempting to settle.
+2025-03-09 14:44:38,19_20,Transaction 19_20 settled fully.
+2025-03-09 14:44:40,34,Instruction 34 inserted.
+2025-03-09 14:44:43,32,Instruction 32 validated.
+2025-03-09 14:44:44,28,Instruction 28 validated.
+2025-03-09 14:44:45,47,Receipt instruction with ID 47 created by institution INST-1 for Bond-C for amount 60206.84
+2025-03-09 14:44:45,48,Delivery instruction with ID 48 created by institution INST-4 for Bond-C for amount 60206.84
+2025-03-09 14:44:46,27,Instruction 27 validated.
+2025-03-09 14:44:48,33,Instruction 33 inserted.
+2025-03-09 14:44:50,40,Instruction 40 inserted.
+2025-03-09 14:44:54,23,Instruction 23 validated.
+2025-03-09 14:44:56,35,Instruction 35 inserted.
+2025-03-09 14:44:58,31,Instruction 31 validated.
+2025-03-09 14:44:59,36,Instruction 36 inserted.
+2025-03-09 14:45:01,49,Delivery instruction with ID 49 created by institution INST-4 for Bond-C for amount 43539.29
+2025-03-09 14:45:01,50,Receipt instruction with ID 50 created by institution INST-1 for Bond-C for amount 43539.29
+2025-03-09 14:45:02,33,Instruction 33 validated.
+2025-03-09 14:45:07,43,Instruction 43 inserted.
+2025-03-09 14:45:08,40,Instruction 40 validated.
+2025-03-09 14:45:11,44,Instruction 44 inserted.
+2025-03-09 14:45:14,42,Instruction 42 inserted.
+2025-03-09 14:45:15,36,Instruction 36 validated.
+2025-03-09 14:45:17,41,Instruction 41 inserted.
+2025-03-09 14:45:18,45,Instruction 45 inserted.
+2025-03-09 14:45:19,39,Instruction 39 validated.
+2025-03-09 14:45:21,31,Instruction 31 attempting to match
+2025-03-09 14:45:21,31,DeliveryInstruction 31 matched with ReceiptInstruction 32
+2025-03-09 14:45:23,27,Instruction 27 attempting to match
+2025-03-09 14:45:23,27,ReceiptInstruction 27 matched with DeliveryInstruction 28
+2025-03-09 14:45:24,37,Instruction 37 validated.
+2025-03-09 14:45:28,26,Instruction 26 attempting to match
+2025-03-09 14:45:28,26,DeliveryInstruction 26 matched with ReceiptInstruction 25
+2025-03-09 14:45:30,38,Instruction 38 validated.
+2025-03-09 14:45:32,30,Instruction 30 attempting to match
+2025-03-09 14:45:32,30,DeliveryInstruction 30 matched with ReceiptInstruction 29
+2025-03-09 14:45:34,22_21,Transaction 22_21 attempting to settle.
+2025-03-09 14:45:34,22_21,Transaction 22_21 settled fully.
+2025-03-09 14:45:36,48,Instruction 48 inserted.
+2025-03-09 14:45:40,34,Instruction 34 validated.
+2025-03-09 14:45:46,23,Instruction 23 attempting to match
+2025-03-09 14:45:46,23,DeliveryInstruction 23 matched with ReceiptInstruction 24
+2025-03-09 14:45:54,46,Instruction 46 inserted.
+2025-03-09 14:46:01,35,Instruction 35 validated.
+2025-03-09 14:46:04,50,Instruction 50 inserted.
+2025-03-09 14:46:05,31_32,Transaction 31_32 attempting to settle.
+2025-03-09 14:46:05,31_32,Transaction 31_32 settled fully.
+2025-03-09 14:46:07,27_28,Transaction 27_28 attempting to settle.
+2025-03-09 14:46:07,27_28,Transaction 27_28 settled fully.
+2025-03-09 14:46:10,44,Instruction 44 validated.
+2025-03-09 14:46:17,36,Instruction 36 attempting to match
+2025-03-09 14:46:17,36,ReceiptInstruction 36 matched with DeliveryInstruction 35
+2025-03-09 14:46:18,43,Instruction 43 validated.
+2025-03-09 14:46:22,40,Instruction 40 attempting to match
+2025-03-09 14:46:22,40,ReceiptInstruction 40 matched with DeliveryInstruction 39
+2025-03-09 14:46:25,51,Receipt instruction with ID 51 created by institution INST-5 for Bond-D for amount 87320.98
+2025-03-09 14:46:25,52,Delivery instruction with ID 52 created by institution INST-1 for Bond-D for amount 87320.98
+2025-03-09 14:46:26,48,Instruction 48 validated.
+2025-03-09 14:46:28,26_25,Transaction 26_25 attempting to settle.
+2025-03-09 14:46:28,26_25,Transaction 26_25 settled fully.
+2025-03-09 14:46:35,53,Receipt instruction with ID 53 created by institution INST-3 for Bond-B for amount 48849.09
+2025-03-09 14:46:35,54,Delivery instruction with ID 54 created by institution INST-5 for Bond-B for amount 48849.09
+2025-03-09 14:46:49,46,Instruction 46 validated.
+2025-03-09 14:46:50,34,Instruction 34 attempting to match
+2025-03-09 14:46:50,34,DeliveryInstruction 34 matched with ReceiptInstruction 33
+2025-03-09 14:46:52,49,Instruction 49 inserted.
+2025-03-09 14:46:53,42,Instruction 42 validated.
+2025-03-09 14:46:56,47,Instruction 47 inserted.
+2025-03-09 14:46:58,37,Instruction 37 attempting to match
+2025-03-09 14:46:58,37,DeliveryInstruction 37 matched with ReceiptInstruction 38
+2025-03-09 14:47:00,41,Instruction 41 validated.
+2025-03-09 14:47:01,45,Instruction 45 validated.
+2025-03-09 14:47:02,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 14:47:02,30_1,Delivery instruction with ID 30_1 created by institution INST-5 for Bond-B for amount 34322.62
+2025-03-09 14:47:02,30_2,Delivery instruction with ID 30_2 created by institution INST-5 for Bond-B for amount 20715.019999999997
+2025-03-09 14:47:02,29_1,Receipt instruction with ID 29_1 created by institution INST-2 for Bond-B for amount 34322.62
+2025-03-09 14:47:02,29_2,Receipt instruction with ID 29_2 created by institution INST-2 for Bond-B for amount 20715.019999999997
+2025-03-09 14:47:02,30_1,Instruction 30_1 attempting to match
+2025-03-09 14:47:02,30_1,DeliveryInstruction 30_1 matched with ReceiptInstruction 29_1
+2025-03-09 14:47:02,30_2,Instruction 30_2 attempting to match
+2025-03-09 14:47:02,30_2,DeliveryInstruction 30_2 matched with ReceiptInstruction 29_2
+2025-03-09 14:47:02,30_1_29_1,Transaction 30_1_29_1 attempting to settle.
+2025-03-09 14:47:02,30_1_29_1,Transaction 30_1_29_1 settled fully.
+2025-03-09 14:47:02,30_29,"Transaction 30_29 partially settled. Children 29_1, 29_2, 30_1 and 30_2 created. Transactions 30_1_29_1 and 30_2_29_2 created."
+2025-03-09 14:47:02,30_29,Transaction 30_29 cancelled due to partial settlement.
+2025-03-09 14:47:10,23_24,Transaction 23_24 attempting to settle.
+2025-03-09 14:47:10,23_24,Transaction 23_24 settled fully.
+2025-03-09 14:47:22,43,Instruction 43 attempting to match
+2025-03-09 14:47:22,43,ReceiptInstruction 43 matched with DeliveryInstruction 44
+2025-03-09 14:47:23,51,Instruction 51 inserted.
+2025-03-09 14:47:29,45,Instruction 45 attempting to match
+2025-03-09 14:47:29,45,ReceiptInstruction 45 matched with DeliveryInstruction 46
+2025-03-09 14:47:32,40_39,Transaction 40_39 attempting to settle.
+2025-03-09 14:47:32,40_39,Transaction 40_39 settled fully.
+2025-03-09 14:47:36,37_38,Transaction 37_38 attempting to settle.
+2025-03-09 14:47:36,37_38,Transaction 37_38 settled fully.
+2025-03-09 14:47:37,42,Instruction 42 attempting to match
+2025-03-09 14:47:37,42,ReceiptInstruction 42 matched with DeliveryInstruction 41
+2025-03-09 14:47:39,54,Instruction 54 inserted.
+2025-03-09 14:47:47,52,Instruction 52 inserted.
+2025-03-09 14:47:48,30_2_29_2,Transaction 30_2_29_2 attempting to settle.
+2025-03-09 14:47:48,30_2,ReceiptInstruction 30_2: insufficient funds for partial settlement.
+2025-03-09 14:47:48,29_2,ReceiptInstruction 29_2: insufficient funds for partial settlement.
+2025-03-09 14:47:48,30_2_29_2,Transaction 30_2_29_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:47:49,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 14:47:49,30_29,One of the instructions or transaction not in the correct state
+2025-03-09 14:47:50,49,Instruction 49 validated.
+2025-03-09 14:47:52,53,Instruction 53 inserted.
+2025-03-09 14:47:55,36_35,Transaction 36_35 attempting to settle.
+2025-03-09 14:47:55,35_1,Delivery instruction with ID 35_1 created by institution INST-4 for Bond-B for amount 18351.139999999992
+2025-03-09 14:47:55,35_2,Delivery instruction with ID 35_2 created by institution INST-4 for Bond-B for amount 63222.15
+2025-03-09 14:47:55,36_1,Receipt instruction with ID 36_1 created by institution INST-1 for Bond-B for amount 18351.139999999992
+2025-03-09 14:47:55,36_2,Receipt instruction with ID 36_2 created by institution INST-1 for Bond-B for amount 63222.15
+2025-03-09 14:47:55,35_1,Instruction 35_1 attempting to match
+2025-03-09 14:47:55,35_1,DeliveryInstruction 35_1 matched with ReceiptInstruction 36_1
+2025-03-09 14:47:55,35_2,Instruction 35_2 attempting to match
+2025-03-09 14:47:55,35_2,DeliveryInstruction 35_2 matched with ReceiptInstruction 36_2
+2025-03-09 14:47:55,35_1_36_1,Transaction 35_1_36_1 attempting to settle.
+2025-03-09 14:47:55,35_1_36_1,Transaction 35_1_36_1 settled fully.
+2025-03-09 14:47:55,36_35,"Transaction 36_35 partially settled. Children 36_1, 36_2, 35_1 and 35_2 created. Transactions 35_1_36_1 and 35_2_36_2 created."
+2025-03-09 14:47:55,36_35,Transaction 36_35 cancelled due to partial settlement.
+2025-03-09 14:48:16,34_33,Transaction 34_33 attempting to settle.
+2025-03-09 14:48:16,34_33,Transaction 34_33 settled fully.
+2025-03-09 14:48:25,50,Instruction 50 validated.
+2025-03-09 14:48:32,48,Instruction 48 attempting to match
+2025-03-09 14:48:32,48,"ERROR: DeliveryInstruction 48 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:48:38,47,Instruction 47 validated.
+2025-03-09 14:48:47,45_46,Transaction 45_46 attempting to settle.
+2025-03-09 14:48:47,45_46,Transaction 45_46 settled fully.
+2025-03-09 14:48:48,30_2_29_2,Transaction 30_2_29_2 attempting to settle.
+2025-03-09 14:48:48,30_2,ReceiptInstruction 30_2: insufficient funds for partial settlement.
+2025-03-09 14:48:48,29_2,ReceiptInstruction 29_2: insufficient funds for partial settlement.
+2025-03-09 14:48:48,30_2_29_2,Transaction 30_2_29_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:48:55,43_44,Transaction 43_44 attempting to settle.
+2025-03-09 14:48:55,44_1,Delivery instruction with ID 44_1 created by institution INST-3 for Bond-C for amount 12297.17
+2025-03-09 14:48:55,44_2,Delivery instruction with ID 44_2 created by institution INST-3 for Bond-C for amount 19871.730000000003
+2025-03-09 14:48:55,43_1,Receipt instruction with ID 43_1 created by institution INST-2 for Bond-C for amount 12297.17
+2025-03-09 14:48:55,43_2,Receipt instruction with ID 43_2 created by institution INST-2 for Bond-C for amount 19871.730000000003
+2025-03-09 14:48:55,44_1,Instruction 44_1 attempting to match
+2025-03-09 14:48:55,44_1,DeliveryInstruction 44_1 matched with ReceiptInstruction 43_1
+2025-03-09 14:48:55,44_2,Instruction 44_2 attempting to match
+2025-03-09 14:48:55,44_2,DeliveryInstruction 44_2 matched with ReceiptInstruction 43_2
+2025-03-09 14:48:55,44_1_43_1,Transaction 44_1_43_1 attempting to settle.
+2025-03-09 14:48:55,44_1_43_1,Transaction 44_1_43_1 settled fully.
+2025-03-09 14:48:55,43_44,"Transaction 43_44 partially settled. Children 43_1, 43_2, 44_1 and 44_2 created. Transactions 44_1_43_1 and 44_2_43_2 created."
+2025-03-09 14:48:55,43_44,Transaction 43_44 cancelled due to partial settlement.
+2025-03-09 14:48:57,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 14:48:57,30_29,One of the instructions or transaction not in the correct state
+2025-03-09 14:49:00,54,Instruction 54 validated.
+2025-03-09 14:49:05,35_2_36_2,Transaction 35_2_36_2 attempting to settle.
+2025-03-09 14:49:05,35_2_1,Delivery instruction with ID 35_2_1 created by institution INST-4 for Bond-B for amount 0.0
+2025-03-09 14:49:05,35_2_2,Delivery instruction with ID 35_2_2 created by institution INST-4 for Bond-B for amount 63222.15
+2025-03-09 14:49:05,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
+2025-03-09 14:49:05,35_2_36_2,Transaction 35_2_36_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:49:11,49,Instruction 49 attempting to match
+2025-03-09 14:49:11,49,DeliveryInstruction 49 matched with ReceiptInstruction 50
+2025-03-09 14:49:14,63,Delivery instruction with ID 63 created by institution INST-5 for Bond-C for amount 25212.49
+2025-03-09 14:49:14,64,Receipt instruction with ID 64 created by institution INST-2 for Bond-C for amount 25212.49
+2025-03-09 14:49:15,48,Instruction 48 attempting to match
+2025-03-09 14:49:15,48,DeliveryInstruction 48 matched with ReceiptInstruction 47
+2025-03-09 14:49:20,65,Delivery instruction with ID 65 created by institution INST-3 for Bond-C for amount 42135.24
+2025-03-09 14:49:20,66,Receipt instruction with ID 66 created by institution INST-4 for Bond-C for amount 42135.24
+2025-03-09 14:49:25,51,Instruction 51 validated.
+2025-03-09 14:49:26,36_35,Transaction 36_35 attempting to settle.
+2025-03-09 14:49:26,36_35,One of the instructions or transaction not in the correct state
+2025-03-09 14:49:33,67,Receipt instruction with ID 67 created by institution INST-2 for Bond-D for amount 96941.61
+2025-03-09 14:49:33,68,Delivery instruction with ID 68 created by institution INST-3 for Bond-D for amount 96941.61
+2025-03-09 14:49:38,53,Instruction 53 validated.
+2025-03-09 14:49:43,52,Instruction 52 validated.
+2025-03-09 14:49:45,69,Receipt instruction with ID 69 created by institution INST-1 for Bond-A for amount 39614.04
+2025-03-09 14:49:45,70,Delivery instruction with ID 70 created by institution INST-4 for Bond-A for amount 39614.04
+2025-03-09 14:50:01,42_41,Transaction 42_41 attempting to settle.
+2025-03-09 14:50:01,42_41,Transaction 42_41 settled fully.
+2025-03-09 14:50:06,71,Delivery instruction with ID 71 created by institution INST-4 for Bond-D for amount 55598.59
+2025-03-09 14:50:06,72,Receipt instruction with ID 72 created by institution INST-5 for Bond-D for amount 55598.59
+2025-03-09 14:50:15,43_44,Transaction 43_44 attempting to settle.
+2025-03-09 14:50:15,43_44,One of the instructions or transaction not in the correct state
+2025-03-09 14:50:17,70,Instruction 70 inserted.
+2025-03-09 14:50:19,53,Instruction 53 attempting to match
+2025-03-09 14:50:19,53,ReceiptInstruction 53 matched with DeliveryInstruction 54
+2025-03-09 14:50:20,71,Instruction 71 inserted.
+2025-03-09 14:50:33,44_2_43_2,Transaction 44_2_43_2 attempting to settle.
+2025-03-09 14:50:33,44_2,ReceiptInstruction 44_2: insufficient funds for partial settlement.
+2025-03-09 14:50:33,43_2,ReceiptInstruction 43_2: insufficient funds for partial settlement.
+2025-03-09 14:50:33,44_2_43_2,Transaction 44_2_43_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:50:34,68,Instruction 68 inserted.
+2025-03-09 14:50:35,67,Instruction 67 inserted.
+2025-03-09 14:50:37,65,Instruction 65 inserted.
+2025-03-09 14:50:40,73,Receipt instruction with ID 73 created by institution INST-4 for Bond-B for amount 52877.17
+2025-03-09 14:50:40,74,Delivery instruction with ID 74 created by institution INST-2 for Bond-B for amount 52877.17
+2025-03-09 14:50:46,64,Instruction 64 inserted.
+2025-03-09 14:50:51,35_2_36_2,Transaction 35_2_36_2 attempting to settle.
+2025-03-09 14:50:51,35_2_1,Delivery instruction with ID 35_2_1 created by institution INST-4 for Bond-B for amount 0.0
+2025-03-09 14:50:51,35_2_2,Delivery instruction with ID 35_2_2 created by institution INST-4 for Bond-B for amount 63222.15
+2025-03-09 14:50:51,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
+2025-03-09 14:50:51,35_2_36_2,Transaction 35_2_36_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:50:53,36_35,Transaction 36_35 attempting to settle.
+2025-03-09 14:50:53,36_35,One of the instructions or transaction not in the correct state
+2025-03-09 14:50:54,66,Instruction 66 inserted.
+2025-03-09 14:51:01,48_47,Transaction 48_47 attempting to settle.
+2025-03-09 14:51:01,48_47,Transaction 48_47 settled fully.
+2025-03-09 14:51:03,69,Instruction 69 inserted.
+2025-03-09 14:51:05,72,Instruction 72 inserted.
+2025-03-09 14:51:08,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:51:08,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:51:11,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:51:11,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:51:12,51,Instruction 51 attempting to match
+2025-03-09 14:51:12,51,ReceiptInstruction 51 matched with DeliveryInstruction 52
+2025-03-09 14:51:16,49_50,Transaction 49_50 attempting to settle.
+2025-03-09 14:51:16,49_50,Transaction 49_50 settled fully.
+2025-03-09 14:51:28,63,Instruction 63 inserted.
+2025-03-09 14:51:36,30_2_29_2,Transaction 30_2_29_2 attempting to settle.
+2025-03-09 14:51:36,30_2,ReceiptInstruction 30_2: insufficient funds for partial settlement.
+2025-03-09 14:51:36,29_2,ReceiptInstruction 29_2: insufficient funds for partial settlement.
+2025-03-09 14:51:36,30_2_29_2,Transaction 30_2_29_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:51:42,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 14:51:42,30_29,One of the instructions or transaction not in the correct state
+2025-03-09 14:51:59,77,Delivery instruction with ID 77 created by institution INST-2 for Bond-B for amount 81581.45
+2025-03-09 14:51:59,78,Receipt instruction with ID 78 created by institution INST-3 for Bond-B for amount 81581.45
+2025-03-09 14:52:10,79,Receipt instruction with ID 79 created by institution INST-4 for Bond-B for amount 52396.04
+2025-03-09 14:52:10,80,Delivery instruction with ID 80 created by institution INST-5 for Bond-B for amount 52396.04
+2025-03-09 14:52:13,67,Instruction 67 validated.
+2025-03-09 14:52:14,71,Instruction 71 validated.
+2025-03-09 14:52:15,64,Instruction 64 validated.
+2025-03-09 14:52:18,72,Instruction 72 validated.
+2025-03-09 14:52:29,74,Instruction 74 inserted.
+2025-03-09 14:52:33,69,Instruction 69 validated.
+2025-03-09 14:52:50,70,Instruction 70 validated.
+2025-03-09 14:53:03,51_52,Transaction 51_52 attempting to settle.
+2025-03-09 14:53:03,52_1,Delivery instruction with ID 52_1 created by institution INST-1 for Bond-D for amount 52926.75
+2025-03-09 14:53:03,52_2,Delivery instruction with ID 52_2 created by institution INST-1 for Bond-D for amount 34394.229999999996
+2025-03-09 14:53:03,51_1,Receipt instruction with ID 51_1 created by institution INST-5 for Bond-D for amount 52926.75
+2025-03-09 14:53:03,51_2,Receipt instruction with ID 51_2 created by institution INST-5 for Bond-D for amount 34394.229999999996
+2025-03-09 14:53:03,52_1,Instruction 52_1 attempting to match
+2025-03-09 14:53:03,52_1,DeliveryInstruction 52_1 matched with ReceiptInstruction 51_1
+2025-03-09 14:53:03,52_2,Instruction 52_2 attempting to match
+2025-03-09 14:53:03,52_2,DeliveryInstruction 52_2 matched with ReceiptInstruction 51_2
+2025-03-09 14:53:03,52_1_51_1,Transaction 52_1_51_1 attempting to settle.
+2025-03-09 14:53:03,52_1_51_1,Transaction 52_1_51_1 settled fully.
+2025-03-09 14:53:03,51_52,"Transaction 51_52 partially settled. Children 51_1, 51_2, 52_1 and 52_2 created. Transactions 52_1_51_1 and 52_2_51_2 created."
+2025-03-09 14:53:03,51_52,Transaction 51_52 cancelled due to partial settlement.
+2025-03-09 14:53:06,68,Instruction 68 validated.
+2025-03-09 14:53:10,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:53:10,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:53:17,35_2_36_2,Transaction 35_2_36_2 attempting to settle.
+2025-03-09 14:53:17,35_2_1,Delivery instruction with ID 35_2_1 created by institution INST-4 for Bond-B for amount 0.0
+2025-03-09 14:53:17,35_2_2,Delivery instruction with ID 35_2_2 created by institution INST-4 for Bond-B for amount 63222.15
+2025-03-09 14:53:17,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
+2025-03-09 14:53:17,35_2_36_2,Transaction 35_2_36_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:53:18,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:53:18,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:53:19,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:53:19,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:53:24,66,Instruction 66 validated.
+2025-03-09 14:53:27,53_54,Transaction 53_54 attempting to settle.
+2025-03-09 14:53:27,54,ReceiptInstruction 54: insufficient funds for partial settlement.
+2025-03-09 14:53:27,53,ReceiptInstruction 53: insufficient funds for partial settlement.
+2025-03-09 14:53:27,53_54,Transaction 53_54 partial settlement aborted due to insufficient funds.
+2025-03-09 14:53:30,63,Instruction 63 validated.
+2025-03-09 14:53:34,44_2_43_2,Transaction 44_2_43_2 attempting to settle.
+2025-03-09 14:53:34,44_2,ReceiptInstruction 44_2: insufficient funds for partial settlement.
+2025-03-09 14:53:34,43_2,ReceiptInstruction 43_2: insufficient funds for partial settlement.
+2025-03-09 14:53:34,44_2_43_2,Transaction 44_2_43_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:53:35,77,Instruction 77 inserted.
+2025-03-09 14:53:38,85,Receipt instruction with ID 85 created by institution INST-3 for Bond-B for amount 43316.97
+2025-03-09 14:53:38,86,Delivery instruction with ID 86 created by institution INST-2 for Bond-B for amount 43316.97
+2025-03-09 14:53:42,78,Instruction 78 inserted.
+2025-03-09 14:53:45,87,Delivery instruction with ID 87 created by institution INST-2 for Bond-A for amount 51363.7
+2025-03-09 14:53:45,88,Receipt instruction with ID 88 created by institution INST-4 for Bond-A for amount 51363.7
+2025-03-09 14:53:47,30_2_29_2,Transaction 30_2_29_2 attempting to settle.
+2025-03-09 14:53:47,30_2,ReceiptInstruction 30_2: insufficient funds for partial settlement.
+2025-03-09 14:53:47,29_2,ReceiptInstruction 29_2: insufficient funds for partial settlement.
+2025-03-09 14:53:47,30_2_29_2,Transaction 30_2_29_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:53:48,65,Instruction 65 validated.
+2025-03-09 14:53:50,73,Instruction 73 inserted.
+2025-03-09 14:53:52,36_35,Transaction 36_35 attempting to settle.
+2025-03-09 14:53:52,36_35,One of the instructions or transaction not in the correct state
+2025-03-09 14:53:58,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 14:53:58,30_29,One of the instructions or transaction not in the correct state
+2025-03-09 14:54:03,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:54:03,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:54:05,43_44,Transaction 43_44 attempting to settle.
+2025-03-09 14:54:05,43_44,One of the instructions or transaction not in the correct state
+2025-03-09 14:54:16,72,Instruction 72 attempting to match
+2025-03-09 14:54:16,72,ReceiptInstruction 72 matched with DeliveryInstruction 71
+2025-03-09 14:54:24,30_2_29_2,Transaction 30_2_29_2 attempting to settle.
+2025-03-09 14:54:24,30_2,ReceiptInstruction 30_2: insufficient funds for partial settlement.
+2025-03-09 14:54:24,29_2,ReceiptInstruction 29_2: insufficient funds for partial settlement.
+2025-03-09 14:54:24,30_2_29_2,Transaction 30_2_29_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:54:25,87,Instruction 87 inserted.
+2025-03-09 14:54:27,69,Instruction 69 attempting to match
+2025-03-09 14:54:27,69,ReceiptInstruction 69 matched with DeliveryInstruction 70
+2025-03-09 14:54:33,85,Instruction 85 inserted.
+2025-03-09 14:54:34,65,Instruction 65 attempting to match
+2025-03-09 14:54:34,65,DeliveryInstruction 65 matched with ReceiptInstruction 66
+2025-03-09 14:54:38,80,Instruction 80 inserted.
+2025-03-09 14:54:43,51_52,Transaction 51_52 attempting to settle.
+2025-03-09 14:54:43,51_52,One of the instructions or transaction not in the correct state
+2025-03-09 14:54:47,89,Delivery instruction with ID 89 created by institution INST-1 for Bond-D for amount 67640.52
+2025-03-09 14:54:47,90,Receipt instruction with ID 90 created by institution INST-2 for Bond-D for amount 67640.52
+2025-03-09 14:54:53,77,Instruction 77 validated.
+2025-03-09 14:55:03,86,Instruction 86 inserted.
+2025-03-09 14:55:05,53_54,Transaction 53_54 attempting to settle.
+2025-03-09 14:55:05,54,ReceiptInstruction 54: insufficient funds for partial settlement.
+2025-03-09 14:55:05,53,ReceiptInstruction 53: insufficient funds for partial settlement.
+2025-03-09 14:55:05,53_54,Transaction 53_54 partial settlement aborted due to insufficient funds.
+2025-03-09 14:55:11,36_35,Transaction 36_35 attempting to settle.
+2025-03-09 14:55:11,36_35,One of the instructions or transaction not in the correct state
+2025-03-09 14:55:13,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:55:13,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:55:15,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:55:15,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:55:21,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:55:21,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:55:22,44_2_43_2,Transaction 44_2_43_2 attempting to settle.
+2025-03-09 14:55:22,44_2,ReceiptInstruction 44_2: insufficient funds for partial settlement.
+2025-03-09 14:55:22,43_2,ReceiptInstruction 43_2: insufficient funds for partial settlement.
+2025-03-09 14:55:22,44_2_43_2,Transaction 44_2_43_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:55:23,35_2_36_2,Transaction 35_2_36_2 attempting to settle.
+2025-03-09 14:55:23,35_2_1,Delivery instruction with ID 35_2_1 created by institution INST-4 for Bond-B for amount 0.0
+2025-03-09 14:55:23,35_2_2,Delivery instruction with ID 35_2_2 created by institution INST-4 for Bond-B for amount 63222.15
+2025-03-09 14:55:23,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
+2025-03-09 14:55:23,35_2_36_2,Transaction 35_2_36_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:55:25,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:55:25,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:55:27,67,Instruction 67 attempting to match
+2025-03-09 14:55:27,67,ReceiptInstruction 67 matched with DeliveryInstruction 68
+2025-03-09 14:55:28,43_44,Transaction 43_44 attempting to settle.
+2025-03-09 14:55:28,43_44,One of the instructions or transaction not in the correct state
+2025-03-09 14:55:32,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:55:32,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:55:42,88,Instruction 88 inserted.
+2025-03-09 14:55:43,78,Instruction 78 validated.
+2025-03-09 14:55:46,63,Instruction 63 attempting to match
+2025-03-09 14:55:46,63,DeliveryInstruction 63 matched with ReceiptInstruction 64
+2025-03-09 14:55:49,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:55:49,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:55:52,79,Instruction 79 inserted.
+2025-03-09 14:55:55,73,Instruction 73 validated.
+2025-03-09 14:56:03,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 14:56:03,30_29,One of the instructions or transaction not in the correct state
+2025-03-09 14:56:05,93,Delivery instruction with ID 93 created by institution INST-4 for Bond-D for amount 31702.88
+2025-03-09 14:56:05,94,Receipt instruction with ID 94 created by institution INST-5 for Bond-D for amount 31702.88
+2025-03-09 14:56:16,74,Instruction 74 validated.
+2025-03-09 14:56:23,52_2_51_2,Transaction 52_2_51_2 attempting to settle.
+2025-03-09 14:56:23,52_2,ReceiptInstruction 52_2: insufficient funds for partial settlement.
+2025-03-09 14:56:23,51_2,ReceiptInstruction 51_2: insufficient funds for partial settlement.
+2025-03-09 14:56:23,52_2_51_2,Transaction 52_2_51_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:56:28,95,Delivery instruction with ID 95 created by institution INST-2 for Bond-C for amount 68039.2
+2025-03-09 14:56:28,96,Receipt instruction with ID 96 created by institution INST-3 for Bond-C for amount 68039.2
+2025-03-09 14:56:32,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:56:32,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:56:40,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:56:40,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:56:50,74,Instruction 74 attempting to match
+2025-03-09 14:56:50,74,DeliveryInstruction 74 matched with ReceiptInstruction 73
+2025-03-09 14:56:55,72_71,Transaction 72_71 attempting to settle.
+2025-03-09 14:56:55,72_71,Transaction 72_71 settled fully.
+2025-03-09 14:56:58,78,Instruction 78 attempting to match
+2025-03-09 14:56:58,78,ReceiptInstruction 78 matched with DeliveryInstruction 77
+2025-03-09 14:57:08,90,Instruction 90 inserted.
+2025-03-09 14:57:14,80,Instruction 80 validated.
+2025-03-09 14:57:17,89,Instruction 89 inserted.
+2025-03-09 14:57:19,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:57:19,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:57:26,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:57:26,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:57:34,36_35,Transaction 36_35 attempting to settle.
+2025-03-09 14:57:34,36_35,One of the instructions or transaction not in the correct state
+2025-03-09 14:57:35,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:57:35,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:57:38,69_70,Transaction 69_70 attempting to settle.
+2025-03-09 14:57:38,69_70,Transaction 69_70 settled fully.
+2025-03-09 14:57:41,85,Instruction 85 validated.
+2025-03-09 14:57:45,67_68,Transaction 67_68 attempting to settle.
+2025-03-09 14:57:45,67_68,Transaction 67_68 settled fully.
+2025-03-09 14:57:46,97,Delivery instruction with ID 97 created by institution INST-4 for Bond-B for amount 36992.55
+2025-03-09 14:57:46,98,Receipt instruction with ID 98 created by institution INST-5 for Bond-B for amount 36992.55
+2025-03-09 14:57:47,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:57:47,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:57:50,51_52,Transaction 51_52 attempting to settle.
+2025-03-09 14:57:50,51_52,One of the instructions or transaction not in the correct state
+2025-03-09 14:57:52,35_2_36_2,Transaction 35_2_36_2 attempting to settle.
+2025-03-09 14:57:52,35_2_1,Delivery instruction with ID 35_2_1 created by institution INST-4 for Bond-B for amount 0.0
+2025-03-09 14:57:52,35_2_2,Delivery instruction with ID 35_2_2 created by institution INST-4 for Bond-B for amount 63222.15
+2025-03-09 14:57:52,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
+2025-03-09 14:57:52,35_2_36_2,Transaction 35_2_36_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:57:53,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:57:53,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:57:55,79,Instruction 79 validated.
+2025-03-09 14:57:56,63_64,Transaction 63_64 attempting to settle.
+2025-03-09 14:57:56,63_64,Transaction 63_64 settled fully.
+2025-03-09 14:58:05,52_2_51_2,Transaction 52_2_51_2 attempting to settle.
+2025-03-09 14:58:05,52_2,ReceiptInstruction 52_2: insufficient funds for partial settlement.
+2025-03-09 14:58:05,51_2,ReceiptInstruction 51_2: insufficient funds for partial settlement.
+2025-03-09 14:58:05,52_2_51_2,Transaction 52_2_51_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:58:06,93,Instruction 93 inserted.
+2025-03-09 14:58:07,53_54,Transaction 53_54 attempting to settle.
+2025-03-09 14:58:07,54,ReceiptInstruction 54: insufficient funds for partial settlement.
+2025-03-09 14:58:07,53,ReceiptInstruction 53: insufficient funds for partial settlement.
+2025-03-09 14:58:07,53_54,Transaction 53_54 partial settlement aborted due to insufficient funds.
+2025-03-09 14:58:11,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:58:11,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:58:20,43_44,Transaction 43_44 attempting to settle.
+2025-03-09 14:58:20,43_44,One of the instructions or transaction not in the correct state
+2025-03-09 14:58:22,101,Receipt instruction with ID 101 created by institution INST-1 for Bond-A for amount 97464.64
+2025-03-09 14:58:22,102,Delivery instruction with ID 102 created by institution INST-2 for Bond-A for amount 97464.64
+2025-03-09 14:58:23,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 14:58:23,30_29,One of the instructions or transaction not in the correct state
+2025-03-09 14:58:25,44_2_43_2,Transaction 44_2_43_2 attempting to settle.
+2025-03-09 14:58:25,44_2,ReceiptInstruction 44_2: insufficient funds for partial settlement.
+2025-03-09 14:58:25,43_2,ReceiptInstruction 43_2: insufficient funds for partial settlement.
+2025-03-09 14:58:25,44_2_43_2,Transaction 44_2_43_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:58:34,87,Instruction 87 validated.
+2025-03-09 14:58:35,94,Instruction 94 inserted.
+2025-03-09 14:58:38,65_66,Transaction 65_66 attempting to settle.
+2025-03-09 14:58:38,65,ReceiptInstruction 65: insufficient funds for partial settlement.
+2025-03-09 14:58:38,66,ReceiptInstruction 66: insufficient funds for partial settlement.
+2025-03-09 14:58:38,65_66,Transaction 65_66 partial settlement aborted due to insufficient funds.
+2025-03-09 14:58:40,86,Instruction 86 validated.
+2025-03-09 14:58:43,88,Instruction 88 validated.
+2025-03-09 14:58:50,30_2_29_2,Transaction 30_2_29_2 attempting to settle.
+2025-03-09 14:58:50,30_2,ReceiptInstruction 30_2: insufficient funds for partial settlement.
+2025-03-09 14:58:50,29_2,ReceiptInstruction 29_2: insufficient funds for partial settlement.
+2025-03-09 14:58:50,30_2_29_2,Transaction 30_2_29_2 partial settlement aborted due to insufficient funds.
+2025-03-09 14:58:59,96,Instruction 96 inserted.
+2025-03-09 14:59:01,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:59:01,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:59:03,103,Delivery instruction with ID 103 created by institution INST-1 for Bond-A for amount 20960.38
+2025-03-09 14:59:03,104,Receipt instruction with ID 104 created by institution INST-2 for Bond-A for amount 20960.38
+2025-03-09 14:59:11,105,Delivery instruction with ID 105 created by institution INST-3 for Bond-B for amount 99953.37
+2025-03-09 14:59:11,106,Receipt instruction with ID 106 created by institution INST-2 for Bond-B for amount 99953.37
+2025-03-09 14:59:12,94,Instruction 94 validated.
+2025-03-09 14:59:30,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 14:59:30,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:59:32,102,Instruction 102 inserted.
+2025-03-09 14:59:33,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:59:33,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:59:37,86,Instruction 86 attempting to match
+2025-03-09 14:59:37,86,DeliveryInstruction 86 matched with ReceiptInstruction 85
+2025-03-09 14:59:38,78_77,Transaction 78_77 attempting to settle.
+2025-03-09 14:59:38,78_77,Transaction 78_77 settled fully.
+2025-03-09 14:59:39,51_52,Transaction 51_52 attempting to settle.
+2025-03-09 14:59:39,51_52,One of the instructions or transaction not in the correct state
+2025-03-09 14:59:40,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 14:59:40,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 14:59:41,36_35,Transaction 36_35 attempting to settle.
+2025-03-09 14:59:41,36_35,One of the instructions or transaction not in the correct state
+2025-03-09 14:59:43,98,Instruction 98 inserted.
+2025-03-09 14:59:44,107,Receipt instruction with ID 107 created by institution INST-4 for Bond-A for amount 49126.84
+2025-03-09 14:59:44,108,Delivery instruction with ID 108 created by institution INST-2 for Bond-A for amount 49126.84
+2025-03-09 14:59:46,79,Instruction 79 attempting to match
+2025-03-09 14:59:46,79,ReceiptInstruction 79 matched with DeliveryInstruction 80
+2025-03-09 14:59:53,65_66,Transaction 65_66 attempting to settle.
+2025-03-09 14:59:53,65,ReceiptInstruction 65: insufficient funds for partial settlement.
+2025-03-09 14:59:53,66,ReceiptInstruction 66: insufficient funds for partial settlement.
+2025-03-09 14:59:53,65_66,Transaction 65_66 partial settlement aborted due to insufficient funds.
+2025-03-09 14:59:56,101,Instruction 101 inserted.
+2025-03-09 15:00:02,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:00:02,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:00:06,88,Instruction 88 attempting to match
+2025-03-09 15:00:06,88,ReceiptInstruction 88 matched with DeliveryInstruction 87
+2025-03-09 15:00:10,89,Instruction 89 validated.
+2025-03-09 15:00:13,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:00:13,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:00:16,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:00:16,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:00:18,53_54,Transaction 53_54 attempting to settle.
+2025-03-09 15:00:18,54,ReceiptInstruction 54: insufficient funds for partial settlement.
+2025-03-09 15:00:18,53,ReceiptInstruction 53: insufficient funds for partial settlement.
+2025-03-09 15:00:18,53_54,Transaction 53_54 partial settlement aborted due to insufficient funds.
+2025-03-09 15:00:20,93,Instruction 93 validated.
+2025-03-09 15:00:22,35_2_36_2,Transaction 35_2_36_2 attempting to settle.
+2025-03-09 15:00:22,35_2_1,Delivery instruction with ID 35_2_1 created by institution INST-4 for Bond-B for amount 0.0
+2025-03-09 15:00:22,35_2_2,Delivery instruction with ID 35_2_2 created by institution INST-4 for Bond-B for amount 63222.15
+2025-03-09 15:00:22,36_2,ReceiptInstruction 36_2: insufficient funds for partial settlement.
+2025-03-09 15:00:22,35_2_36_2,Transaction 35_2_36_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:00:29,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:00:29,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:00:30,97,Instruction 97 inserted.
+2025-03-09 15:00:31,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 15:00:31,30_29,One of the instructions or transaction not in the correct state
+2025-03-09 15:00:41,30_2_29_2,Transaction 30_2_29_2 attempting to settle.
+2025-03-09 15:00:41,30_2,ReceiptInstruction 30_2: insufficient funds for partial settlement.
+2025-03-09 15:00:41,29_2,ReceiptInstruction 29_2: insufficient funds for partial settlement.
+2025-03-09 15:00:41,30_2_29_2,Transaction 30_2_29_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:00:55,90,Instruction 90 validated.
+2025-03-09 15:01:07,44_2_43_2,Transaction 44_2_43_2 attempting to settle.
+2025-03-09 15:01:07,44_2,ReceiptInstruction 44_2: insufficient funds for partial settlement.
+2025-03-09 15:01:07,43_2,ReceiptInstruction 43_2: insufficient funds for partial settlement.
+2025-03-09 15:01:07,44_2_43_2,Transaction 44_2_43_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:01:10,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:01:10,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:01:13,95,Instruction 95 inserted.
+2025-03-09 15:01:14,52_2_51_2,Transaction 52_2_51_2 attempting to settle.
+2025-03-09 15:01:14,52_2,ReceiptInstruction 52_2: insufficient funds for partial settlement.
+2025-03-09 15:01:14,51_2,ReceiptInstruction 51_2: insufficient funds for partial settlement.
+2025-03-09 15:01:14,52_2_51_2,Transaction 52_2_51_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:01:18,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:01:18,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:01:22,74_73,Transaction 74_73 attempting to settle.
+2025-03-09 15:01:22,74_73,Transaction 74_73 settled fully.
+2025-03-09 15:01:25,43_44,Transaction 43_44 attempting to settle.
+2025-03-09 15:01:25,43_44,One of the instructions or transaction not in the correct state
+2025-03-09 15:01:34,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:01:34,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:01:35,30_2_29_2,Transaction 30_2_29_2 attempting to settle.
+2025-03-09 15:01:35,30_2,ReceiptInstruction 30_2: insufficient funds for partial settlement.
+2025-03-09 15:01:35,29_2,ReceiptInstruction 29_2: insufficient funds for partial settlement.
+2025-03-09 15:01:35,30_2_29_2,Transaction 30_2_29_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:01:39,88_87,Transaction 88_87 attempting to settle.
+2025-03-09 15:01:39,88_87,Transaction 88_87 settled fully.
+2025-03-09 15:01:40,108,Instruction 108 inserted.
+2025-03-09 15:01:43,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:01:43,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:01:44,44_2_43_2,Transaction 44_2_43_2 attempting to settle.
+2025-03-09 15:01:44,44_2,ReceiptInstruction 44_2: insufficient funds for partial settlement.
+2025-03-09 15:01:44,43_2,ReceiptInstruction 43_2: insufficient funds for partial settlement.
+2025-03-09 15:01:44,44_2_43_2,Transaction 44_2_43_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:01:47,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:01:47,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:01:48,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:01:48,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:01:51,89,Instruction 89 attempting to match
+2025-03-09 15:01:51,89,DeliveryInstruction 89 matched with ReceiptInstruction 90
+2025-03-09 15:01:52,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:01:52,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:01:57,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:01:57,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:02:00,43_44,Transaction 43_44 attempting to settle.
+2025-03-09 15:02:00,43_44,One of the instructions or transaction not in the correct state
+2025-03-09 15:02:06,79_80,Transaction 79_80 attempting to settle.
+2025-03-09 15:02:06,80,ReceiptInstruction 80: insufficient funds for partial settlement.
+2025-03-09 15:02:06,79,ReceiptInstruction 79: insufficient funds for partial settlement.
+2025-03-09 15:02:06,79_80,Transaction 79_80 partial settlement aborted due to insufficient funds.
+2025-03-09 15:02:10,53_54,Transaction 53_54 attempting to settle.
+2025-03-09 15:02:10,54,ReceiptInstruction 54: insufficient funds for partial settlement.
+2025-03-09 15:02:10,53,ReceiptInstruction 53: insufficient funds for partial settlement.
+2025-03-09 15:02:10,53_54,Transaction 53_54 partial settlement aborted due to insufficient funds.
+2025-03-09 15:02:13,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:02:13,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:02:15,111,Receipt instruction with ID 111 created by institution INST-1 for Bond-A for amount 50855.54
+2025-03-09 15:02:15,112,Delivery instruction with ID 112 created by institution INST-4 for Bond-A for amount 50855.54
+2025-03-09 15:02:27,113,Receipt instruction with ID 113 created by institution INST-3 for Bond-B for amount 13987.31
+2025-03-09 15:02:27,114,Delivery instruction with ID 114 created by institution INST-4 for Bond-B for amount 13987.31
+2025-03-09 15:02:35,97,Instruction 97 validated.
+2025-03-09 15:02:42,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 15:02:42,30_29,One of the instructions or transaction not in the correct state
+2025-03-09 15:02:45,101,Instruction 101 validated.
+2025-03-09 15:02:46,52_2_51_2,Transaction 52_2_51_2 attempting to settle.
+2025-03-09 15:02:46,52_2,ReceiptInstruction 52_2: insufficient funds for partial settlement.
+2025-03-09 15:02:46,51_2,ReceiptInstruction 51_2: insufficient funds for partial settlement.
+2025-03-09 15:02:46,52_2_51_2,Transaction 52_2_51_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:02:48,51_52,Transaction 51_52 attempting to settle.
+2025-03-09 15:02:48,51_52,One of the instructions or transaction not in the correct state
+2025-03-09 15:02:51,35_2_36_2,Transaction 35_2_36_2 attempting to settle.
+2025-03-09 15:02:51,35_2_36_2,Transaction 35_2_36_2 settled fully.
+2025-03-09 15:03:01,65_66,Transaction 65_66 attempting to settle.
+2025-03-09 15:03:01,65,ReceiptInstruction 65: insufficient funds for partial settlement.
+2025-03-09 15:03:01,66,ReceiptInstruction 66: insufficient funds for partial settlement.
+2025-03-09 15:03:01,65_66,Transaction 65_66 partial settlement aborted due to insufficient funds.
+2025-03-09 15:03:02,96,Instruction 96 validated.
+2025-03-09 15:03:10,95,Instruction 95 validated.
+2025-03-09 15:03:20,98,Instruction 98 validated.
+2025-03-09 15:03:21,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:03:21,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:03:24,107,Instruction 107 inserted.
+2025-03-09 15:03:29,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:03:29,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:03:30,93,Instruction 93 attempting to match
+2025-03-09 15:03:30,93,DeliveryInstruction 93 matched with ReceiptInstruction 94
+2025-03-09 15:03:33,115,Delivery instruction with ID 115 created by institution INST-5 for Bond-D for amount 93154.68
+2025-03-09 15:03:33,116,Receipt instruction with ID 116 created by institution INST-2 for Bond-D for amount 93154.68
+2025-03-09 15:03:42,117,Receipt instruction with ID 117 created by institution INST-2 for Bond-C for amount 30971.12
+2025-03-09 15:03:42,118,Delivery instruction with ID 118 created by institution INST-3 for Bond-C for amount 30971.12
+2025-03-09 15:03:43,105,Instruction 105 inserted.
+2025-03-09 15:03:47,104,Instruction 104 inserted.
+2025-03-09 15:03:48,102,Instruction 102 validated.
+2025-03-09 15:03:50,106,Instruction 106 inserted.
+2025-03-09 15:03:54,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:03:54,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:04:00,86_85,Transaction 86_85 attempting to settle.
+2025-03-09 15:04:00,86_85,Transaction 86_85 settled fully.
+2025-03-09 15:04:02,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:04:02,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:04:09,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:04:09,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:04:14,36_35,Transaction 36_35 attempting to settle.
+2025-03-09 15:04:14,36_35,One of the instructions or transaction not in the correct state
+2025-03-09 15:04:17,103,Instruction 103 inserted.
+2025-03-09 15:04:20,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:04:20,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:04:27,119,Delivery instruction with ID 119 created by institution INST-5 for Bond-D for amount 46143.82
+2025-03-09 15:04:27,120,Receipt instruction with ID 120 created by institution INST-2 for Bond-D for amount 46143.82
+2025-03-09 15:04:28,103,Instruction 103 validated.
+2025-03-09 15:04:29,115,Instruction 115 inserted.
+2025-03-09 15:04:30,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:04:30,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:04:36,105,Instruction 105 validated.
+2025-03-09 15:04:39,44_2_43_2,Transaction 44_2_43_2 attempting to settle.
+2025-03-09 15:04:39,44_2,ReceiptInstruction 44_2: insufficient funds for partial settlement.
+2025-03-09 15:04:39,43_2,ReceiptInstruction 43_2: insufficient funds for partial settlement.
+2025-03-09 15:04:39,44_2_43_2,Transaction 44_2_43_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:04:41,112,Instruction 112 inserted.
+2025-03-09 15:04:45,107,Instruction 107 validated.
+2025-03-09 15:04:46,30_2_29_2,Transaction 30_2_29_2 attempting to settle.
+2025-03-09 15:04:46,30_2,ReceiptInstruction 30_2: insufficient funds for partial settlement.
+2025-03-09 15:04:46,29_2,ReceiptInstruction 29_2: insufficient funds for partial settlement.
+2025-03-09 15:04:46,30_2_29_2,Transaction 30_2_29_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:04:47,116,Instruction 116 inserted.
+2025-03-09 15:04:48,118,Instruction 118 inserted.
+2025-03-09 15:04:49,102,Instruction 102 attempting to match
+2025-03-09 15:04:49,102,DeliveryInstruction 102 matched with ReceiptInstruction 101
+2025-03-09 15:04:51,65_66,Transaction 65_66 attempting to settle.
+2025-03-09 15:04:51,65,ReceiptInstruction 65: insufficient funds for partial settlement.
+2025-03-09 15:04:51,66,ReceiptInstruction 66: insufficient funds for partial settlement.
+2025-03-09 15:04:51,65_66,Transaction 65_66 partial settlement aborted due to insufficient funds.
+2025-03-09 15:04:58,121,Delivery instruction with ID 121 created by institution INST-3 for Bond-D for amount 64381.24
+2025-03-09 15:04:58,122,Receipt instruction with ID 122 created by institution INST-5 for Bond-D for amount 64381.24
+2025-03-09 15:05:04,52_2_51_2,Transaction 52_2_51_2 attempting to settle.
+2025-03-09 15:05:04,52_2,ReceiptInstruction 52_2: insufficient funds for partial settlement.
+2025-03-09 15:05:04,51_2,ReceiptInstruction 51_2: insufficient funds for partial settlement.
+2025-03-09 15:05:04,52_2_51_2,Transaction 52_2_51_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:05:10,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:05:10,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:05:13,98,Instruction 98 attempting to match
+2025-03-09 15:05:13,98,ReceiptInstruction 98 matched with DeliveryInstruction 97
+2025-03-09 15:05:18,108,Instruction 108 validated.
+2025-03-09 15:05:19,93_94,Transaction 93_94 attempting to settle.
+2025-03-09 15:05:19,93_94,Transaction 93_94 settled fully.
+2025-03-09 15:05:20,89_90,Transaction 89_90 attempting to settle.
+2025-03-09 15:05:20,89,ReceiptInstruction 89: insufficient funds for partial settlement.
+2025-03-09 15:05:20,90,ReceiptInstruction 90: insufficient funds for partial settlement.
+2025-03-09 15:05:20,89_90,Transaction 89_90 partial settlement aborted due to insufficient funds.
+2025-03-09 15:05:31,113,Instruction 113 inserted.
+2025-03-09 15:05:33,53_54,Transaction 53_54 attempting to settle.
+2025-03-09 15:05:33,54,ReceiptInstruction 54: insufficient funds for partial settlement.
+2025-03-09 15:05:33,53,ReceiptInstruction 53: insufficient funds for partial settlement.
+2025-03-09 15:05:33,53_54,Transaction 53_54 partial settlement aborted due to insufficient funds.
+2025-03-09 15:05:36,79_80,Transaction 79_80 attempting to settle.
+2025-03-09 15:05:36,80,ReceiptInstruction 80: insufficient funds for partial settlement.
+2025-03-09 15:05:36,79,ReceiptInstruction 79: insufficient funds for partial settlement.
+2025-03-09 15:05:36,79_80,Transaction 79_80 partial settlement aborted due to insufficient funds.
+2025-03-09 15:05:39,117,Instruction 117 inserted.
+2025-03-09 15:05:41,111,Instruction 111 inserted.
+2025-03-09 15:05:43,51_52,Transaction 51_52 attempting to settle.
+2025-03-09 15:05:43,51_52,One of the instructions or transaction not in the correct state
+2025-03-09 15:05:51,104,Instruction 104 validated.
+2025-03-09 15:05:55,106,Instruction 106 validated.
+2025-03-09 15:05:58,43_44,Transaction 43_44 attempting to settle.
+2025-03-09 15:05:58,43_44,One of the instructions or transaction not in the correct state
+2025-03-09 15:05:59,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:05:59,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:06:01,96,Instruction 96 attempting to match
+2025-03-09 15:06:01,96,ReceiptInstruction 96 matched with DeliveryInstruction 95
+2025-03-09 15:06:15,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:06:15,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:06:17,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:06:17,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:06:31,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:06:31,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:06:33,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:06:33,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:06:39,123,Delivery instruction with ID 123 created by institution INST-4 for Bond-C for amount 80500.59
+2025-03-09 15:06:39,124,Receipt instruction with ID 124 created by institution INST-5 for Bond-C for amount 80500.59
+2025-03-09 15:06:41,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:06:41,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:06:43,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:06:43,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:06:51,36_35,Transaction 36_35 attempting to settle.
+2025-03-09 15:06:51,36_35,One of the instructions or transaction not in the correct state
+2025-03-09 15:07:09,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:07:09,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:07:11,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:07:11,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:07:14,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 15:07:14,30_29,One of the instructions or transaction not in the correct state
+2025-03-09 15:07:15,114,Instruction 114 inserted.
+2025-03-09 15:07:23,120,Instruction 120 inserted.
+2025-03-09 15:07:27,125,Receipt instruction with ID 125 created by institution INST-2 for Bond-A for amount 23592.49
+2025-03-09 15:07:27,126,Delivery instruction with ID 126 created by institution INST-3 for Bond-A for amount 23592.49
+2025-03-09 15:07:28,89_90,Transaction 89_90 attempting to settle.
+2025-03-09 15:07:28,89,ReceiptInstruction 89: insufficient funds for partial settlement.
+2025-03-09 15:07:28,90,ReceiptInstruction 90: insufficient funds for partial settlement.
+2025-03-09 15:07:28,89_90,Transaction 89_90 partial settlement aborted due to insufficient funds.
+2025-03-09 15:07:33,107,Instruction 107 attempting to match
+2025-03-09 15:07:33,107,ReceiptInstruction 107 matched with DeliveryInstruction 108
+2025-03-09 15:07:41,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:07:41,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:07:42,111,Instruction 111 validated.
+2025-03-09 15:07:43,124,Instruction 124 inserted.
+2025-03-09 15:07:46,119,Instruction 119 inserted.
+2025-03-09 15:07:51,98_97,Transaction 98_97 attempting to settle.
+2025-03-09 15:07:51,97_1,Delivery instruction with ID 97_1 created by institution INST-4 for Bond-B for amount 24967.77000000001
+2025-03-09 15:07:51,97_2,Delivery instruction with ID 97_2 created by institution INST-4 for Bond-B for amount 12024.779999999992
+2025-03-09 15:07:51,98_1,Receipt instruction with ID 98_1 created by institution INST-5 for Bond-B for amount 24967.77000000001
+2025-03-09 15:07:51,98_2,Receipt instruction with ID 98_2 created by institution INST-5 for Bond-B for amount 12024.779999999992
+2025-03-09 15:07:51,97_1,Instruction 97_1 attempting to match
+2025-03-09 15:07:51,97_1,DeliveryInstruction 97_1 matched with ReceiptInstruction 98_1
+2025-03-09 15:07:51,97_2,Instruction 97_2 attempting to match
+2025-03-09 15:07:51,97_2,DeliveryInstruction 97_2 matched with ReceiptInstruction 98_2
+2025-03-09 15:07:51,97_1_98_1,Transaction 97_1_98_1 attempting to settle.
+2025-03-09 15:07:51,97_1_98_1,Transaction 97_1_98_1 settled fully.
+2025-03-09 15:07:51,98_97,"Transaction 98_97 partially settled. Children 98_1, 98_2, 97_1 and 97_2 created. Transactions 97_1_98_1 and 97_2_98_2 created."
+2025-03-09 15:07:51,98_97,Transaction 98_97 cancelled due to partial settlement.
+2025-03-09 15:07:53,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:07:53,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:07:54,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:07:54,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:07:55,79_80,Transaction 79_80 attempting to settle.
+2025-03-09 15:07:55,80_1,Delivery instruction with ID 80_1 created by institution INST-5 for Bond-B for amount 24967.77000000001
+2025-03-09 15:07:55,80_2,Delivery instruction with ID 80_2 created by institution INST-5 for Bond-B for amount 27428.26999999999
+2025-03-09 15:07:55,79_1,Receipt instruction with ID 79_1 created by institution INST-4 for Bond-B for amount 24967.77000000001
+2025-03-09 15:07:55,79_2,Receipt instruction with ID 79_2 created by institution INST-4 for Bond-B for amount 27428.26999999999
+2025-03-09 15:07:55,80_1,Instruction 80_1 attempting to match
+2025-03-09 15:07:55,80_1,DeliveryInstruction 80_1 matched with ReceiptInstruction 79_1
+2025-03-09 15:07:55,80_2,Instruction 80_2 attempting to match
+2025-03-09 15:07:55,80_2,DeliveryInstruction 80_2 matched with ReceiptInstruction 79_2
+2025-03-09 15:07:55,80_1_79_1,Transaction 80_1_79_1 attempting to settle.
+2025-03-09 15:07:55,80_1_79_1,Transaction 80_1_79_1 settled fully.
+2025-03-09 15:07:55,79_80,"Transaction 79_80 partially settled. Children 79_1, 79_2, 80_1 and 80_2 created. Transactions 80_1_79_1 and 80_2_79_2 created."
+2025-03-09 15:07:55,79_80,Transaction 79_80 cancelled due to partial settlement.
+2025-03-09 15:08:04,117,Instruction 117 validated.
+2025-03-09 15:08:08,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:08:08,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:08:13,103,Instruction 103 attempting to match
+2025-03-09 15:08:13,103,DeliveryInstruction 103 matched with ReceiptInstruction 104
+2025-03-09 15:08:15,116,Instruction 116 validated.
+2025-03-09 15:08:16,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:08:16,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:08:20,36_35,Transaction 36_35 attempting to settle.
+2025-03-09 15:08:20,36_35,One of the instructions or transaction not in the correct state
+2025-03-09 15:08:21,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:08:21,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:08:23,121,Instruction 121 inserted.
+2025-03-09 15:08:24,96_95,Transaction 96_95 attempting to settle.
+2025-03-09 15:08:24,96_95,Transaction 96_95 settled fully.
+2025-03-09 15:08:26,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:08:26,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:08:27,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:08:27,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:08:28,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:08:28,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:08:29,131,Receipt instruction with ID 131 created by institution INST-3 for Bond-B for amount 96009.4
+2025-03-09 15:08:29,132,Delivery instruction with ID 132 created by institution INST-5 for Bond-B for amount 96009.4
+2025-03-09 15:08:40,102_101,Transaction 102_101 attempting to settle.
+2025-03-09 15:08:40,102_1,Delivery instruction with ID 102_1 created by institution INST-2 for Bond-A for amount 0.0
+2025-03-09 15:08:40,102_2,Delivery instruction with ID 102_2 created by institution INST-2 for Bond-A for amount 97464.64
+2025-03-09 15:08:40,101,ReceiptInstruction 101: insufficient funds for partial settlement.
+2025-03-09 15:08:40,102_101,Transaction 102_101 partial settlement aborted due to insufficient funds.
+2025-03-09 15:08:49,114,Instruction 114 validated.
+2025-03-09 15:08:55,35_2_1,Instruction 35_2_1 attempting to match
+2025-03-09 15:08:55,35_2_1,"ERROR: DeliveryInstruction 35_2_1 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:08:58,123,Instruction 123 inserted.
+2025-03-09 15:09:00,112,Instruction 112 validated.
+2025-03-09 15:09:09,118,Instruction 118 validated.
+2025-03-09 15:09:25,53_54,Transaction 53_54 attempting to settle.
+2025-03-09 15:09:25,54,ReceiptInstruction 54: insufficient funds for partial settlement.
+2025-03-09 15:09:25,53,ReceiptInstruction 53: insufficient funds for partial settlement.
+2025-03-09 15:09:25,53_54,Transaction 53_54 partial settlement aborted due to insufficient funds.
+2025-03-09 15:09:33,113,Instruction 113 validated.
+2025-03-09 15:09:43,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:09:43,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:09:46,65_66,Transaction 65_66 attempting to settle.
+2025-03-09 15:09:46,65_66,Transaction 65_66 settled fully.
+2025-03-09 15:09:47,122,Instruction 122 inserted.
+2025-03-09 15:09:49,44_2_43_2,Transaction 44_2_43_2 attempting to settle.
+2025-03-09 15:09:49,44_2_43_2,Transaction 44_2_43_2 settled fully.
+2025-03-09 15:09:50,30_29,Transaction 30_29 attempting to settle.
+2025-03-09 15:09:50,30_29,One of the instructions or transaction not in the correct state
+2025-03-09 15:09:53,105,Instruction 105 attempting to match
+2025-03-09 15:09:53,105,DeliveryInstruction 105 matched with ReceiptInstruction 106
+2025-03-09 15:10:02,35_2_2,Instruction 35_2_2 attempting to match
+2025-03-09 15:10:02,35_2_2,"ERROR: DeliveryInstruction 35_2_2 failed to match, ReceiptInstruction not yet validated"
+2025-03-09 15:10:05,43_44,Transaction 43_44 attempting to settle.
+2025-03-09 15:10:05,43_44,One of the instructions or transaction not in the correct state
+2025-03-09 15:10:07,30_2_29_2,Transaction 30_2_29_2 attempting to settle.
+2025-03-09 15:10:07,30_2,ReceiptInstruction 30_2: insufficient funds for partial settlement.
+2025-03-09 15:10:07,29_2,ReceiptInstruction 29_2: insufficient funds for partial settlement.
+2025-03-09 15:10:07,30_2_29_2,Transaction 30_2_29_2 partial settlement aborted due to insufficient funds.
+2025-03-09 15:10:12,51_52,Transaction 51_52 attempting to settle.
+2025-03-09 15:10:12,51_52,One of the instructions or transaction not in the correct state
+2025-03-09 15:10:15,115,Instruction 115 validated.
+2025-03-09 15:10:17,52_2_51_2,Transaction 52_2_51_2 attempting to settle.
+2025-03-09 15:10:17,52_2,ReceiptInstruction 52_2: insufficient funds for partial settlement.
+2025-03-09 15:10:17,51_2,ReceiptInstruction 51_2: insufficient funds for partial settlement.
+2025-03-09 15:10:17,52_2_51_2,Transaction 52_2_51_2 partial settlement aborted due to insufficient funds.
