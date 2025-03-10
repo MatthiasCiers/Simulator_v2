@@ -28,12 +28,14 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
             linkcode=linkcode,
             creation_time=creation_time
         )
-        # logging ( don't know why is_transaction = True)
+
+
+        # logging
         self.model.log_event(f"Delivery instruction with ID {uniqueID} created by institution {institution.institutionID} for {securityType} for amount {amount}", self.uniqueID, is_transaction = True)
 
     def createDeliveryChildren(self):
 
-        MIN_SETTLEMENT_AMOUNT = self.model.min_settlement_amount  # Define a minimum settlement threshold
+        MIN_SETTLEMENT_AMOUNT = self.model.min_settlement_amount  # Define a minimum settlement threshold (@ruben dont think this is necessary)
         if self.securitiesAccount.getAccountType() != self.securityType:
             available_securities = 0
         else:
@@ -48,7 +50,7 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
         #takes the minimum of available securities of deliverer and available cash of seller and not more than the amount
         available_to_settle = min(self.amount, available_cash, available_securities)
 
-        if available_securities > MIN_SETTLEMENT_AMOUNT:
+        if available_to_settle > MIN_SETTLEMENT_AMOUNT:
             #create delivery children instructions
 
             #instant matching and settlement of first child not yet possible, because receipt_child_1 does not yet exist
@@ -69,7 +71,7 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
         else:
             # Log insufficient funds and return a tuple of Nones.
             self.model.log_event(
-                f"ReceiptInstruction {self.uniqueID}: insufficient funds for partial settlement.",
+                f"DeliveryInstruction {self.uniqueID}: insufficient funds for partial settlement.",
                 self.uniqueID,
                 is_transaction=True
             )
