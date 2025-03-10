@@ -84,6 +84,8 @@ class TransactionAgent(Agent):
                         child_transaction_1 = delivery_child_1.match()
                         child_transaction_2 = delivery_child_2.match()
                         child_transaction_1.settle()
+                        child_transaction_2.deliverer.get_securitiesAccount().set_newSecurities(False)
+                        child_transaction_2.receiver.get_cashAccount().set_newSecurities(False)
                         self.model.log_event(
                             f"Transaction {self.transactionID} partially settled. Children {receipt_child_1.get_uniqueID()}, "
                             f"{receipt_child_2.get_uniqueID()}, {delivery_child_1.get_uniqueID()} and {delivery_child_2.get_uniqueID()} created. "
@@ -94,8 +96,15 @@ class TransactionAgent(Agent):
                         self.cancel_partial()
         else:
             self.model.log_event(f"One of the instructions or transaction not in the correct state", self.transactionID, is_transaction = True)
+        self.deliverer.get_securitiesAccount().set_newSecurities(False)
+        self.receiver.get_cashAccount().set_newSecurities(False)
 
     def step(self):
+        if (self.deliverer.get_securitiesAccount().get_newSecurities() == False
+            or self.receiver.get_cashAccount().get_newSecurities() == False):
+            #if no new securities or cash where added to an account, no settlement gets tried
+            return
+
         if self.deliverer.is_instruction_time_out() or self.receiver.is_instruction_time_out():
             self.cancel_timeout()
         else:

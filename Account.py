@@ -1,11 +1,12 @@
 class Account:
 
     #account object class
-    def __init__(self, accountID: str, accountType:str,balance:float, creditLimit:float = 0):
+    def __init__(self, accountID: str, accountType:str,balance:float, newSecurities: bool = True, creditLimit:float = 0):
         self.accountID = accountID
         self.accountType = accountType
         self.balance = balance
         self.creditLimit = creditLimit
+        self.newSecurities = newSecurities
         self.usedCredit = 0
 
         #logging
@@ -26,6 +27,14 @@ class Account:
     def getUsedCredit(self):
         return self.usedCredit
 
+    def get_newSecurities(self):
+        if self.balance == 0 and self.newSecurities == False:
+            return False
+        else:
+            return True
+
+    def set_newSecurities(self, new:bool):
+        self.newSecurities = new
 
     def checkBalance(self, amount : float, securityType: str):
         if self.accountType == "Cash" and securityType == "Cash":
@@ -45,6 +54,7 @@ class Account:
             if self.creditLimit == (self.creditLimit - self.usedCredit):
 
                 self.balance = self.balance + amount
+                self.set_newSecurities(True)
                 #logging
                 #self.model.log_event(f"Account {self.accountID} added {amount} cash. Total cash amount: {self.balance}, total credit amount: {self.usedCredit}", self.accountID, is_transaction = False)
                 return amount
@@ -54,6 +64,7 @@ class Account:
                 if self.usedCredit >= amount:
                     #reset the used credit with the amount
                     self.usedCredit = self.usedCredit - amount
+                    self.set_newSecurities(True)
                     # logging
                     #self.model.log_event(f"Account {self.accountID} added {amount} cash. Total cash amount: {self.balance}, total credit amount: {self.usedCredit}", self.accountID, is_transaction=False)
                     return amount
@@ -62,6 +73,7 @@ class Account:
                     remaining = amount - self.usedCredit
                     self.usedCredit = 0
                     self.balance = self.balance + remaining
+                    self.set_newSecurities(True)
                     # logging
                     #self.model.log_event(f"Account {self.accountID} added {amount} cash. Total cash amount: {self.balance}, total credit amount: {self.usedCredit}",self.accountID, is_transaction=False)
                     return amount
@@ -69,6 +81,7 @@ class Account:
         #if security account:
         elif self.accountType == securityType:
             self.balance = self.balance + amount
+            self.set_newSecurities(True)
             #logging
             #self.model.log_event(f"Account {self.accountID} added {amount} securities of type {self.accountType}. New amount: {self.balance}", self.accountID, is_transaction = False)
             return amount
