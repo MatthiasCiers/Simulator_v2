@@ -59,6 +59,7 @@ class TransactionAgent(Agent):
                     #logging
                     self.model.log_event(f"Transaction {self.transactionID} settled fully.", self.transactionID, is_transaction = True)
                     #remove the transaction and instructions from the model if fully settled
+                    self.model.remove_transaction(self)
                     self.model.agents.remove(self.deliverer)
                     self.model.agents.remove(self.receiver)
                     self.model.agents.remove(self)
@@ -106,6 +107,7 @@ class TransactionAgent(Agent):
         self.receiver.get_cashAccount().set_newSecurities(False)
 
     def step(self):
+        time_of_day = self.model.simulated_time.time()
         if (self.deliverer.get_securitiesAccount().get_newSecurities() == False
             or self.receiver.get_cashAccount().get_newSecurities() == False):
             #if no new securities or cash where added to an account, no settlement gets tried
@@ -115,8 +117,8 @@ class TransactionAgent(Agent):
             self.deliverer.cancel_timout()
         elif self.receiver.is_instruction_time_out():
             self.receiver.cancel_timout()
-        else:
-            if self.status not in ["Cancelled due to timeout", "Settled"]:
+        elif self.status not in ["Cancelled due to timeout", "Settled"]:
+            if self.model.trading_start <= timedelta(hours=time_of_day.hour, minutes=time_of_day.minute) <= self.model.trading_end:
                 self.settle()
         self.model.simulated_time = self.model.simulated_time + timedelta(seconds=1)
 
@@ -128,6 +130,7 @@ class TransactionAgent(Agent):
         #logging
         self.model.log_event(f"Transaction {self.transactionID} cancelled due to partial settlement.", self.transactionID, is_transaction = True)
         #remove transition and instructions from the model when cancelled
+        self.model.remove_transaction(self)
         self.model.agents.remove(self.deliverer)
         self.model.agents.remove(self.receiver)
         self.model.agents.remove(self)

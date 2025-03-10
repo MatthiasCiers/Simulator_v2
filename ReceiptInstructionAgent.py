@@ -144,6 +144,7 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
             receiver=self,
             status="Matched",
         )
+        self.model.register_transaction(transaction)
 
         # Link transaction to both instructions
         self.linkedTransaction = transaction
@@ -172,6 +173,7 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
             self.linkedTransaction.deliverer.set_status("Cancelled due to timeout")
             self.linkedTransaction.set_status("Cancelled due to timeout")
 
+            self.model.remove_transaction(self.linkedTransaction)
             self.model.agents.remove(self.linkedTransaction.deliverer)
             self.model.agents.remove(self.linkedTransaction)
             self.model.agents.remove(self)

@@ -23,7 +23,7 @@ class SettlementModel(Model):
         self.num_institutions = 5
         self.min_total_accounts = 2
         self.max_total_accounts = 6
-        self.simulation_duration_days = 0.02
+        self.simulation_duration_days = 2
         self.min_settlement_amount = 100
         self.bond_types = ["Bond-A", "Bond-B", "Bond-C", "Bond-D"]
         self.steps_per_day = 500 #random chosen
@@ -32,6 +32,13 @@ class SettlementModel(Model):
         self.simulation_start = datetime.now()
         self.simulation_end = self.simulation_start + timedelta(days=self.simulation_duration_days)
         self.simulated_time = self.simulation_start
+
+        self.trading_start = timedelta(hours=1, minutes=30)
+        self.trading_end = timedelta(hours=19, minutes=30)
+        self.batch_start = timedelta(hours=22, minutes=0)
+        self.day_end = timedelta(hours=23, minutes=59, seconds=59)
+
+
         self.institutions = []
         self.accounts = []
         self.instructions = []
@@ -109,16 +116,39 @@ class SettlementModel(Model):
 
 
     def step(self):
+            time_of_day = self.simulated_time.time()
+
+            if self.trading_start <= timedelta(hours=time_of_day.hour, minutes=time_of_day.minute) <= self.trading_end:
+                #real-time processing
+                print(f"Running simulation step {self.steps}...")
+                #shuffles all agents and then executes their step module once for all of them
+                self.agents.shuffle_do("step")
+                print(f"{len(self.agents)} Agents executed their step module")
+            elif timedelta(hours=time_of_day.hour, minutes=time_of_day.minute) >= self.batch_start:
+                #batch processing at 22:00
+                self.batch_processing()
+            self.simulated_time += timedelta(seconds=1)
+
+            if self.simulated_time >= datetime.combine(self.simulated_time.date(), datetime.min.time()) + self.day_end:
+                self.simulated_time = datetime.combine(self.simulated_time.date() + timedelta(days=1), datetime.min.time()) + self.trading_start
+
+    def register_transaction(self,t):
+        self.transactions.append(t)
+
+    def remove_transaction(self,t):
+        self.transactions.remove(t)
+
+    def batch_processing(self):
+        for transaction in self.transactions:
+            if transaction.get_status() == "Matched":
+                transaction.settle()
 
 
-            print(f"Running simulation step {self.steps}...")
-            #shuffles all agents and then executes their step module once for all of them
-
-            self.agents.shuffle_do("step")
-            print(f"{len(self.agents)} Agents executed their step module")
 
 
-        #this has to be implemented later
+
+
+    #this has to be implemented later
        # if self.steps % self.steps_per_day == 0:
         #    print(f"\n=== End of Business Day (Step {self.steps}) Batch Processing ===")
          #   self.agents.shuffle_do("batch_run")
