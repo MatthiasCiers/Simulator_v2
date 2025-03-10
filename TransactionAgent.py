@@ -18,8 +18,14 @@ class TransactionAgent(Agent):
         #logging ( don't know why is_transaction = True)
        # self.model.log_event(f"Transaction {self.transactionID} created from account {self.deliverer.get_securitiesAccount().getAccountID()} to account {self.receiver.get_cashAccount().getAccountID()}", self.transactionID, is_transaction = True)
 
+    def get_transactionID(self):
+        return self.transactionID
+
     def get_status(self):
         return self.status
+
+    def set_status(self, new_status: str):
+        self.status = new_status
 
     def settle(self):
         #logging
@@ -53,9 +59,9 @@ class TransactionAgent(Agent):
                     #logging
                     self.model.log_event(f"Transaction {self.transactionID} settled fully.", self.transactionID, is_transaction = True)
                     #remove the transaction and instructions from the model if fully settled
-                    self.model.agents.remove(self)
                     self.model.agents.remove(self.deliverer)
                     self.model.agents.remove(self.receiver)
+                    self.model.agents.remove(self)
 
 
             elif self.deliverer.get_amount() == 0 or self.receiver.get_amount() == 0:
@@ -105,31 +111,25 @@ class TransactionAgent(Agent):
             #if no new securities or cash where added to an account, no settlement gets tried
             return
 
-        if self.deliverer.is_instruction_time_out() or self.receiver.is_instruction_time_out():
-            self.cancel_timeout()
+        if self.deliverer.is_instruction_time_out():
+            self.deliverer.cancel_timout()
+        elif self.receiver.is_instruction_time_out():
+            self.receiver.cancel_timout()
         else:
             if self.status not in ["Cancelled due to timeout", "Settled"]:
                 self.settle()
         self.model.simulated_time = self.model.simulated_time + timedelta(seconds=1)
 
-    def cancel_timeout(self):
-        # TODO: Implement timeout cancellation logic
-        self.status = "Cancelled due to timeout"
-        # logging
-        self.model.log_event(f"Transaction {self.transactionID} cancelled due to timeout.", self.transactionID, is_transaction=True)
-        # remove transition and instructions from the model when cancelled
-        self.model.agents.remove(self)
-        self.model.agents.remove(self.deliverer)
-        self.model.agents.remove(self.receiver)
-
-
     def cancel_partial(self):
         self.status = "Cancelled due to partial settlement"
+        self.deliverer.set_status("Cancelled due to partial settlement")
+        self.receiver.set_status("Cancelled due to partial settlement")
 
         #logging
         self.model.log_event(f"Transaction {self.transactionID} cancelled due to partial settlement.", self.transactionID, is_transaction = True)
         #remove transition and instructions from the model when cancelled
-        self.model.agents.remove(self)
         self.model.agents.remove(self.deliverer)
         self.model.agents.remove(self.receiver)
+        self.model.agents.remove(self)
+
 

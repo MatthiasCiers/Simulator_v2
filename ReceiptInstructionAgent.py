@@ -159,3 +159,26 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
             is_transaction=True,
         )
         return transaction
+
+    def cancel_timout(self):
+        if self.status == "Exists" or self.status == "Pending" or self.status == "Validated":
+            self.status = "Cancelled due to timeout"
+            self.model.agents.remove(self)
+            # logging
+            self.model.log_event(f"Instruction {self.uniqueID} cancelled due to timeout.", self.uniqueID,
+                                 is_transaction=True)
+        if self.status == "Matched":
+            self.status = "Cancelled due to timeout"
+            self.linkedTransaction.deliverer.set_status("Cancelled due to timeout")
+            self.linkedTransaction.set_status("Cancelled due to timeout")
+
+            self.model.agents.remove(self.linkedTransaction.deliverer)
+            self.model.agents.remove(self.linkedTransaction)
+            self.model.agents.remove(self)
+
+            # logging
+            self.model.log_event(f"ReceiptInstruction {self.uniqueID} cancelled due to timeout.", self.uniqueID, is_transaction=True)
+            self.model.log_event(f"DeliveryInstruction {self.linkedTransaction.deliverer.get_uniqueID()} cancelled due to timeout.", self.linkedTransaction.deliverer.get_uniqueID(), is_transaction=True)
+            self.model.log_event(f"Transaction {self.linkedTransaction.get_transactionID()} cancelled due to timeout.", self.linkedTransaction.get_transactionID(), is_transaction=True)
+
+

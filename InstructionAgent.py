@@ -82,7 +82,6 @@ class InstructionAgent (Agent):
         self.status = new_status
 
     def insert(self):
-        # TODO: is this just changing state from exists to pending?
         if self.creation_time < datetime.now():
             if self.status == 'Exists':
                 self.status = 'Pending'
@@ -91,7 +90,6 @@ class InstructionAgent (Agent):
 
     def validate(self):
         if self.status == 'Pending':
-            # TODO: second delay has to be implemented still
             self.set_status('Validated')
             #logging
             self.model.log_event(f"Instruction {self.uniqueID} validated.", self.uniqueID, is_transaction = True)
@@ -103,22 +101,8 @@ class InstructionAgent (Agent):
             #logging
             self.model.log_event(f"Instruction {self.uniqueID} settled", self.uniqueID, is_transaction = True)
 
-    def cancel_timout(self):
-        #method to cancel instruction due to timeout
-        # TODO
-        # logging
-        self.model.log_event(f"Instruction {self.uniqueID} cancelled due to timeout.", self.uniqueID, is_transaction=True)
-        pass
-
-    def cancel_partial(self):
-        #method to cancel instruction due to partial settlement.
-        #this instruction gets cancelled, but children get created
-        self.status = "Cancelled due to partial settlement"
-        #logging
-        self.model.log_event(f"Instruction {self.uniqueID} cancelled due to partial settlement.", self.uniqueID, is_transaction = True)
-
     def is_instruction_time_out(self):
-        return self.creation_time < datetime.now() - timedelta(days=3)
+        return self.creation_time < datetime.now() - timedelta(hours=48)
 
     def step(self):
 
