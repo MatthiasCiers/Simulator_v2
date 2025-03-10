@@ -102,7 +102,7 @@ class InstructionAgent (Agent):
             self.model.log_event(f"Instruction {self.uniqueID} settled", self.uniqueID, is_transaction = True)
 
     def is_instruction_time_out(self):
-        return self.creation_time < datetime.now() - timedelta(hours=48)
+        return self.creation_time + timedelta(hours = 48) <= self.model.simulated_time
 
     def step(self):
 

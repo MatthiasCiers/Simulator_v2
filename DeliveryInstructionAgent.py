@@ -116,7 +116,7 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
         # Create a transaction
         transaction = TransactionAgent.TransactionAgent(
             model=self.model,
-            transactionID=f"{self.uniqueID}_{other_instruction.uniqueID}",
+            transactionID=f"trans{self.uniqueID}_{other_instruction.uniqueID}",
             deliverer=self,
             receiver=other_instruction,
             status="Matched",
