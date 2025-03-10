@@ -28,10 +28,7 @@ class Account:
         return self.usedCredit
 
     def get_newSecurities(self):
-        if self.balance == 0 and self.newSecurities == False:
-            return False
-        else:
-            return True
+        return self.newSecurities
 
     def set_newSecurities(self, new:bool):
         self.newSecurities = new

@@ -108,8 +108,8 @@ class TransactionAgent(Agent):
 
     def step(self):
         time_of_day = self.model.simulated_time.time()
-        if (self.deliverer.get_securitiesAccount().get_newSecurities() == False
-            or self.receiver.get_cashAccount().get_newSecurities() == False):
+        if (self.deliverer.get_securitiesAccount().get_newSecurities() == False or
+            self.receiver.get_cashAccount().get_newSecurities() == False ):
             #if no new securities or cash where added to an account, no settlement gets tried
             return
 
