@@ -26,7 +26,7 @@ class SettlementModel(Model):
         self.simulation_duration_days = 2
         self.min_settlement_amount = 100
         self.bond_types = ["Bond-A", "Bond-B", "Bond-C", "Bond-D"]
-        self.steps_per_day = 500 #random chosen
+
 
 
         self.simulation_start = datetime.now()
@@ -151,11 +151,6 @@ class SettlementModel(Model):
 
 
 
-    #this has to be implemented later
-       # if self.steps % self.steps_per_day == 0:
-        #    print(f"\n=== End of Business Day (Step {self.steps}) Batch Processing ===")
-         #   self.agents.shuffle_do("batch_run")
-          #  print("=== End of Batch Processing ===\n")
 
 
 

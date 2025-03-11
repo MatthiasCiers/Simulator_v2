@@ -143,16 +143,7 @@ class Account:
             #self.model.log_event(f"ERROR: account {self.accountID} doesn't allow to deduct this type of assets", self.accountID, is_transaction=False)
             return 0
 
-    class Account:
-        # account object class
-        def __init__(self, accountID: str, accountType: str, balance: float, creditLimit: float = 0):
-            self.accountID = accountID
-            self.accountType = accountType
-            self.balance = balance
-            self.creditLimit = creditLimit
-            self.usedCredit = 0
 
-        # ... existing methods ...
 
     def get_full_account_info(self):
             """Return a dictionary of all account attributes."""
