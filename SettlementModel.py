@@ -38,7 +38,7 @@ class SettlementModel(Model):
         self.batch_start = timedelta(hours=22, minutes=0)
         self.day_end = timedelta(hours=23, minutes=59, seconds=59)
 
-
+        self.batch_processed = False
         self.institutions = []
         self.accounts = []
         self.instructions = []
@@ -120,13 +120,16 @@ class SettlementModel(Model):
 
             if self.trading_start <= timedelta(hours=time_of_day.hour, minutes=time_of_day.minute) <= self.trading_end:
                 #real-time processing
+                self.batch_processed = False
                 print(f"Running simulation step {self.steps}...")
                 #shuffles all agents and then executes their step module once for all of them
                 self.agents.shuffle_do("step")
                 print(f"{len(self.agents)} Agents executed their step module")
             elif timedelta(hours=time_of_day.hour, minutes=time_of_day.minute) >= self.batch_start:
-                #batch processing at 22:00
-                self.batch_processing()
+                if not self.batch_processed: #batch processing at 22:00 only one loop of batch_processing
+                    self.batch_processing()
+                    self.batch_processed = True
+
             self.simulated_time += timedelta(seconds=1)
 
             if self.simulated_time >= datetime.combine(self.simulated_time.date(), datetime.min.time()) + self.day_end:
