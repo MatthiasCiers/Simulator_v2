@@ -37,6 +37,9 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
             f"Receipt instruction with ID {uniqueID} created by institution {institution.institutionID} for {securityType} for amount {amount}",
             self.uniqueID, is_transaction=True)
 
+    def get_creation_time(self):
+        return self.creation_time
+
     def createReceiptChildren(self):
 
         MIN_SETTLEMENT_AMOUNT = self.model.min_settlement_amount
