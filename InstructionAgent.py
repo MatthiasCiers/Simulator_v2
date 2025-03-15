@@ -94,15 +94,8 @@ class InstructionAgent (Agent):
             #logging
             self.model.log_event(f"Instruction {self.uniqueID} validated.", self.uniqueID, is_transaction = True)
 
-    def settle(self):
-    #only to change state. Actual settlement logic is in TransactionAgent
-        if self.status == "Matched":
-            self.set_status('Settled')
-            #logging
-            self.model.log_event(f"Instruction {self.uniqueID} settled", self.uniqueID, is_transaction = True)
-
     def is_instruction_time_out(self):
-        return self.creation_time + timedelta(hours = 48) <= self.model.simulated_time
+        return self.creation_time + timedelta(days = 14) <= self.model.simulated_time
 
     def step(self):
 

@@ -51,13 +51,23 @@ class TransactionAgent(Agent):
                         self.receiver.set_status("Cancelled due to error")
                         self.status = "Cancelled due to error"
 
-                    #change states to "Settled"
-                    self.deliverer.set_status("Settled")
-                    self.receiver.set_status("Settled")
-                    self.status = "Settled"
+                    #checks if settled on time (T+2)
+                    if self.deliverer.get_creation_time() + timedelta(hours = 48) < self.model.simulated_time or self.receiver.get_creation_time() + timedelta(hours = 48) < self.model.simulated_time:
+                        self.deliverer.set_status("Settled late")
+                        self.receiver.set_status("Settled late")
+                        self.status = "Settled late"
+                        # logging
+                        self.model.log_event(f"Transaction {self.transactionID} settled fully late.", self.transactionID,
+                                             is_transaction=True)
+                    else:
+                        self.deliverer.set_status("Settled on time")
+                        self.receiver.set_status("Settled on time")
+                        self.status = "Settled on time"
+                        # logging
+                        self.model.log_event(f"Transaction {self.transactionID} settled fully on time.",
+                                             self.transactionID,
+                                             is_transaction=True)
 
-                    #logging
-                    self.model.log_event(f"Transaction {self.transactionID} settled fully.", self.transactionID, is_transaction = True)
                     #remove the transaction and instructions from the model if fully settled
                     self.model.remove_transaction(self)
                     self.model.agents.remove(self.deliverer)
@@ -108,8 +118,8 @@ class TransactionAgent(Agent):
 
     def step(self):
         time_of_day = self.model.simulated_time.time()
-        if (self.deliverer.get_securitiesAccount().get_newSecurities() == False or
-            self.receiver.get_cashAccount().get_newSecurities() == False ):
+        if not (self.deliverer.get_securitiesAccount().get_newSecurities() == True or
+            self.receiver.get_cashAccount().get_newSecurities() == True ):
             #if no new securities or cash where added to an account, no settlement gets tried
             return
 
@@ -117,7 +127,7 @@ class TransactionAgent(Agent):
             self.deliverer.cancel_timout()
         elif self.receiver.is_instruction_time_out():
             self.receiver.cancel_timout()
-        elif self.status not in ["Cancelled due to timeout", "Settled"]:
+        elif self.status not in ["Cancelled due to timeout","Cancelled due to partial settlement", "Settled late", "Settled on time"]:
             if self.model.trading_start <= timedelta(hours=time_of_day.hour, minutes=time_of_day.minute) <= self.model.trading_end:
                 self.settle()
         self.model.simulated_time = self.model.simulated_time + timedelta(seconds=1)

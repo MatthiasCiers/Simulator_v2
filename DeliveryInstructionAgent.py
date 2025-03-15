@@ -33,6 +33,9 @@ class DeliveryInstructionAgent(InstructionAgent.InstructionAgent):
         # logging
         self.model.log_event(f"Delivery instruction with ID {uniqueID} created by institution {institution.institutionID} for {securityType} for amount {amount}", self.uniqueID, is_transaction = True)
 
+    def get_creation_time(self):
+        return self.creation_time
+
     def createDeliveryChildren(self):
 
         MIN_SETTLEMENT_AMOUNT = self.model.min_settlement_amount  # Define a minimum settlement threshold (@ruben dont think this is necessary)
