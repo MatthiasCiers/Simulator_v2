@@ -23,7 +23,7 @@ class SettlementModel(Model):
         self.num_institutions = 5
         self.min_total_accounts = 2
         self.max_total_accounts = 6
-        self.simulation_duration_days = 2
+        self.simulation_duration_days = 5
         self.min_settlement_amount = 100
         self.bond_types = ["Bond-A", "Bond-B", "Bond-C", "Bond-D"]
 
@@ -91,8 +91,8 @@ class SettlementModel(Model):
             #generate cash account => there has to be at least 1 cash account
             new_cash_accountID = generate_iban()
             new_cash_accountType = "Cash"
-            new_cash_balance =  round(random.uniform(100000, 200000), 2)
-            new_cash_creditLimit = round(random.uniform(100000, 500000), 2)
+            new_cash_balance = round(random.uniform(150000, 300000), 2)  # Increased balance range
+            new_cash_creditLimit = round(random.uniform(200000, 600000), 2)
             new_cash_Account = Account.Account(accountID=new_cash_accountID, accountType= new_cash_accountType, balance= new_cash_balance, creditLimit=new_cash_creditLimit)
             inst_accounts.append(new_cash_Account)
             self.accounts.append(new_cash_Account)
