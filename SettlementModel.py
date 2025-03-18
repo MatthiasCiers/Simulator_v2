@@ -146,28 +146,100 @@ class SettlementModel(Model):
             if transaction.get_status() == "Matched":
                 transaction.settle()
 
+    def get_recursive_settled_amount(self, parent_instruction):
+        """
+        Recursively sum the settled amounts of all descendant (child) instructions
+        for a given parent instruction.
 
+        Parameters:
+            parent_instruction: The instruction whose children (and their descendants)
+                                are to be summed.
+        Returns:
+            The total settled amount from all descendant instructions.
+        """
+        total = 0.0
+        for inst in self.instructions:
+            # Check if this instruction is a child of the parent_instruction.
+            if inst.isChild and inst.motherID == parent_instruction.get_uniqueID():
+                # If the child instruction is settled, add its amount.
+                if inst.get_status() in ["Settled on time", "Settled late"]:
+                    total += inst.get_amount()
+                # Recursively include settled amounts from further descendant instructions.
+                total += self.get_recursive_settled_amount(inst)
+        return total
 
+    def calculate_settlement_efficiency(self):
+        """
+        Calculates settlement efficiency based on instruction pairs, including recursive
+        child instructions.
 
+        Two metrics are computed:
+         - Instruction Efficiency: the percentage of original instruction pairs (mother instructions)
+           that ended up fully settled (either directly or via child instructions covering the full amount).
+         - Value Efficiency: the ratio (in percent) of the total settled (effective) value to the total
+           intended settlement value.
 
+        Original instructions are those with motherID == "mother", and they are grouped by their linkcode.
+        In case of partial settlement (both instructions cancelled due to partial settlement), this method
+        recursively aggregates settled amounts from child instructions.
 
+        Returns:
+            A tuple (instruction_efficiency_percentage, value_efficiency_percentage)
+        """
+        total_original_pairs = 0
+        fully_settled_pairs = 0
+        total_intended_value = 0.0
+        total_settled_value = 0.0
 
+        # Group original (mother) instructions by linkcode.
+        original_pairs = {}
+        for inst in self.instructions:
+            if inst.motherID == "mother":
+                original_pairs.setdefault(inst.linkcode, []).append(inst)
 
+        for linkcode, pair in original_pairs.items():
+            if len(pair) < 2:
+                # We expect a pair (delivery and receipt); if not, skip this group.
+                continue
 
+            # We assume both instructions have the same intended settlement amount.
+            intended_amount = pair[0].get_amount()
+            total_original_pairs += 1
+            total_intended_value += intended_amount
 
+            # Case 1: Fully settled directly (both instructions settled on time or late).
+            if (pair[0].get_status() in ["Settled on time", "Settled late"] and
+                    pair[1].get_status() in ["Settled on time", "Settled late"]):
+                fully_settled_pairs += 1
+                total_settled_value += intended_amount
 
+            # Case 2: Partial settlement – both instructions were cancelled due to partial settlement.
+            elif (pair[0].get_status() == "Cancelled due to partial settlement" and
+                  pair[1].get_status() == "Cancelled due to partial settlement"):
+                # Recursively sum settled amounts from child instructions (and their descendants).
+                settled_child_value = (self.get_recursive_settled_amount(pair[0]) +
+                                       self.get_recursive_settled_amount(pair[1]))
+                # The effective settled amount is capped at the intended amount.
+                effective_settled = min(settled_child_value, intended_amount)
+                total_settled_value += effective_settled
+                # Count the pair as fully settled if the effective settled value equals the intended value.
+                if effective_settled == intended_amount:
+                    fully_settled_pairs += 1
+            # Other statuses are considered as not settled.
 
+        instruction_efficiency = (fully_settled_pairs / total_original_pairs * 100) if total_original_pairs > 0 else 0
+        value_efficiency = (total_settled_value / total_intended_value * 100) if total_intended_value > 0 else 0
 
+        return instruction_efficiency, value_efficiency
 
-
-
-
-
-
-
-
-
-
+    def print_settlement_efficiency(self):
+        """
+        Quickly prints the settlement efficiency metrics.
+        """
+        instruction_eff, value_eff = self.calculate_settlement_efficiency()
+        print("Settlement Efficiency:")
+        print("  Instruction Efficiency: {:.2f}%".format(instruction_eff))
+        print("  Value Efficiency: {:.2f}%".format(value_eff))
 
 if __name__ == "__main__":
     print("Starting simulation...")
@@ -186,3 +258,6 @@ if __name__ == "__main__":
         print(event)
     print("Saving final event log...")
     model.save_log(log_path)
+    print("---------------------------------------------------------------")
+    model.print_settlement_efficiency()
+
