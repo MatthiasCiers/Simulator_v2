@@ -57,7 +57,7 @@ class InstitutionAgent(Agent):
             raise ValueError("No security accounts available for institution " + self.institutionID)
         security_account = random.choice(security_accounts)
         random_security = security_account.accountType  # Use the type from the chosen account
-        amount = round(random.uniform(10000, 50000), 2)
+        amount = self.model.sample_instruction_amount()
         model = self.model
         linkedTransaction = None
         uniqueID = len(self.model.instructions) + 1
@@ -71,7 +71,7 @@ class InstitutionAgent(Agent):
         if other_institution_security_account is None:
             # Create a new security account for the counterparty institution
             new_security_account_id = SettlementModel.generate_iban()  # Generates an IBAN-like string
-            new_security_balance = round(random.uniform(5000, 200000), 2)  # Mimic the balance generation logic
+            new_security_balance = round(random.uniform(200e6, 600e6), 2)  # Mimic the balance generation logic
             new_security_account = Account.Account(
                 accountID=new_security_account_id,
                 accountType=securityType,
@@ -117,7 +117,7 @@ class InstitutionAgent(Agent):
 
         #if selected create an instruction and with low probability allow/ disallow partial settlements
 
-        if random.random() <0.5:
+        if random.random() <0.1:
             self.create_instruction()
         if random.random() <0.05:
             self.create_cancelation_instruction()

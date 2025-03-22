@@ -80,6 +80,18 @@ class SettlementModel(Model):
         print(f"Activity log saved to {activity_filename}")
         print(f"Event Log saved to {filename}")
 
+    def sample_instruction_amount(self):
+        """
+        Samples an instruction amount (in EUR) based on a two-point mixture distribution.
+        With probability ~88% return a 'low' amount (around €20 million, ±10% noise),
+        and with probability ~12% return a 'high' amount (around €2.57 billion, ±5% noise)
+        so that overall: mean ≈ €324M, std ≈ €829M, and median ≈ €20M.
+        """
+        if random.random() < 0.881:
+            return random.uniform(18e6, 22e6)
+        else:
+            return random.uniform(2.45e9, 2.70e9)
+
     def generate_data(self):
         print("Generate Accounts & Institutions:")
         print("-----------------------------------------")
@@ -91,8 +103,8 @@ class SettlementModel(Model):
             #generate cash account => there has to be at least 1 cash account
             new_cash_accountID = generate_iban()
             new_cash_accountType = "Cash"
-            new_cash_balance = round(random.uniform(150000, 300000), 2)  # Increased balance range
-            new_cash_creditLimit = round(random.uniform(200000, 600000), 2)
+            new_cash_balance =  round(random.uniform(3e9, 5e9), 2)  # Increased balance range
+            new_cash_creditLimit = round(random.uniform(2e9, 4e9), 2)
             new_cash_Account = Account.Account(accountID=new_cash_accountID, accountType= new_cash_accountType, balance= new_cash_balance, creditLimit=new_cash_creditLimit)
             inst_accounts.append(new_cash_Account)
             self.accounts.append(new_cash_Account)
@@ -100,7 +112,7 @@ class SettlementModel(Model):
             for _ in range(total_accounts - 1):
                 new_security_accountID = generate_iban()
                 new_security_accountType = random.choice(self.bond_types)
-                new_security_balance = round(random.uniform(100000, 200000), 2)
+                new_security_balance = round(random.uniform(200e6, 600e6), 2)
                 new_security_creditLimit = 0
                 new_security_Account = Account.Account(accountID=new_security_accountID, accountType= new_security_accountType, balance= new_security_balance, creditLimit= new_security_creditLimit)
                 inst_accounts.append(new_security_Account)
@@ -162,7 +174,7 @@ class SettlementModel(Model):
             # Check if this instruction is a child of the parent_instruction.
             if inst.isChild and inst.motherID == parent_instruction.get_uniqueID():
                 # If the child instruction is settled, add its amount.
-                if inst.get_status() in ["Settled on time", "Settled late"]:
+                if inst.get_status() in ["Settled on time"]:
                     total += inst.get_amount()
                 # Recursively include settled amounts from further descendant instructions.
                 total += self.get_recursive_settled_amount(inst)
@@ -208,8 +220,8 @@ class SettlementModel(Model):
             total_intended_value += intended_amount
 
             # Case 1: Fully settled directly (both instructions settled on time or late).
-            if (pair[0].get_status() in ["Settled on time", "Settled late"] and
-                    pair[1].get_status() in ["Settled on time", "Settled late"]):
+            if (pair[0].get_status() in ["Settled on time"] and
+                    pair[1].get_status() in ["Settled on time"]):
                 fully_settled_pairs += 1
                 total_settled_value += intended_amount
 
