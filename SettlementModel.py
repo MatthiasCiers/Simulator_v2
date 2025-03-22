@@ -244,6 +244,8 @@ class SettlementModel(Model):
 
         return instruction_efficiency, value_efficiency
 
+
+
     def print_settlement_efficiency(self):
         """
         Quickly prints the settlement efficiency metrics.
@@ -252,6 +254,19 @@ class SettlementModel(Model):
         print("Settlement Efficiency:")
         print("  Instruction Efficiency: {:.2f}%".format(instruction_eff))
         print("  Value Efficiency: {:.2f}%".format(value_eff))
+
+    def save_settlement_efficiency_to_csv(self, filename="settlement_efficiency.csv"):
+        """
+        Saves the settlement efficiency metrics to a CSV file.
+        """
+        instruction_eff, value_eff = self.calculate_settlement_efficiency()
+        data = [
+            {"Metric": "Instruction Efficiency (%)", "Value": round(instruction_eff, 2)},
+            {"Metric": "Value Efficiency (%)", "Value": round(value_eff, 2)}
+        ]
+        df = pd.DataFrame(data)
+        df.to_csv(filename, index=False)
+        print(f"Settlement efficiency metrics saved to {filename}")
 
 if __name__ == "__main__":
     print("Starting simulation...")
@@ -272,4 +287,5 @@ if __name__ == "__main__":
     model.save_log(log_path)
     print("---------------------------------------------------------------")
     model.print_settlement_efficiency()
+    model.save_settlement_efficiency_to_csv()
 
