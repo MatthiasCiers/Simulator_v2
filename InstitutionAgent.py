@@ -71,7 +71,7 @@ class InstitutionAgent(Agent):
         if other_institution_security_account is None:
             # Create a new security account for the counterparty institution
             new_security_account_id = SettlementModel.generate_iban()  # Generates an IBAN-like string
-            new_security_balance = round(random.uniform(200e6, 600e6), 2)  # Mimic the balance generation logic
+            new_security_balance = round(random.uniform(200e8, 600e8), 2)  # Mimic the balance generation logic
             new_security_account = Account.Account(
                 accountID=new_security_account_id,
                 accountType=securityType,
@@ -85,7 +85,7 @@ class InstitutionAgent(Agent):
         isChild = False
         status = "Exists"
         linkcode = f"LINK-{uniqueID}L{otherID}"
-        instruction_creation_time = datetime.now()
+        instruction_creation_time = self.model.simulated_time
         delay_seconds = random.uniform(0.5, 5)  # random delay between 0.5 and 5 seconds
         counter_instruction_creation_time = instruction_creation_time + timedelta(seconds=delay_seconds)
 

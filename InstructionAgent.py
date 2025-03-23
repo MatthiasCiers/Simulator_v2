@@ -23,6 +23,7 @@ class InstructionAgent (Agent):
         self.linkcode = linkcode
         self.creation_time = creation_time# track creation time for timeout
         self.linkedTransaction = linkedTransaction
+        self.last_matched = creation_time
 
 
 #getter methods
@@ -82,7 +83,7 @@ class InstructionAgent (Agent):
         self.status = new_status
 
     def insert(self):
-        if self.creation_time < datetime.now():
+        if self.creation_time < self.model.simulated_time:
             if self.status == 'Exists':
                 self.status = 'Pending'
                 # logging
@@ -107,7 +108,12 @@ class InstructionAgent (Agent):
            elif self.status == 'Pending':
                self.validate()
            elif self.status == "Validated":
-               self.match()
+               if self.last_matched+ timedelta(seconds=3) <= self.model.simulated_time:
+                    self.match()
+                    self.last_matched = self.model.simulated_time
+               else:
+                   return
+
 
        self.model.simulated_time = self.model.simulated_time +timedelta(seconds=1)
 

@@ -23,7 +23,7 @@ class SettlementModel(Model):
         self.num_institutions = 5
         self.min_total_accounts = 2
         self.max_total_accounts = 6
-        self.simulation_duration_days = 5
+        self.simulation_duration_days = 15
         self.min_settlement_amount = 100
         self.bond_types = ["Bond-A", "Bond-B", "Bond-C", "Bond-D"]
 
@@ -112,7 +112,7 @@ class SettlementModel(Model):
             for _ in range(total_accounts - 1):
                 new_security_accountID = generate_iban()
                 new_security_accountType = random.choice(self.bond_types)
-                new_security_balance = round(random.uniform(200e6, 600e6), 2)
+                new_security_balance = round(random.uniform(200e8, 600e8), 2)
                 new_security_creditLimit = 0
                 new_security_Account = Account.Account(accountID=new_security_accountID, accountType= new_security_accountType, balance= new_security_balance, creditLimit= new_security_creditLimit)
                 inst_accounts.append(new_security_Account)
@@ -154,6 +154,13 @@ class SettlementModel(Model):
         self.transactions.remove(t)
 
     def batch_processing(self):
+        for instruction in self.instructions:
+            if instruction.get_status() == "Exists":
+                instruction.insert()
+            if instruction.get_status() == "Pending":
+                instruction.validate()
+            if instruction.get_status() == "Validated":
+                instruction.match()
         for transaction in self.transactions:
             if transaction.get_status() == "Matched":
                 transaction.settle()
