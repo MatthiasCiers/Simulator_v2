@@ -72,7 +72,7 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
                 True,
                 "Validated",
                 f"{self.linkcode}_1",
-                creation_time=datetime.now(),
+                creation_time=self.model.simulated_time,
                 linkedTransaction=None
             )
             receipt_child_2 = ReceiptInstructionAgent(
@@ -87,7 +87,7 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
                 True,
                 "Validated",
                 f"{self.linkcode}_2",
-                creation_time=datetime.now(),
+                creation_time=self.model.simulated_time,
                 linkedTransaction=None
             )
             # Add the new child instructions to the agents scheduler.

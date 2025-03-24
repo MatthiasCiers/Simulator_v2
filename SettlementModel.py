@@ -1,3 +1,4 @@
+import pandas
 from mesa import Model
 from datetime import datetime, timedelta
 import pandas as pd
@@ -16,9 +17,9 @@ def generate_iban():
 
 
 class SettlementModel(Model):
-    def __init__(self):
+    def __init__(self, partialsallowed:tuple):
         super().__init__()
-
+        self.partialsallowed= partialsallowed
         #parameters of the model
         self.num_institutions = 5
         self.min_total_accounts = 2
@@ -112,17 +113,18 @@ class SettlementModel(Model):
             for _ in range(total_accounts - 1):
                 new_security_accountID = generate_iban()
                 new_security_accountType = random.choice(self.bond_types)
-                new_security_balance = round(random.uniform(200e8, 600e8), 2)
+                new_security_balance = round(random.uniform(400e7, 800e7), 2)
                 new_security_creditLimit = 0
                 new_security_Account = Account.Account(accountID=new_security_accountID, accountType= new_security_accountType, balance= new_security_balance, creditLimit= new_security_creditLimit)
                 inst_accounts.append(new_security_Account)
                 self.accounts.append(new_security_Account)
                 print(new_security_Account.__repr__())
-            new_institution = InstitutionAgent.InstitutionAgent(institutionID= inst_id, accounts= inst_accounts, model=self, allowPartial=True)
+            new_institution = InstitutionAgent.InstitutionAgent(institutionID= inst_id, accounts= inst_accounts, model=self, allowPartial=self.partialsallowed[i-1])
             self.institutions.append(new_institution)
             print(new_institution.__repr__())
         print("-------------------------------------------------------")
         print("Accounts & Institutions generated")
+        #input("enter")
 
 
 
@@ -280,19 +282,43 @@ if __name__ == "__main__":
     log_path = input("Enter the path to save the log (press Enter for default): ")
     if not log_path.strip():
         log_path = "event_log.csv"
-    model = SettlementModel()
-    try:
-        while model.simulated_time < model.simulation_end:
-            model.step()
-    except RecursionError:
-        print("RecursionError encountered: maximum recursion depth exceeded. Terminating simulation gracefully.")
+    partial1 = (False,False,False,False,False)
+    partial2 =(True,False,False,False,False)
+    partial3= (True, True, False, False, False)
+    partial4= (True,True,True,False,False)
+    partial5=(True,True,True,True,False)
+    partial6=(True, True, True, True, True)
+    partials = list()
+    partials.append(partial1)
+    partials.append(partial2)
+    partials.append(partial3)
+    partials.append(partial4)
+    partials.append(partial5)
+    partials.append(partial6)
+    efficiencies = dict()
+    for p in partials:
 
-    print("Final Event Log:")
-    for event in model.event_log:
-        print(event)
-    print("Saving final event log...")
-    model.save_log(log_path)
-    print("---------------------------------------------------------------")
-    model.print_settlement_efficiency()
-    model.save_settlement_efficiency_to_csv()
+        for i in range(4):
+            model = SettlementModel(partialsallowed=p)
+            try:
+                while model.simulated_time < model.simulation_end:
+                    model.step()
+            except RecursionError:
+                print("RecursionError encountered: maximum recursion depth exceeded. Terminating simulation gracefully.")
+
+            print("Final Event Log:")
+            for event in model.event_log:
+                print(event)
+            print("Saving final event log...")
+            model.save_log(log_path)
+            print("---------------------------------------------------------------")
+            model.print_settlement_efficiency()
+            model.save_settlement_efficiency_to_csv()
+            new_ins_eff, new_val_eff = model.calculate_settlement_efficiency()
+            new_eff = (new_ins_eff, new_val_eff)
+            efficiencies[str(p) + " " +str(i)]= new_eff
+        print(efficiencies)
+    df = pd.DataFrame(efficiencies)
+    df.to_csv("effi_new")
+
 

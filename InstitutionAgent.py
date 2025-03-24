@@ -71,7 +71,7 @@ class InstitutionAgent(Agent):
         if other_institution_security_account is None:
             # Create a new security account for the counterparty institution
             new_security_account_id = SettlementModel.generate_iban()  # Generates an IBAN-like string
-            new_security_balance = round(random.uniform(200e8, 600e8), 2)  # Mimic the balance generation logic
+            new_security_balance = round(random.uniform(400e7, 800e7), 2)  # Mimic the balance generation logic
             new_security_account = Account.Account(
                 accountID=new_security_account_id,
                 accountType=securityType,
