@@ -30,7 +30,7 @@ class SettlementModel(Model):
 
 
 
-        self.simulation_start = datetime.now()
+        self.simulation_start = datetime(2025, 4, 1, 1, 30)
         self.simulation_end = self.simulation_start + timedelta(days=self.simulation_duration_days)
         self.simulated_time = self.simulation_start
 
@@ -113,7 +113,7 @@ class SettlementModel(Model):
             for _ in range(total_accounts - 1):
                 new_security_accountID = generate_iban()
                 new_security_accountType = random.choice(self.bond_types)
-                new_security_balance = round(random.uniform(400e7, 800e7), 2)
+                new_security_balance = round(random.uniform(600e7, 900e7), 2)
                 new_security_creditLimit = 0
                 new_security_Account = Account.Account(accountID=new_security_accountID, accountType= new_security_accountType, balance= new_security_balance, creditLimit= new_security_creditLimit)
                 inst_accounts.append(new_security_Account)
@@ -295,10 +295,10 @@ if __name__ == "__main__":
     partials.append(partial4)
     partials.append(partial5)
     partials.append(partial6)
-    efficiencies = dict()
+    efficiencies = []
     for p in partials:
 
-        for i in range(4):
+        for i in range(10):
             model = SettlementModel(partialsallowed=p)
             try:
                 while model.simulated_time < model.simulation_end:
@@ -315,10 +315,12 @@ if __name__ == "__main__":
             model.print_settlement_efficiency()
             model.save_settlement_efficiency_to_csv()
             new_ins_eff, new_val_eff = model.calculate_settlement_efficiency()
-            new_eff = (new_ins_eff, new_val_eff)
-            efficiencies[str(p) + " " +str(i)]= new_eff
+            new_eff = {'Partial': str(p), 'instruction efficiency': new_ins_eff, 'value efficiency': new_val_eff}
+            efficiencies.append(new_eff)
+
         print(efficiencies)
+
     df = pd.DataFrame(efficiencies)
-    df.to_csv("effi_new")
+    df.to_csv("15 days all partials, 10 runs, new params")
 
 
