@@ -44,9 +44,56 @@ class SettlementModel(Model):
         self.accounts = []
         self.instructions = []
         self.transactions = []
-        self.event_log = []
+
         self.activity_log = []
+
+        #OCEL logging reqs:
+
+        self.event_counter = 1
+        self.event_log = []  # List to store OCEL events
+        self.objects_catalog = {}  # Dictionary for static object info
+
+
         self.generate_data()
+
+    def next_event_id(self):
+        event_id = f"e{self.event_counter}"
+        self.event_counter += 1
+        return event_id
+
+    def log_ocel_event(self, activity: str, object_refs: list):
+        """
+        Log an event in OCEL format.
+        :param activity: The activity name (e.g., 'DeliveryInstruction Created').
+        :param object_refs: List of dictionaries with keys 'object_id' and 'object_type'.
+        """
+        event_entry = {
+            "event_id": self.next_event_id(),
+            "timestamp": self.simulated_time.strftime('%Y-%m-%dT%H:%M:%S'),
+            "activity": activity,
+            "object_refs": object_refs
+        }
+        self.event_log.append(event_entry)
+        print(f"Logged event: {event_entry}")
+
+    def register_object(self, object_id: str, object_type: str, attributes: dict):
+        self.objects_catalog[object_id] = {
+            "object_id": object_id,
+            "object_type": object_type,
+            "attributes": attributes
+        }
+
+    def save_log(self, filename=None, activity_filename=None):
+        if filename is None:
+            filename = "ocel_event_log.csv"
+        df = pd.DataFrame(self.event_log)
+        df.to_csv(filename, index=False)
+        if activity_filename is None:
+            activity_filename = "objects_catalog.csv"
+        df_activity = pd.DataFrame(list(self.objects_catalog.values()))
+        df_activity.to_csv(activity_filename, index=False)
+        print(f"Object catalog saved to {activity_filename}")
+        print(f"Event Log saved to {filename}")
 
     def random_timestamp(self):
         delta = self.simulation_end - self.simulated_time
@@ -54,32 +101,22 @@ class SettlementModel(Model):
         random_time = self.simulation_start + timedelta(seconds=random_seconds)
         return random_time  # Now returns a datetime object
 
-    def log_event(self, message, agent_id, is_transaction=True):
-        timestamp = self.simulated_time.strftime('%Y-%m-%d %H:%M:%S')
-        log_entry = {'Timestamp': timestamp, 'Agent ID': agent_id, 'Event': message}
-
-        if is_transaction:
-            if log_entry not in self.event_log:
-                print(f"{timestamp} | Agent ID: {log_entry['Agent ID']} | {message}")
-                self.event_log.append(log_entry)  # Ensures no duplicates
-        else:
-            if log_entry not in self.activity_log:
-                print(f"{timestamp} | Agent ID: {log_entry['Agent ID']} | {message}")
+   # def log_event(self, message, agent_id, is_transaction=True):
+   #     timestamp = self.simulated_time.strftime('%Y-%m-%d %H:%M:%S')
+   #     log_entry = {'Timestamp': timestamp, 'Agent ID': agent_id, 'Event': message}
+    #
+    #    if is_transaction:
+    #        if log_entry not in self.event_log:
+    #            print(f"{timestamp} | Agent ID: {log_entry['Agent ID']} | {message}")
+    #            self.event_log.append(log_entry)  # Ensures no duplicates
+     #   else:
+     #       if log_entry not in self.activity_log:
+     #           print(f"{timestamp} | Agent ID: {log_entry['Agent ID']} | {message}")
                   # Ensures no duplicates
 
-        self.activity_log.append(log_entry)
+      #  self.activity_log.append(log_entry)
 
-    def save_log(self, filename=None, activity_filename=None):
-        if filename is None:
-            filename = "event_log.csv"  # Default filename
-        df = pd.DataFrame(self.event_log)
-        df.to_csv(filename, index=False)
-        if activity_filename is None:
-            activity_filename = "activity_log.csv"
-        df_activity = pd.DataFrame(self.activity_log)
-        df_activity.to_csv(activity_filename, index=False)
-        print(f"Activity log saved to {activity_filename}")
-        print(f"Event Log saved to {filename}")
+
 
     def sample_instruction_amount(self):
         """
@@ -289,16 +326,16 @@ if __name__ == "__main__":
     partial5=(True,True,True,True,False)
     partial6=(True, True, True, True, True)
     partials = list()
-    partials.append(partial1)
-    partials.append(partial2)
-    partials.append(partial3)
-    partials.append(partial4)
-    partials.append(partial5)
+    #partials.append(partial1)
+    #partials.append(partial2)
+    #partials.append(partial3)
+    #partials.append(partial4)
+    #partials.append(partial5)
     partials.append(partial6)
     efficiencies = []
     for p in partials:
 
-        for i in range(10):
+        for i in range(1):
             model = SettlementModel(partialsallowed=p)
             try:
                 while model.simulated_time < model.simulation_end:

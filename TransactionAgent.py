@@ -29,7 +29,12 @@ class TransactionAgent(Agent):
 
     def settle(self):
         #logging
-        self.model.log_event(f"Transaction {self.transactionID} attempting to settle.", self.transactionID, is_transaction = True)
+        #self.model.log_event(f"Transaction {self.transactionID} attempting to settle.", self.transactionID, is_transaction = True)
+        self.model.log_ocel_event(
+            activity="Transaction Attempting to Settle",
+            object_refs=[{"object_id": self.transactionID, "object_type": "Transaction"}]
+        )
+
         if self.deliverer.get_status() == "Matched" and self.receiver.get_status() == "Matched" and self.status == "Matched":
             if (self.deliverer.securitiesAccount.checkBalance(self.deliverer.get_amount(), self.deliverer.get_securityType())
                     and self.receiver.cashAccount.checkBalance(self.receiver.get_amount(), "Cash")
@@ -50,6 +55,14 @@ class TransactionAgent(Agent):
                         self.deliverer.set_status("Cancelled due to error")
                         self.receiver.set_status("Cancelled due to error")
                         self.status = "Cancelled due to error"
+                        self.model.log_ocel_event(
+                            activity="Cancelled due to error",
+                            object_refs=[
+                                {"object_id": self.transactionID, "object_type": "Transaction"},
+                                {"object_id": self.deliverer.uniqueID, "object_type": "DeliveryInstruction"},
+                                {"object_id": self.receiver.uniqueID, "object_type": "ReceiptInstruction"}
+                            ]
+                        )
 
                     #checks if settled on time (T+2)
                     if self.deliverer.get_creation_time() + timedelta(hours = 48) < self.model.simulated_time or self.receiver.get_creation_time() + timedelta(hours = 48) < self.model.simulated_time:
@@ -57,17 +70,32 @@ class TransactionAgent(Agent):
                         self.receiver.set_status("Settled late")
                         self.status = "Settled late"
                         # logging
-                        self.model.log_event(f"Transaction {self.transactionID} settled fully late.", self.transactionID,
-                                             is_transaction=True)
+                        #self.model.log_event(f"Transaction {self.transactionID} settled fully late.", self.transactionID,
+                        #                     is_transaction=True)
+                        self.model.log_ocel_event(
+                            activity="Transaction Settled Late",
+                            object_refs=[
+                                {"object_id": self.transactionID, "object_type": "Transaction"},
+                                {"object_id": self.deliverer.uniqueID, "object_type": "DeliveryInstruction"},
+                                {"object_id": self.receiver.uniqueID, "object_type": "ReceiptInstruction"}
+                            ]
+                        )
                     else:
                         self.deliverer.set_status("Settled on time")
                         self.receiver.set_status("Settled on time")
                         self.status = "Settled on time"
                         # logging
-                        self.model.log_event(f"Transaction {self.transactionID} settled fully on time.",
-                                             self.transactionID,
-                                             is_transaction=True)
-
+                        #self.model.log_event(f"Transaction {self.transactionID} settled fully on time.",
+                        #                     self.transactionID,
+                                           #  is_transaction=True)
+                        self.model.log_ocel_event(
+                        activity = "Transaction Settled On Time",
+                        object_refs = [
+                            {"object_id": self.transactionID, "object_type": "Transaction"},
+                            {"object_id": self.deliverer.uniqueID, "object_type": "DeliveryInstruction"},
+                            {"object_id": self.receiver.uniqueID, "object_type": "ReceiptInstruction"}
+                            ]
+                        )
                     #remove the transaction and instructions from the model if fully settled
                     self.model.remove_transaction(self)
                     self.model.agents.remove(self.deliverer)
@@ -77,8 +105,13 @@ class TransactionAgent(Agent):
 
             elif self.deliverer.get_amount() == 0 or self.receiver.get_amount() == 0:
                 #will do nothing if there is no cash or securities available
+                self.model.log_ocel_event(
+                    activity="Transaction Settlement Failed: Insufficient Funds",
+                    object_refs=[{"object_id": self.transactionID, "object_type": "Transaction"}]
+                )
+
                 #logging
-                self.model.log_event(f"Error: Transaction {self.transactionID} failed due to no cash or securities available", self.transactionID, is_transaction = True)
+                #self.model.log_event(f"Error: Transaction {self.transactionID} failed due to no cash or securities available", self.transactionID, is_transaction = True)
             else:
                 #handless partial settlement
                 # Inside the partial settlement block in TransactionAgent.settle()
@@ -88,12 +121,16 @@ class TransactionAgent(Agent):
 
                     # Check if partial settlement children were created.
                     if receipt_children == (None, None) or delivery_children == (None, None):
-                        self.model.log_event(
-                            f"Transaction {self.transactionID} partial settlement aborted due to insufficient funds.",
-                            self.transactionID,
-                            is_transaction=True
+                        #self.model.log_event(
+                        #    f"Transaction {self.transactionID} partial settlement aborted due to insufficient funds.",
+                        #    self.transactionID,
+                        #    is_transaction=True
+                        #)
+                        self.model.log_ocel_event(
+                            activity="Transaction Partial Settlement Aborted",
+                            object_refs=[{"object_id": self.transactionID, "object_type": "Transaction"}]
                         )
-                        # Optionally, you can handle this scenario (e.g., cancel the transaction or retry later)
+
                     else:
                         delivery_child_1, delivery_child_2 = delivery_children
                         receipt_child_1, receipt_child_2 = receipt_children
@@ -103,16 +140,31 @@ class TransactionAgent(Agent):
                         child_transaction_1.settle()
                         child_transaction_2.deliverer.get_securitiesAccount().set_newSecurities(False)
                         child_transaction_2.receiver.get_cashAccount().set_newSecurities(False)
-                        self.model.log_event(
-                            f"Transaction {self.transactionID} partially settled. Children {receipt_child_1.get_uniqueID()}, "
-                            f"{receipt_child_2.get_uniqueID()}, {delivery_child_1.get_uniqueID()} and {delivery_child_2.get_uniqueID()} created. "
-                            f"Transactions {child_transaction_1.transactionID} and {child_transaction_2.transactionID} created.",
-                            self.transactionID,
-                            is_transaction=True
+                        #self.model.log_event(
+                        #    f"Transaction {self.transactionID} partially settled. Children {receipt_child_1.get_uniqueID()}, "
+                        #    f"{receipt_child_2.get_uniqueID()}, {delivery_child_1.get_uniqueID()} and {delivery_child_2.get_uniqueID()} created. "
+                        #    f"Transactions {child_transaction_1.transactionID} and {child_transaction_2.transactionID} created.",
+                        #    self.transactionID,
+                        #    is_transaction=True
+                        #)
+                        self.model.log_ocel_event(
+                            activity="Transaction Partially Settled",
+                            object_refs=[
+                                {"object_id": self.transactionID, "object_type": "Transaction"},
+                                {"object_id": receipt_child_1.uniqueID, "object_type": "ReceiptInstruction"},
+                                {"object_id": receipt_child_2.uniqueID, "object_type": "ReceiptInstruction"},
+                                {"object_id": delivery_child_1.uniqueID, "object_type": "DeliveryInstruction"},
+                                {"object_id": delivery_child_2.uniqueID, "object_type": "DeliveryInstruction"}
+                            ]
                         )
                         self.cancel_partial()
         else:
-            self.model.log_event(f"One of the instructions or transaction not in the correct state", self.transactionID, is_transaction = True)
+        #    self.model.log_event(f"One of the instructions or transaction not in the correct state", self.transactionID, is_transaction = True)
+            self.model.log_ocel_event(
+                activity="Transaction Settlement Failed: Incorrect Status",
+                object_refs=[{"object_id": self.transactionID, "object_type": "Transaction"}]
+            )
+
         self.deliverer.get_securitiesAccount().set_newSecurities(False)
         self.receiver.get_cashAccount().set_newSecurities(False)
 
@@ -136,9 +188,12 @@ class TransactionAgent(Agent):
         self.status = "Cancelled due to partial settlement"
         self.deliverer.set_status("Cancelled due to partial settlement")
         self.receiver.set_status("Cancelled due to partial settlement")
-
+        self.model.log_ocel_event(
+            activity="Transaction Cancelled due to Partial Settlement",
+            object_refs=[{"object_id": self.transactionID, "object_type": "Transaction"}]
+        )
         #logging
-        self.model.log_event(f"Transaction {self.transactionID} cancelled due to partial settlement.", self.transactionID, is_transaction = True)
+        #self.model.log_event(f"Transaction {self.transactionID} cancelled due to partial settlement.", self.transactionID, is_transaction = True)
         #remove transition and instructions from the model when cancelled
         self.model.remove_transaction(self)
         self.model.agents.remove(self.deliverer)

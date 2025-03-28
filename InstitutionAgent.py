@@ -100,6 +100,15 @@ class InstitutionAgent(Agent):
             self.model.instructions.append(new_instructionAgent)
             self.model.instructions.append(counter_instructionAgent)
 
+        self.model.log_ocel_event(
+            activity="Instruction Pair Created",
+            object_refs=[
+                {"object_id": new_instructionAgent.uniqueID, "object_type": "Instruction"},
+                {"object_id": counter_instructionAgent.uniqueID, "object_type": "Instruction"},
+                {"object_id": self.institutionID, "object_type": "Institution"}
+            ]
+        )
+
 
 
 
