@@ -59,7 +59,7 @@ class ReceiptInstructionAgent(InstructionAgent.InstructionAgent):
         available_to_settle = min(self.amount, available_cash, available_securities)
 
         if available_to_settle > MIN_SETTLEMENT_AMOUNT:
-            # Create receipt child instructions with the computed amounts.
+            #  Create receipt child instructions with the computed amounts.
             receipt_child_1 = ReceiptInstructionAgent(
                 self.model,
                 f"{self.uniqueID}_1",

@@ -16,7 +16,7 @@ class TransactionAgent(Agent):
         self.status = status
 
         #logging ( don't know why is_transaction = True)
-       # self.model.log_event(f"Transaction {self.transactionID} created from account {self.deliverer.get_securitiesAccount().getAccountID()} to account {self.receiver.get_cashAccount().getAccountID()}", self.transactionID, is_transaction = True)
+        # self.model.log_event(f"Transaction {self.transactionID} created from account {self.deliverer.get_securitiesAccount().getAccountID()} to account {self.receiver.get_cashAccount().getAccountID()}", self.transactionID, is_transaction = True)
 
     def get_transactionID(self):
         return self.transactionID
