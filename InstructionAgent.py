@@ -1,12 +1,15 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from mesa import Agent
-import TransactionAgent
-import SettlementModel
-import InstitutionAgent
-import Account
+from typing import TYPE_CHECKING, Optional
+
+if TYPE_CHECKING:
+    from TransactionAgent import TransactionAgent
+    from SettlementModel import SettlementModel
+    from InstitutionAgent import InstitutionAgent
+    from Account import Account
 
 class InstructionAgent (Agent):
-    def __init__(self, model: SettlementModel, uniqueID: str, motherID: str, institution: InstitutionAgent, securitiesAccount: Account, cashAccount: Account, securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime= datetime.now(), linkedTransaction: TransactionAgent = None):
+    def __init__(self, model: "SettlementModel", uniqueID: str, motherID: str, institution: "InstitutionAgent", securitiesAccount: "Account", cashAccount: "Account", securityType: str, amount: float, isChild: bool, status: str, linkcode: str, creation_time: datetime, linkedTransaction: Optional["TransactionAgent"] = None):
         super().__init__(model)
         self.uniqueID = uniqueID
         self.motherID = motherID
@@ -20,6 +23,7 @@ class InstructionAgent (Agent):
         self.linkcode = linkcode
         self.creation_time = creation_time# track creation time for timeout
         self.linkedTransaction = linkedTransaction
+        self.last_matched = creation_time
 
 
 #getter methods
@@ -78,90 +82,45 @@ class InstructionAgent (Agent):
     def set_status(self, new_status: str):
         self.status = new_status
 
-    def insert_instruction(self):
-        # TODO: is this just changing state from exists to pending?
-        if self.creation_time < datetime.now():
+    def insert(self):
+        if self.creation_time < self.model.simulated_time:
             if self.status == 'Exists':
                 self.status = 'Pending'
-        pass
-
+                # logging
+                #self.model.log_event(f"Instruction {self.uniqueID} inserted.", self.uniqueID, is_transaction=True)
+                self.model.log_ocel_event(
+                    activity="Instruction Inserted",
+                    object_refs=[{"object_id": self.uniqueID, "object_type": "Instruction"}]
+                )
     def validate(self):
         if self.status == 'Pending':
-            # TODO: second delay has to be implemented still
             self.set_status('Validated')
-
             #logging
-            self.model.log_event(f"Instruction {self.uniqueID} validated.", self.uniqueID, is_transaction = True)
-
-    def match(self):
-    #matches this instruction with the other instruction with same linkcode
-    #creates transactionAgent with the 2 instructions
-        #logging
-        self.model.log_event(f"Instruction {self.uniqueID} attempting to match", self.uniqueID, is_transaction = True)
-        if self.status == 'Validated':
-            #find other instruction with same linkcode:
-            other_instruction = None
-            for agent in self.model.agents:
-                if (
-                    isinstance(agent, InstructionAgent) #checks if it is an InstructionAgent
-                    and agent.uniqueID != self.uniqueID #checks if it is not itself
-                    and agent.linkcode == self.linkcode #checks if linkcodes match
-                    and agent.status == 'Validated' #checks status of other instruction
-                ):
-                    if( #check if both instructions are of opposite type
-                        isinstance(self, DeliveryInstructionAgent) and isinstance(agent, ReceiptInstructionAgent)
-                    ) or (
-                        isinstance(self, ReceiptInstructionAgent) and isinstance(agent, DeliveryInstructionAgent)
-                    ):
-                        other_instruction = agent
-                        break
-            else:
-                #logging
-                self.model.log_event(f"ERROR: Instruction {self.uniqueID} failed to match, no matching instruction found", self.uniqueID, is_transaction = True)
-
-            #create transaction
-            transaction = TransactionAgent(
-                model = self.model,
-                transactionID = f"{self.uniqueID}_{other_instruction.uniqueID}",
-                deliverer = self if isinstance(self, DeliveryInstructionAgent) else other_instruction,
-                receiver = self if isinstance(self, ReceiptInstructionAgent) else other_instruction,
-                status = "Matched"
+            #self.model.log_event(f"Instruction {self.uniqueID} validated.", self.uniqueID, is_transaction = True)
+            self.model.log_ocel_event(
+                activity="Instruction Validated",
+                object_refs=[{"object_id": self.uniqueID, "object_type": "Instruction"}]
             )
+    def is_instruction_time_out(self):
+        return self.creation_time + timedelta(days = 14) <= self.model.simulated_time
 
-            #link transaction to both instructions:
-            self.linkedTransaction = transaction
-            other_instruction.linkedTransaction = transaction
+    def step(self):
 
-            #update status in both instructions
-            self.set_status("Matched")
-            other_instruction.set_status("Matched")
+       if self.is_instruction_time_out():
+           self.cancel_timout()
+       else:
+           if self.status == 'Exists':
+               self.insert()
+           elif self.status == 'Pending':
+               self.validate()
+           elif self.status == "Validated":
+               if self.last_matched+ timedelta(seconds=3) <= self.model.simulated_time:
+                    self.match()
+                    self.last_matched = self.model.simulated_time
+               else:
+                   return
 
-            #logging
-            self.model.log_event(f"Instruction {self.uniqueID} matched with instruction {self.linkedTransaction.get_uniqueID}", self.uniqueID, is_transaction = True)
-            return transaction
 
-        else:
-            self.model.log_event(f"Error: Instruction {self.uniqueID} in wrong state, impossible to match", self.uniqueID, is_transaction = True)
-
-    def settle(self):
-    #only to change state. Actual settlement logic is in TransactionAgent
-        if self.status == "Matched":
-            self.set_status('Settled')
-            #logging
-            self.model.log_event(f"Instruction {self.uniqueID} settled", self.uniqueID, is_transaction = True)
-
-    def cancel_timout(self):
-        #method to cancel instruction due to timeout
-        # TODO
-        # logging
-        self.model.log_event(f"Instruction {self.uniqueID} cancelled due to timeout.", self.uniqueID, is_transaction=True)
-        pass
-
-    def cancel_partial(self):
-        #method to cancel instruction due to partial settlement.
-        #this instruction gets cancelled, but children get created
-        self.status = "Cancelled due to partial settlement"
-        #logging
-        self.model.log_event(f"Instruction {self.uniqueID} cancelled due to partial settlement.", self.uniqueID, is_transaction = True)
+       self.model.simulated_time = self.model.simulated_time +timedelta(seconds=1)
 
 
