@@ -63,39 +63,39 @@ class TransactionAgent(Agent):
                                 {"object_id": self.receiver.uniqueID, "object_type": "ReceiptInstruction"}
                             ]
                         )
-
-                    #checks if settled on time (T+2)
-                    if self.deliverer.get_creation_time() + timedelta(hours = 48) < self.model.simulated_time or self.receiver.get_creation_time() + timedelta(hours = 48) < self.model.simulated_time:
-                        self.deliverer.set_status("Settled late")
-                        self.receiver.set_status("Settled late")
-                        self.status = "Settled late"
-                        # logging
-                        #self.model.log_event(f"Transaction {self.transactionID} settled fully late.", self.transactionID,
-                        #                     is_transaction=True)
-                        self.model.log_ocel_event(
-                            activity="Transaction Settled Late",
-                            object_refs=[
+                    if self.status != "Cancelled due to error":
+                        #checks if settled on time (T+2)
+                        if self.deliverer.get_creation_time() + timedelta(hours = 48) < self.model.simulated_time or self.receiver.get_creation_time() + timedelta(hours = 48) < self.model.simulated_time:
+                            self.deliverer.set_status("Settled late")
+                            self.receiver.set_status("Settled late")
+                            self.status = "Settled late"
+                            # logging
+                            #self.model.log_event(f"Transaction {self.transactionID} settled fully late.", self.transactionID,
+                            #                     is_transaction=True)
+                            self.model.log_ocel_event(
+                                activity="Transaction Settled Late",
+                                object_refs=[
+                                    {"object_id": self.transactionID, "object_type": "Transaction"},
+                                    {"object_id": self.deliverer.uniqueID, "object_type": "DeliveryInstruction"},
+                                    {"object_id": self.receiver.uniqueID, "object_type": "ReceiptInstruction"}
+                                ]
+                            )
+                        else:
+                            self.deliverer.set_status("Settled on time")
+                            self.receiver.set_status("Settled on time")
+                            self.status = "Settled on time"
+                            # logging
+                            #self.model.log_event(f"Transaction {self.transactionID} settled fully on time.",
+                            #                     self.transactionID,
+                                               #  is_transaction=True)
+                            self.model.log_ocel_event(
+                            activity = "Transaction Settled On Time",
+                            object_refs = [
                                 {"object_id": self.transactionID, "object_type": "Transaction"},
                                 {"object_id": self.deliverer.uniqueID, "object_type": "DeliveryInstruction"},
                                 {"object_id": self.receiver.uniqueID, "object_type": "ReceiptInstruction"}
-                            ]
-                        )
-                    else:
-                        self.deliverer.set_status("Settled on time")
-                        self.receiver.set_status("Settled on time")
-                        self.status = "Settled on time"
-                        # logging
-                        #self.model.log_event(f"Transaction {self.transactionID} settled fully on time.",
-                        #                     self.transactionID,
-                                           #  is_transaction=True)
-                        self.model.log_ocel_event(
-                        activity = "Transaction Settled On Time",
-                        object_refs = [
-                            {"object_id": self.transactionID, "object_type": "Transaction"},
-                            {"object_id": self.deliverer.uniqueID, "object_type": "DeliveryInstruction"},
-                            {"object_id": self.receiver.uniqueID, "object_type": "ReceiptInstruction"}
-                            ]
-                        )
+                                ]
+                            )
                     #remove the transaction and instructions from the model if fully settled
                     self.model.remove_transaction(self)
                     self.model.agents.remove(self.deliverer)
